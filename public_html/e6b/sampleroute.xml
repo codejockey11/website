@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flight-plan xmlns="http://www8.garmin.com/xmlschemas/FlightPlan/v1">
+  <created>2011-07-09T19:13:18Z</created>
+  <waypoint-table>
+    <waypoint>
+      <identifier>EDBAUM1</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code></country-code>
+      <lat>49.230833</lat>
+      <lon>9.418056</lon>
+      <comment></comment>
+    </waypoint>
+    <waypoint>
+      <identifier>EDIPPE</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code></country-code>
+      <lat>49.609722</lat>
+      <lon>10.225833</lon>
+      <comment></comment>
+    </waypoint>
+    <waypoint>
+      <identifier>EDKRON</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code></country-code>
+      <lat>50.244722</lat>
+      <lon>11.360556</lon>
+      <comment></comment>
+    </waypoint>
+    <waypoint>
+      <identifier>EDOQ</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code></country-code>
+      <lat>51.296944</lat>
+      <lon>13.078056</lon>
+      <comment></comment>
+    </waypoint>
+  </waypoint-table>
+  <route>
+    <route-name>EDBAUM BIS EDOQ</route-name>
+    <flight-plan-index>1</flight-plan-index>
+    <route-point>
+      <waypoint-identifier>EDBAUM1</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code></waypoint-country-code>
+    </route-point>
+    <route-point>
+      <waypoint-identifier>EDIPPE</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code></waypoint-country-code>
+    </route-point>
+    <route-point>
+      <waypoint-identifier>EDKRON</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code></waypoint-country-code>
+    </route-point>
+    <route-point>
+      <waypoint-identifier>EDOQ</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code></waypoint-country-code>
+    </route-point>
+  </route>
+</flight-plan>
