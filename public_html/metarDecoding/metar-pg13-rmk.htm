@@ -1,0 +1,963 @@
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>Remarks Section for the METAR/ /SPECI Code</H2>
+    </CENTER>
+    <H2>Index</H2>
+    <TABLE>
+      <TR>
+        <TD>
+          <A HREF="metar-pg13-rmk.htm#AUTO">Automated, Manual, and Plain Language Remarks</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="metar-pg13-rmk.htm#ADDITIVE">Additive Coded and Automated Maintenance Data</A>
+        </TD>
+      </TR>
+    </TABLE>
+    <H3>General</H3>
+    <BR/>
+    Remarks shall be included in all <B>METAR</B> and <B>SPECI</B>, if appropriate.  <B>Note:</B> The United States does not report remarks in the same manner as the WMO standard.
+    <BR/>
+    Remarks shall be separated from the body of the report by a space and the contraction <B>RMK</B>. If there are no remarks, the contraction <B>RMK</B> is not required.
+    <BR/>
+    <B>METAR/SPECI</B> remarks fall into 2 categories:
+    <A HREF="metar-pg13-rmk.htm#AUTO">
+      (1) Automated, Manual, and Plain
+      Language
+    </A>, and <A HREF="metar-pg13-rmk.htm#ADDITIVE">(2) Additive and Maintenance Data</A>.
+    <BR/>
+    Remarks shall be made in accordance with the following:
+    <BR/>
+    <UL>
+      <LI>Where plain language is called for, authorized contractions, abbreviations, and symbols should be used to conserve time and space. However, in no case should an essential remark, of which the observer is aware, be omitted for the lack of readily available contractions. In such a case, the only requirement is that the remark be clear.</LI>
+      <LI>Time entries shall be made in minutes past the hour if the time reported occurs during the same hour the observation is taken. Hours and minutes shall be used if the hour is different, or this handbook prescribes the use of the hour and minutes.</LI>
+      <LI>
+        Present weather coded in the body of the report as <B>VC</B> may be further described, i.e., direction from the station, if known. Weather phenomena beyond 10 statute miles of the point(s) of observation shall be coded as distant (<B>DSNT</B>) followed by the direction from the station. For example, precipitation of unknown intensity within 10 statute miles east of the station would be coded as "<B>VCSH E</B>";lightning 25 statute miles west of the station would be coded as "<B>LTG DSNT W</B>".
+      </LI>
+      <LI>Distance remarks shall be statute miles except for automated lightning remarks which are in nautical miles.</LI>
+      <LI>
+        Movement of clouds of weather, if known, shall be coded with respect to the direction toward which the phenomena is moving. For example, a thunderstorm moving toward the northeast would be coded as "<B>TS MOV NE</B>".
+      </LI>
+      <LI>Directions shall use the eight points of the compass coded in clockwise order.</LI>
+      <LI>Insofar as possible, remarks shall be entered in the order they are presented in the following paragraphs.</LI>
+    </UL>
+    <BR/>
+    <A NAME="#AUTO">
+      <H3>
+        <B>Automated, Manual, and Plain Language Remarks</B>
+      </H3>
+    </A>
+    <BR/>
+    These remarks generally elaborate on parameters reported in the body of the report. Automated and manual remarks may be generated either by an automated or manual station. Plain language remarks are only provided from manual stations.
+    <OL>
+      <LI>
+        <B>Volcanic Eruptions (Plain Language)</B>. Volcanic eruptions shall be coded. The remark shall be plain language and contain the following, if known:
+      </LI>
+      <UL>
+        <LI>Name of volcano.</LI>
+        <LI>Latitude and longitude or the direction and the approximate distance from the station.</LI>
+        <LI>Date/Time (UTC) of the eruption.</LI>
+        <LI>Size description, approximate height, and direction of movement of the ash cloud.</LI>
+        <LI>Any other pertinent data about the eruption.</LI>
+      </UL>
+      For example, a remark on a volcanic eruption would look like the following:
+      <BR/>
+      <B>MT. AUGUSTINE VOLCANO 70 MILES SW ERUPTED 231505 LARGE ASH CLOUD EXTENDING TO APRX 30000 FEET MOVING NR.</B>
+      <BR/>
+      Pre-eruption volcanic activity shall not be coded. Pre-eruption refers to unusual and/or increasing volcanic activity which could presage a volcanic eruption.
+      <BR/>
+      <LI>
+        <B>Funnel Cloud (Tornadic activity_B/E(hh)mm_LOC/DIR_(MOV))</B>. At manual stationS, tornadoes, funnel clouds, or waterspouts shall be coded in the format, <B>TORNADIC ACTIVITY_B/E(hh)mm_LOC/DIR_(MOV)</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>TORNADO</B>, <B>FUNNEL CLOUD</B>, or <B>WATERSPOUT</B> identifies the specific tornadic activity,
+        </LI>
+        <LI>
+          <B>B/E</B> denotes the beginning and/or ending time,
+        </LI>
+        <LI>
+          <B>(hh)mm</B> is the time of occurrence (only the minutes are required if the hour can be inferred from the time of the report),
+        </LI>
+        <LI>
+          <B>LOC/DIR</B> is the location and/or direction of the phenomena from the station, and
+        </LI>
+        <LI>
+          <B>MOV</B> is the movement, if known, from the station.
+        </LI>
+      </UL>
+      Tornadic activity shall be coded as the first remark after the "<B>RMK</B>" entry. For example, "<B>TORNADO B13 6 NE</B>" would indicate that a tornado, which began at 13 minutes past the hour, was 6 statute miles northeast of the station.
+      <BR/>
+      <LI>
+        <B>Type of Automated Station (AO1 or AO2)</B>. <B>AO1</B> or <B>AO2</B> shall be coded in all <B>METAR/SPECI</B> from automated stations.
+      </LI>
+      <UL>
+        <LI>
+          <B>AO1</B> - Automated stations without a precipitation discriminator.
+        </LI>
+        <LI>
+          <B>AO2</B> - Automated stations with a precipitation discriminator.
+        </LI>
+      </UL>
+      <LI>
+        <B>Peak Wind (PK_WND_dddff(f)/(hh)mm)</B>. The peak wind shall be coded in the format, <B>PK_WND_dddff(f)/(hh)mm</B> of the next <B>METAR</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>PK_WND</B> is the remark identifier,
+        </LI>
+        <LI>
+          <B>ddd</B> is the direction of the peak wind,
+        </LI>
+        <LI>
+          <B>ff(f)</B> is the peak wind speed since the last <B>METAR</B>, and
+        </LI>
+        <LI>
+          <B>(hh)mm</B> is the time of occurrence (only the minutes are required if the hour can be inferred from the report time).
+        </LI>
+      </UL>
+      There shall be a space between the two elements of the remark identifier and the wind direction/speed group. A solidus "<B>/</B>" (without spaces) shall separate the wind direction/speed group and the time. For example, a peak wind of 45 knots from 280 degrees that occurred at 15 minutes past the hour would be coded "<B>PK WND 28045/15</B>".
+      <BR/>
+      <LI>
+        <B>Wind Shift (WSHFT_(hh)mm)</B>. A wind shift shall be coded in the format <B>WSHFT_(hh)mm</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>WSHFT</B> is the remark identifier and
+        </LI>
+        <LI>
+          <B>(hh)mm</B> is the time the wind shift began (only the minutes are required if the hour can be inferred from the report time).
+        </LI>
+      </UL>
+      The contraction <B>FROPA</B> may be entered following the time if it is reasonably certain that the wind shift was the result of a frontal passage. There shall be a space between the remark identifier and the time and, if applicable, between the time and the frontal passage contraction. For example, a remark reporting a wind shift accompanied by a frontal passage that began at 30 minutes after the hour would be coded as "<B>WSHFT 30 FROPA</B>".
+      <BR/>
+      <LI>
+        <B>Tower or Surface Visibility (TWR_VIS_vvvvv or SFC_VIS_vvvvv)</B>. Tower visibility or surface visibility shall be coded in the formats, <B>TWR_VIS_vvvvv</B> or <B>SFC_VIS_vvvvv</B>, respectively, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>vvvvv</B> is the observed tower/surface visibility value. A space shall be coded between each of the remark elements. For example, the control tower visibility of 1 1/2 statute miles would be coded "<B>TWR VIS 1 1/2</B>".
+        </LI>
+      </UL>
+      <LI>
+        <B>
+          Variable Prevailing Visibility (VIS_v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>Vv<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>)
+        </B>. Variable prevailing visibility shall be coded in the format <B>
+          VIS_v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>Vv<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>
+        </B> where:
+      </LI>
+      <UL>
+        <LI>
+          <B>VIS</B> is the remark identifier, <B>
+            v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>
+          </B> is the lowest visibility evaluated,
+        </LI>
+        <LI>
+          <B>V</B> denotes variability between two values, and <B>
+            v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>
+          </B> is the highest visibility evaluated.
+        </LI>
+      </UL>
+      There shall be one space following the remark identifier;no spaces between the letter <B>V</B> and the lowest/highest values. For example, a visibility that was varying between 1/2 and 2 statute miles would be coded "<B>VIS 1/2V2</B>".<BR/>
+      <LI>
+        <B>Sector Visibility (VIS_[DIR]_vvvvv){Plain Language]</B>. The sector visibility shall be coded in the format <B>VIS_[DIR]_vvvvv</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>VIS</B> is the remark identifier,
+        </LI>
+        <LI>
+          [<B>DIR</B>] defines the sector to 8 points of the compass, and
+        </LI>
+        <LI>
+          <B>vvvvv</B> is the sector visibility in statute miles, using the appropriate set of values in <A HREF="metar-pg7-vis.htm#A-3">Table A-3</A>.
+        </LI>
+      </UL>
+      For example, a visibility of 2 1/2 statute miles in the northeastern octant would be coded "<B>VIS NE 2 1/2</B>".<BR/>
+      <LI>
+        <B>Visibility At Second Location (VIS_vvvvv_[LOC])</B>. At designated automated stations, the visibility at a second location shall be coded in the format <B>VIS_vvvvv_[LOC]</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>VIS</B> is the remark identifier,
+        </LI>
+        <LI>
+          <B>vvvvv</B> is the measured visibility value, and
+        </LI>
+        <LI>
+          <B>[LOC]</B> is the specific location of the visibility sensor(s) at the station.
+        </LI>
+      </UL>
+      <BR/>
+      This remark shall only be generated when the condition is lower than that contained in the body of the report. For example, a visibility of 2 1/2 statute miles measured by a second sensor located at runway 11 would be coded "<B>VIS 2 1/2 RWY11</B>".<BR/>
+      <LI>
+        <B>Lightning (Frequency_LTG(type)_[LOC])</B>.
+      </LI>
+      <UL>
+        <LI>
+          When lightning is observed at a manual station, the frequency, type of lightning, and location shall be reported. The remark shall be coded in the format <B>Frequency_LTG(type)_[LOC]</B>. The contractions for the type and frequency of lightning shall be based on Table A-22. For example, "<B>OCNL LTGICCG OHD</B>", "<B>FRQ LTG VC</B>", or "<B>LTG DSNT W</B>".
+        </LI>
+        <LI>When lightning is detected by an automated system:</LI>
+        <UL>
+          <LI>
+            Within 5 nautical miles of the Airport Location Point (ALP), it will be reported as <B>TS</B> in the body of the report with no remarks.
+          </LI>
+          <LI>
+            Between 5 and 10 nautical miles of the ALP, it will be reported as <B>VCTS</B> in the body of the report with no remarks.
+          </LI>
+          <LI>
+            Beyond 10 but less than 30 nautical miles of the ALP, it will be reported in remarks only as <B>LTG DSNT</B> followed by the direction from the ALP.
+          </LI>
+        </UL>
+      </UL>
+      <CENTER>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="3">
+              <B>Table A-22. Type and Frequency of Lightning</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="3">
+              <B>Type of Lightning</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Type</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Contraction</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Definition</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Cloud-ground</TD>
+            <TD ALIGN="CENTER">CG</TD>
+            <TD ALIGN="CENTER">Lightning occurring between cloud and ground.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">In-cloud</TD>
+            <TD ALIGN="CENTER">IC</TD>
+            <TD ALIGN="CENTER">Lightning which takes place within the cloud.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Cloud-cloud</TD>
+            <TD ALIGN="CENTER">CC</TD>
+            <TD ALIGN="CENTER">Streaks of lightning reaching from one cloud to another.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Cloud-air</TD>
+            <TD ALIGN="CENTER">CA</TD>
+            <TD ALIGN="CENTER">Streaks of lightning which pass from a cloud to the air, but do not strike the ground.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="3">
+              <B>Frequency of Lightning</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Frequency</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Contraction</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Definition</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Occasional</TD>
+            <TD ALIGN="CENTER">OCNL</TD>
+            <TD ALIGN="CENTER">Less than 1 flash per minute.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Frequent</TD>
+            <TD ALIGN="CENTER">FRQ</TD>
+            <TD ALIGN="CENTER">About 1 to 6 flashes per minute.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Continuous</TD>
+            <TD ALIGN="CENTER">CONS</TD>
+            <TD ALIGN="CENTER">More than 6 flashes per minute.</TD>
+          </TR>
+        </TABLE>
+      </CENTER>
+      <LI>
+        <B>Beginning and Ending of Precipitation (w"w"B(hh)mmE(hh)mm)</B>. At designated stations, the beginning and ending of precipitation shall be coded in the format, <B>w"w"B(hh)mmE(hh)mm</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>w"w"</B> is the type of precipitation,
+        </LI>
+        <LI>
+          <B>B</B> denotes the beginning,
+        </LI>
+        <LI>
+          <B>E</B> denotes the ending, and
+        </LI>
+        <LI>
+          <B>(hh)mm</B> is the time of occurrence (only the minutes are required if the hour can be inferred from the report time).
+        </LI>
+      </UL>
+      <BR/>
+      There shall be no spaces between the elements. The coded remarks are not required in <B>SPECI</B> and should be reported in the next <B>METAR</B>.<BR/>
+      Intensity qualifiers shall not be coded. For example, if rain began at 0005, ended at 0030, and snow began at 0020, and ended at 0055, the remarks would be coded "<B>RAB05E30SNB20E55</B>". If the precipitation were showery, the remark would be coded "<B>SHRABO5E30SHSNB20E55</B>".<BR/>
+      <LI>
+        <B>Beginning and Ending of Thunderstorms (TSB(hh)mmE(hh)mm)</B>. The beginning and ending of thunderstorm(s) shall be coded in the format, <B>TSB(hh)mmE(hh)mm</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>TS</B> indicated thunderstorm,
+        </LI>
+        <LI>
+          <B>B</B> denotes the beginning,
+        </LI>
+        <LI>
+          <B>E</B> denotes the ending, and
+        </LI>
+        <LI>
+          <B>(hh)mm</B> is the time of occurrence (only the minutes are required if the hour can be inferred from the report time).
+        </LI>
+      </UL>
+      <BR/>There shall be no spaces between the elements. For example, if a thunderstorm began at 0159 and ended at 0230, the remark would be coded "<B>TSB0159E30</B>".<BR/>
+      <LI>
+        <B>Thunderstorm Location (TS_LOC_(MOV_DIR)) [Plain Language]</B>. Thunderstorm(s) shall be coded in the format, <B>TS_LOC_(MOV_DIR)</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>TS</B> identifies the thunderstorm activity,
+        </LI>
+        <LI>
+          <B>LOC</B> is the location of the thunderstorm(s) from the station, and
+        </LI>
+        <LI>
+          <B>MOV_DIR</B> is the movement with direction, if known.
+        </LI>
+      </UL>
+      <BR/>For example, a thunderstorm southeast of the station and moving toward the northeast would be coded "<B>TS SE MOV NE</B>".<BR/>
+      <LI>
+        <B>Hailstone Size (GR_[size])[Plain Language]</B>. At designated stations, the hailstone size shall be coded in the format, <B>GR_[size]</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>GR</B> is the remark identifier and
+        </LI>
+        <LI>
+          <B>[size]</B> is the diameter of the largest hailstone. The hailstone size shall be coded in 1/4 inch increments.
+        </LI>
+      </UL>
+      <BR/>
+      For example, "<B>GR 1 3/4</B>" would indicate that the largest hailstones were 1 3/4 inches in diameter. If <B>GS</B> is coded in the body of the report, no hailstone size remark is required.<BR/>
+      <LI>
+        <B>Virga (VIRGA_(DIR)) [Plain Language]</B>. Virga shall be coded in the format, <B>VIRGA_(DIR)</B> where:
+      </LI>
+      <UL>
+        <LI>
+          <B>VIRGA</B> is the remark identifier and
+        </LI>
+        <LI>
+          <B>DIR</B> is the direction from the station. The direction of the phenomena from the station is optional, e.g., "<B>VIRGA</B>" or "<B>VIRGA SW</B>".
+        </LI>
+      </UL>
+      <LI>
+        <B>
+          Variable Ceiling Height (CIG_h<SUB>n</SUB>h<SUB>n</SUB>h<SUB>n</SUB>Vh<SUB>x</SUB>h<SUB>x</SUB>h<SUB>x</SUB>)
+        </B>. The variable ceiling height shall be coded in the format, <B>
+          CIG_h<SUB>n</SUB>h<SUB>n</SUB>h<SUB>n</SUB>Vh<SUB>x</SUB>h<SUB>x</SUB>h<SUB>x</SUB>
+        </B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>CIG</B> is the remark identifier,
+        </LI>
+        <LI>
+          <B>
+            h<SUB>n</SUB>h<SUB>n</SUB>h<SUB>n</SUB>
+          </B> is the lowest ceiling height evaluated,
+        </LI>
+        <LI>
+          <B>V</B> denotes variability between two values, and
+        </LI>
+        <LI>
+          <B>
+            h<SUB>x</SUB>h<SUB>x</SUB>h<SUB>x</SUB>
+          </B> is the highest ceiling height evaluated.
+        </LI>
+      </UL>
+      <BR/>
+      There shall be one space following the remark identifier;no spaces between the letter <B>V</B> and the lowest/highest ceiling values. For example, "<B>CIG 005V010</B>" would indicate a ceiling that was varying between 500 feet and 1,000 feet.<BR/>
+      <LI>
+        <B>
+          Obscurations (w"w"_[N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>]h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>) [Plain Language]
+        </B>. Obscurations (surface-based or aloft) shall be coded in the format, <B>
+          w"w"_[N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>]h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>
+        </B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B> w"w"</B> is the weather causing the obscuration at the surface or aloft,
+        </LI>
+        <LI>
+          <B>
+            N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>
+          </B>, is the applicable sky cover amount of the obscurations aloft (<B>FEW</B>, <B>SCT</B>, <B>BKN</B>, <B>OVC</B>) or at the surface (<B>FEW</B>, <B>SCT</B>, <B>BKN</B>), and
+        </LI>
+        <LI>
+          <B>
+            h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>
+          </B> is the applicable height.
+        </LI>
+      </UL>
+      <BR/>
+      Surface-based obscurations shall have a height of "000". There shall be a space separating the weather causing the obscuration and the sky cover amount;there shall be no space between the sky cover amount and the height. For example, fog hiding 3-4 oktas of the sky would be coded "<B>FG SCT000</B>";a broken layer at 2,000 feet composed of smoke would be coded "<B>FU BKN 020</B>".<BR/>
+      <LI>
+        <B>
+          Variable Sky Condition (N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>(h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>)_V_N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>) [Plain Language]
+        </B>. The variable sky condition remark shall be coded in the format, <B>
+          N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>(h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>)_V_N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>
+        </B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>
+            N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>(h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>)
+          </B> and <B>
+            N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>
+          </B> identifies the two operationally significant sky conditions and <B>V</B> denotes the variability between the two ranges. If there are several layers with the same sky condition amount, the layer height (<B>
+            h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>
+          </B>) of the variable layer shall be coded. For example, a cloud layer at 1,400 feet that is varying between broken and overcast would be coded "<B>BKN014 V OVC</B>".
+        </LI>
+      </UL>
+      <LI>
+        <B>Significant Cloud Types [Plain Language]</B>. The significant cloud type remark shall be coded in all reports in the folling manner:
+      </LI>
+      <OL>
+        <LI>
+          <B>Cumulonimbus or Cumulonimbus Mammatus (CB or CBMAM_LOC_(MOV_DIR)</B>. Cumulonimbus or cumulonimbus mammatus, as appropriate, (for which no thunderstorm is being reported) shall be coded in the format, <B>CB</B> or <B>CBMAM_LOC_(MOV_DIR)</B>, where:
+        </LI>
+        <UL>
+          <LI>
+            <B>CB</B> or <B>CBMAM</B> is the cloud type,
+          </LI>
+          <LI>
+            <B>LOC</B> is the direction from the station, and
+          </LI>
+          <LI>
+            <B>MOV_DIR</B> is the movement with direction (if known).
+          </LI>
+        </UL>
+        <BR/>
+        The cloud type, location, movement, and direction entries shall be separated from each other with a space. For example, a <B>CB</B> up to 10 statute miles west of the station moving toward the east would be coded <B>CB W MOV E</B>. If the <B>CB</B> was more than 10 statute miles to the west, the remark would be coded <B>CB DSNT W</B>.<BR/>
+        <LI>
+          <B>Towering Cumulus (TCU_[DIR])</B>. Towering cumulus clouds shall be coded in the format, <B>TCU_[DIR]</B>, where:
+        </LI>
+        <UL>
+          <LI>
+            <B>TCU</B> is the cloud type and
+          </LI>
+          <LI>
+            <B>DIR</B> is the direction from the station.
+          </LI>
+        </UL>
+        The cloud type and direction entries shall be separated by a space. For example, a towering cumulus cloud up to 10 statute miles west of the station would be coded <B>TCU W</B>.<BR/>
+        <LI>
+          <B>Altocumulus castellanus (ACC_[DIR])</B>. Altocumulus castellanus shall be coded in the format, <B>ACC_[DIR]</B>, where:
+        </LI>
+        <UL>
+          <LI>
+            <B>ACC</B> is the cloud type and
+          </LI>
+          <LI>
+            <B>DIR</B> is the direction from the station.
+          </LI>
+        </UL>
+        The cloud type and direction entries shall be separated by a space. For example, an altocumulus cloud 5 to 10 statute miles northwest of the station would be coded <B>ACC NW</B>.<BR/>
+        <LI>
+          <B>Standing lenticular or Rotor clouds (CLD_[DIR])</B>. Stratocumulus (<B>SCSL</B>), altocumulus (<B>ACSL</B>), or cirrocumulus (<B>CCSL</B>), or rotor clouds shall be coded in the format, <B>CLD_[DIR]</B>, where:
+        </LI>
+        <UL>
+          <LI>
+            <B>CLD</B> is the cloud type and
+          </LI>
+          <LI>
+            <B>DIR</B> is the direction from the station.
+          </LI>
+        </UL>
+        The cloud type and direction entries shall be separated by a space. For example, altocumulus standing lenticular clouds observed southwest through west of the station would be coded <B>ACSL SW-W</B>;an apparent rotor cloud 5 to 10 statute miles northeast of the station would be coded <B>APRNT ROTOR CLD NE</B>;and cirrocumulus clouds south of the station would be coded <B>CCSL S</B>.
+      </OL>
+
+      <LI>
+        <B>Ceiling Height at Second Location (CIG_hhh_[LOC])</B>. At designated stations, the ceiling height at a second location shall be coded in the format, <B>CIG_hhh_[LOC]</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>CIG</B> is the remark identifier,
+        </LI>
+        <LI>
+          <B>hhh</B> is the measured height of the ceiling, and
+        </LI>
+        <LI>
+          <B>[LOC]</B> is the specific location of the ceilometer(s) at the station.
+        </LI>
+      </UL>
+      This remark shall only be generated when the ceiling is lower than that contained in the body of the report. For example, if the ceiling measured by a second sensor located at runway 11 is broken at 200 feet, the remark would be <B>CIG 002 RWY 11</B>.<BR/>
+      <LI>
+        <B>Pressure Rising or Falling Rapidly (PRESRR/PRESFR)</B>. At designated stations, when the pressure is rising or falling rapidly at the time of the observation, the remark <B>PRESRR</B> (pressure rising rapidly) or <B>PRESFR</B> (pressure falling rapidly) shall be included in the report.
+      </LI>
+      <LI>
+        <B>Sea-Level Pressure (SLPppp)</B>. At designated stations, the sea-level pressure shall be coded in the format <B>SLPppp</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>SLP</B> is the remark identifier and
+        </LI>
+        <LI>
+          <B>ppp</B> is the tens, units, and tenths of the sea-level pressure in hectopascals.
+        </LI>
+      </UL>
+
+      For example, a sea-level pressure of 998.2 hectopascals would be coded as <B>SLP982</B>. For a <B>METAR</B>, if sea-level pressure is not available, it is coded as <B>SLPNO</B>.<BR/>
+      <LI>
+        <B>Aircraft Mishap (ACFT_MSHP) [Plain Language]</B>. If a report is taken to document weather conditions when notified of an aircraft mishap, the remark <B>ACFT_MSHP</B> shall be coded in the report but not transmitted. The act of non-transmission shall be indicated by enclosing the remark in parentheses in the record, i.e., <B>ACFT MSHP</B>.
+      </LI>
+      <LI>
+        <B>No SPECI Reports Taken (NOSPECI) [Plain Language]</B>. At manual stations where <B>SPECI</B>"s are not taken, the remark <B>NOSPECI</B> shall be coded to indicate that no changes in weather conditions will be reported until the next <B>METAR</B>.
+      </LI>
+      <LI>
+        <B>Snow Increasing Rapidly (SNINCR_[inches-hour/inches on ground])</B>. At designated stations, the snow increasing rapidly remark shall be reported, in the next <B>METAR</B>, <I>whenever the snow depth increases by 1 inch or more in the past hour</I>. The remark shall be coded in the format, <B>SNINCR_[inches-hour/inches on ground]</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>SNINCR</B> is the remark indicator,
+        </LI>
+        <LI>
+          <B>inches-hour</B> is the depth increase in the past hour, and
+        </LI>
+        <LI>
+          <B>inches on ground</B> is the total depth of snow on the ground at the time of the report.
+        </LI>
+      </UL>
+      The depth increase in the past hour and the total depth on the ground are separated from each other by a solidus <B>/</B>. For example, a snow depth increase of 2 inches in the past hour with a total depth on the ground of 10 inches would be coded <B>SNINCR2/10</B>.<BR/>
+      <LI>
+        <B>Other Significant Information [Plain Language]</B>. Agencies may add to a report other information significant to their operations, such as information on fog dispersal operations, runway conditions, <B>FIRST</B> or <B>LAST</B> report from station, etc.
+      </LI>
+    </OL>
+    <A NAME="ADDITIVE">
+      <H3>
+        <B>Additive Coded and Automated Maintenance Data</B>
+      </H3>
+    </A>
+    <BR/>
+    Additive data groups are only reported at designated stations. The maintenance data groups are only reported from automated stations.
+    <OL>
+      <LI>
+        <B>Precipitation</B>
+      </LI>
+      <UL>
+        <LI>
+          <B>Amount of Precipitation</B>. The amount of liquid precipitation shall be coded as the depth of precipitation that accumulates in an exposed vessel during the time period being evaluated. The amount of freezing or frozen precipitation shall be the water equivalent of the solid precipitation accumulated during the appropriate time period.
+        </LI>
+        <LI>
+          <B>Units of Measure for Precipitation</B>. Precipitation measurements shall be in inches, tenths of inches, or hundredths of inches depending on the precipitation being measured. See Table A-23.
+        </LI>
+        <CENTER>
+          <TABLE BORDER="1">
+            <TR>
+              <TD ALIGN="CENTER" COLSPAN="2">
+                <B>
+                  Table A-23. Units of Measure of
+                  Precipitation
+                </B>
+              </TD>
+            </TR>
+            <TR>
+              <TD ALIGN="CENTER">
+                <B>Type of Measurement</B>
+              </TD>
+              <TD ALIGN="CENTER">
+                <B>Unit of Measure</B>
+              </TD>
+            </TR>
+            <TR>
+              <TD ALIGN="CENTER">Liquid Precipitation</TD>
+              <TD ALIGN="CENTER">0.01 inch</TD>
+            </TR>
+            <TR>
+              <TD ALIGN="CENTER">Water Equivalent of Solid Precipitation</TD>
+              <TD ALIGN="CENTER">0.01 inch</TD>
+            </TR>
+            <TR>
+              <TD ALIGN="CENTER">Solid Precipitation</TD>
+              <TD ALIGN="CENTER">0.1 inch</TD>
+            </TR>
+            <TR>
+              <TD ALIGN="CENTER">Snow Precipitation</TD>
+              <TD ALIGN="CENTER">1.0 inch</TD>
+            </TR>
+          </TABLE>
+        </CENTER>
+        <LI>
+          <B>Depth of Freezing or Frozen Precipitation</B>. The depth of freezing and/or frozen precipitation shall be the actual vertical depth of the precipitation accumulated on a horizontal surface during the appropriate time period. If snow falls, melts, and refreezes, the depth of ice formed shall be included in the measurement.
+        </LI>
+        <UL>
+          <LI>
+            <B>Hourly Precipitation Amount (Prrrr)</B>. At designated automated stations, the hourly precipitation amount shall be coded in the format, <B>Prrrr</B>, where:
+          </LI>
+          <UL>
+            <LI>
+              <B>P</B> is the group indicator and
+            </LI>
+            <LI>
+              <B>rrrr</B> is the water equivalent of all precipitation that has occurred since the last <B>METAR</B> (METAR, not a SPECI).
+            </LI>
+          </UL>
+          <BR/>
+          The amount shall be coded in hundredths of an inch. For example, <B>P0009</B> would indicate 9/100 of an inch of precipitation fell in the past hour;<B>P0000</B> would indicate that less than 1/100 of an inch of precipitation (considered a trace) fell in the past hour.<BR/>
+          This group is omitted if no precipitation occurred since the last <B>METAR</B>.<BR/>
+          <LI>
+            <B>3- and 6-hour Precipitation (6RRRR)</B>. At designated stations, the 3- and 6-hourly precipitation group shall be coded in the format <B>6RRRR</B>, where:
+          </LI>
+          <UL>
+            <LI>
+              <B>6</B> is the group indicator and
+            </LI>
+            <LI>
+              <B>RRRR</B> is the amount of precipitation.
+            </LI>
+          </UL>
+          The amount of precipitation (water equivalent) accumulated in the past 3 hours shall be reported in the 3-hourly report;the amount accumulated in the past 6 hours shall be reported in the 6-hourly report. The amount of precipitation shall be coded in inches, using the tens, units, tenths and hundredths digits of the amount. When an indeterminable amount of precipitation has occurred during the period, <B>6RRRR</B> shall be coded <B>6////</B>. For example, 2.17 inches of precipitation would be coded <B>60217</B>. A trace shall be coded <B>60000</B>.<BR/>
+          <LI>
+            <B>
+              24-Hour Precipitation Amount (7R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>)
+            </B>. At designated stations, the 24-hour precipitation amount shall be coded in the format, 7R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>, where:
+          </LI>
+          <UL>
+            <LI>
+              <B>7</B> is the group indicator and
+            </LI>
+            <LI>
+              <B>
+                R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>
+              </B> is the 24-hour precipitation amount.
+            </LI>
+          </UL>
+          The 24-hour precipitation amount shall be included in the 1200 UTC (or other agency designated time) report whenever more than a trace of precipitation (water equivalent) has fallen in the preceding 24 hours. The amount of precipitation shall be coded by using the tens, units, tenths, and hundredths of inches (water equivalent) for the 24-hour period. If more than a trace (water equivalent) has occurred and the amount cannot be determined, the group shall be coded <B>7////</B>. For example, 1.25 inches of precipitation (water equivalent) in the past 24 hours shall be coded <B>70125</B>.
+          <LI>
+            <B>Snow Depth on Ground (4/sss)</B>. At designated stations, the total snow depth on the ground group shall be coded in the 0000 and 1200 UTC observation whenever there is more than a trace of snow on the ground. It shall be coded in the 0600 and 1800 UTC observation if there is more than a trace of snow on the ground and more than a trace of precipitation (water equivalent) has occurred within the past 6 hours. The remark shall be coded in the format <B>4/sss</B>, where:
+          </LI>
+          <UL>
+            <LI>
+              <B>4/</B> is the group indicator and
+            </LI>
+            <LI>
+              <B>sss</B> is the snow depth in whole inches using three digits.
+            </LI>
+          </UL>
+
+          For example, a snow depth of 21 inches shall be coded as <B>4/021</B>.<BR/>
+          <LI>
+            <B>Water Equivalent of Snow on Ground (933RRR)</B>. At designated stations, the water equivalent of snow on the ground shall be coded each day, in the 1800 UTC report, if the average snow depth is 2 inches or more. The remark shall be coded in the format, <B>933RRR</B>, where:
+          </LI>
+          <UL>
+            <LI>
+              <B>933</B> is the group indicator and
+            </LI>
+            <LI>
+              <B>RRR</B> is the water equivalent of snow, i.e., snow, snow pellets, snow grains, ice pellets, ice crystals, and hail, on the ground.
+            </LI>
+          </UL>
+          The water equivalent shall be coded in tens, units, and tenths of inches, using three digits. If the water equivalent of consists entirely of hail, the group shall not be coded. A water equivalent of 3.6 inches from snow would be coded as <B>933036</B>;a water equivalent of 12.5 would be coded as <B>933125</B>.
+        </UL>
+      </UL>
+      <LI>
+        <B>
+          Cloud Types (8/C<SUB>L</SUB>C<SUB>M</SUB>C<SUB>H</SUB>)
+        </B>. At designated stations, the group, <B>
+          8/C<SUB>L</SUB>C<SUB>M</SUB>C<SUB>H</SUB>
+        </B>, shall be reported and coded in 3- and 6-hourly reports when clouds are observed.
+      </LI>
+      <UL>
+        <LI>
+          The predominant low cloud (<B>
+            C<SUB>L</SUB>
+          </B>), middle cloud (<B>
+            C<SUB>M</SUB>
+          </B>), and high cloud (<B>
+            C<SUB>H</SUB>
+          </B>), shall be identified in accordance with the WMO International Cloud Atlas, Volumes I and II, or the WMO Abridged International Cloud Atlas or agency observing aids for cloud identification.
+        </LI>
+        <LI>
+          A <B>0</B> shall be coded for the low, middle, or high cloud type if no cloud is present in that classification.
+        </LI>
+        <LI>
+          A solidus "<B>/</B>" shall be coded for layers above an overcast.
+        </LI>
+        <LI>If no clouds are observed due to clear skies, the cloud type group shall not be coded.</LI>
+      </UL>
+      For example, a report of <B>8/6//</B> would indicate an overcast layer of stratus clouds;a report of <B>8/903</B> would indicate cumulonimbus type low cloud, no middle clouds, and dense cirrus high clouds.<BR/>
+      <LI>
+        <B>Duration of Sunshine (98mmm)</B>. At sunshine duration reporting sites, the duration of sunshine that occurred the previous calendar day shall be coded in the 0800 UTC report. If the station is closed at 0800 UTC, the group shall be coded in the first 6-hourly <B>METAR</B> after the station opens. The duration of sunshine shall be coded in the format, <B>98mmm</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>98</B> is the group indicator and
+        </LI>
+        <LI>
+          <B>mmm</B> is the total minutes of sunshine.
+        </LI>
+      </UL>
+      The minutes of sunshine shall be coded using the hundreds, tens, and units digits. For examples, 96 minutes of sunshine would be coded <B>98096</B>. If no sunshine occurred, the group would be coded <B>98000</B>.<BR/>
+      <LI>
+        <B>
+          Hourly Temperature and Dew Point (Ts<SUB>n</SUB>T"T"T"s<SUB>n</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>)
+        </B>. At designated stations, the hourly temperature and dew point group shall be coded to the tenth of a degree Celsius in the format, <B>
+          Ts<SUB>n</SUB>T"T"T"s<SUB>n</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>
+        </B> where:
+      </LI>
+      <UL>
+        <LI>
+          <B>T</B> is the group indicator,
+        </LI>
+        <LI>
+          <B>
+            s<SUB>n</SUB>
+          </B> is the sign of the temperature,
+        </LI>
+        <LI>
+          <B>T"T"T"</B> is the temperature, and
+        </LI>
+        <LI>
+          <B>
+            T"<SUB>d</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>
+          </B> is the dew point.
+        </LI>
+      </UL>
+      The sign of the temperature and dew point shall be coded as <B>1</B> if the value is below 0<SUP>o</SUP>C and <B>0</B> if the value is 0<SUP>o</SUP>C or higher. The temperature and dew point shall be reported in tens, units, and tenths of degree Celsius. There shall be no spaces between the entries. For example, a temperature of 2.6<SUP>o</SUP>C and dew point of -1.5<SUP>o</SUP>C would be reported in the body of the report as <B>03/M01</B> and the <B>
+        Ts<SUB>n</SUB>T"T"T"s<SUB>n</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>T"<SUB>d</SUB>
+      </B> group as <B>T00261015</B>. If dew point is missing, report the temperature;if the temperature is missing, do not report the temperature/dew point group.<BR/>
+      <LI>
+        <B>
+          6-Hourly Maximum Temperature (1s<SUB>n</SUB>T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>)
+        </B>. At designated stations, the 6-hourly maximum temperature group shall be coded in the format, <B>
+          1s<SUB>n</SUB>T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>
+        </B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>1</B> is the group indicator,
+        </LI>
+        <LI>
+          <B>
+            s<SUB>n</SUB>
+          </B> is the sign of the temperature,
+        </LI>
+        <LI>
+          <B>
+            T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>
+          </B> is the maximum temperature in tenths of degrees Celsius using three digits.
+        </LI>
+      </UL>
+      The sign of the maximum temperature shall be coded as <B>1</B> if the maximum temperature is below 0<SUP>o</SUP>C and <B>0</B> if the maximum temperature is 0<SUP>o</SUP>C or higher. For example, a maximum temperature of -2.1<SUP>o</SUP>C would be coded <B>11021</B>;14.2<SUP>o</SUP>C would be coded <B>10142</B>.<BR/>
+      <LI>
+        <B>
+          6-Hourly Minimum Temperature (2s<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>)
+        </B>. At designated stations, the 6-hourly minimum temperature group shall be coded in the format, <B>
+          2s<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>
+        </B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>2</B> is the group indicator,
+        </LI>
+        <LI>
+          <B>
+            s<SUB>n</SUB>
+          </B> is the sign of the temperature,
+        </LI>
+        <LI>
+          <B>
+            T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>
+          </B> is
+          the minimum temperature in tenths of degrees Celsius using three digits.
+        </LI>
+      </UL>
+      The sign of the minimum temperature shall be coded as <B>1</B> if the minimum temperature is below 0<SUP>o</SUP>C and <B>0</B> if the minimum temperature is 0<SUP>o</SUP>C or higher. For example, a minimum temperature of -0.1<SUP>o</SUP>C would be coded <B>21001</B>;1.2<SUP>o</SUP>C would be coded <B>20012</B>.<BR/>
+      <LI>
+        <B>
+          24-hour Maximum and Minimum Temperature (4s<SUB>n</SUB>T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>s<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>)
+        </B>. At designated stations, the 24-hour maximum temperature and the 24-hour minimum temperature shall be coded in the format, <B>
+          4s<SUB>n</SUB>T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>s<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>
+        </B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>4</B> is the group indicator,
+        </LI>
+        <LI>
+          <B>
+            s<SUB>n</SUB>
+          </B> is the sign of the temperature,
+        </LI>
+        <LI>
+          <B>
+            T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>
+          </B> is the maximum 24-hour temperature, and
+        </LI>
+        <LI>
+          <B>
+            T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>
+          </B> is the 24-hour minimum temperature.
+        </LI>
+      </UL>
+      <B>
+        T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>
+      </B> and <B>
+        T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>
+      </B> shall be coded in tenths of degrees Celsius using three digits. The sign of the maximum or minimum temperature shall be coded as <B>1</B> if it is below 0<SUP>o</SUP>C and <B>0</B> if it is 0<SUP>o</SUP>C or higher. For example, a 24-hour maximum temperature of 10<SUP>o</SUP>C and a 24-hour minimum temperature of -1.5<SUP>o</SUP>C would be coded <B>401001015</B>;a 24-hour maximum temperature of 11.2<SUP>o</SUP>C and a 24-hour minimum temperature of 8.4<SUP>o</SUP>C would be coded as <B>401120084</B>.<BR/>
+      <LI>
+        <B>3-Hourly Pressure Tendency (5appp)</B>. At designated stations, the 3-hourly pressure tendency group shall be coded in the format, <B>5appp</B>, where:
+      </LI>
+      <UL>
+        <LI>
+          <B>5</B> is the group indicator,
+        </LI>
+        <LI>
+          <B>a</B> is the character of pressure change over the past 3 hours and
+        </LI>
+        <LI>
+          <B>ppp</B> is the amount of barometric change in tenths of hectopascals. See table A-24.
+        </LI>
+      </UL>
+      The amount of barometric change shall be coded using the tens, units, and tenths digits. For example, a steady increase of 3.2 hectopascals in the past three hours would be coded <B>52032</B>.<BR/>
+      <CENTER>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="3">
+              <B>Table A-24. Characteristics of Barometer Tendency</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>
+                Primary<BR/>Requirement
+              </B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Description</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>
+                Code<BR/>Figure
+              </B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER" ROWSPAN="4">
+              Atmospheric<BR/>pressure now<BR/>higher than 3<BR/>hours ago.
+            </TD>
+            <TD ALIGN="CENTER">Increasing, then decreasing</TD>
+            <TD ALIGN="CENTER">0</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Increasing, then then steady, or increasing then increasing more slowly.</TD>
+            <TD ALIGN="CENTER">1</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Increasing steadily or unsteadily.</TD>
+            <TD ALIGN="CENTER">2</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Decreasing or steady, then increasing;or increasing, then increasing more rapidly.</TD>
+            <TD ALIGN="CENTER">3</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER" ROWSPAN="3">
+              Atmospheric<BR/>pressure now<BR/>same as 3 hours<BR/>ago.
+            </TD>
+            <TD ALIGN="CENTER">Increasing, then decreasing</TD>
+            <TD ALIGN="CENTER">0</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Steady</TD>
+            <TD ALIGN="CENTER">4</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Decreasing, then increasing.</TD>
+            <TD ALIGN="CENTER">5</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER" ROWSPAN="4">
+              Atmospheric<BR/>pressure now<BR/>lower than 3<BR/>hours ago.
+            </TD>
+            <TD ALIGN="CENTER">Decreasing, then increasing.</TD>
+            <TD ALIGN="CENTER">5</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Decreasing then steady;or decreasing then decreasing more slowly.</TD>
+            <TD ALIGN="CENTER">6</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Decreasing steadily or unsteadily.</TD>
+            <TD ALIGN="CENTER">7</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Steady or increasing, then decreasing;or decreasing then decreasing moe rapidly.</TD>
+            <TD ALIGN="CENTER">8</TD>
+          </TR>
+        </TABLE>
+      </CENTER>
+      <LI>
+        <B>Sensor Status Indicators</B>. Sensor status indicators should be reported as indicated below:
+      </LI>
+      <UL>
+        <LI>
+          If the Runway Visual Range should not be reported but is missing, <B>RVRNO</B> shall be coded.
+        </LI>
+        <LI>
+          When automated stations are equipped with a present weather identifier and that sensor is not operating, the remark <B>PWINO</B> shall be coded.
+        </LI>
+        <LI>
+          When automated stations are equipped with a tipping bucket rain gauge and that sensor is not operating, <B>PNO</B> shall be coded.
+        </LI>
+        <LI>
+          When automated stations are equipped when a freezing rain sensor and that sensor is not operating, the remark <B>FZRANO</B> shall be coded.
+        </LI>
+        <LI>
+          When automated stations are equipped with a lightning detection system and that sensor is not operating, the remark <B>TSNO</B> shall be coded.
+        </LI>
+        <LI>
+          When automated stations are equipped with a secondary visibility sensor that sensor is not operating, the remark <B>VISNO_LOC</B> shall be coded.
+        </LI>
+        <LI>
+          When automated stations are equipped with a secondary ceiling height indicator and that sensor is not operating, the remark <B>CHINO_LOC</B> shall be coded.
+        </LI>
+      </UL>
+      <LI>
+        <B>Maintenance Indicator</B>. A maintenance indicator sign, <B>$</B>, shall be coded when an automated system detects that maintenance is needed on the system.
+      </LI>
+    </OL>
+    <CENTER>
+      <HR/>
+      The following shows examples of U.S. METAR formatted observation.
+    </CENTER>
+    <BR/>
+    METAR KOXC 231155Z AUTO 34003KT 10SM BKN036 OVC042 17/13 A2994 RMK A01=<BR/>
+    PKMJ 231155Z 00000KT 15SM FEW015TCU SCT050 BKN300 27/24 A2985 RMK TCU VC E SLP110 60003 70015 8/801 T02720241 10290 20256 50002=<BR/>
+    KTBN 231155Z 34004KT 2 1/2SM BR BKN002 BKN100 OVC250 21/20 A3007 RMK SLP172 70009 8/671 9/521 5////=<BR/>
+    <HR/>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

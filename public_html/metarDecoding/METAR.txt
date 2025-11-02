@@ -1,0 +1,1113 @@
+AVIATION ROUTINE WEATHER REPORT (METAR)
+
+
+I.	METAR OBSERVATION CODE
+
+A.	GENERAL
+
+	In the World Meteorological Organization method of numbering code forms, each code form bears a number preceded by the letters FM.  This number is followed by a Roman numeral to identify the session of CSM (Commission for Synoptic Meteorology) or of CBS (Commission for Basic Systems) which either approved the code form as a new one or made the latest amendment to its previous version.  A code form approved or amended by correspondence after a session of CSM/CBS receives the number of that session.
+
+	An indicator term is used to designate the code form colloquially and is therefore called a “code name”.  In some cases, this code name is included as a symbolic prefix in the code form and during transmission ensures ready identification of the type of report.
+
+	The METAR code (FM 15-IX) is the international code to report routine, hourly weather conditions at air terminals.  SPECI (FM 16-IX) is the name of the code for an aviation selected special weather report.  
+
+	The METAR code is a precise, easy to read code which provides a great deal of information.  The code format is also used by most of the world to provide pilots with trend forecast weather at air terminals to which they are flying.  
+
+	This code has been adopted as the international code for reporting weather conditions by all nations.  
+
+	On 1 July, 1996, the United States converted to the METAR format.  The United States has filed with WMO certain exceptions to the international METAR format that reflect national observing practices which differ from practices outlined in the WMO Manual on Codes No. 306..  These exceptions are identified in the discussion of the separate sections of the METAR code.  
+
+1.	Aviation Routine Weather Report (METAR)
+
+	METAR contains a report of wind, visibility, runway visual range, present weather, sky condition, temperature, dew point, and altimeter setting collectively referred to as “the body of the report”.  In addition, coded and/or plain language information which elaborates on data in the body of the report may be appended to the METAR.  This contents of the remarks will vary according to the type of weather station.  At designated stations, the METAR may be abridged to include one or more of the above elements.
+
+2.	Aviation Selected Special Weather Report (SPECI)
+
+	SPECI is an unscheduled report taken when any of the following criteria have been observed.  SPECI shall contain all data elements found in a METAR plus additional plain language information which elaborates on data in the body of the report.  All SPECIs shall be made as soon as possible after the relevant criteria are observed.
+
+a.	Criteria for SPECI
+
+(1)	WIND SHIFT.  Wind direction changes by 45 degrees or more in less than 15 minutes and the wind speed is 10 knots or more throughout the wind shift.
+
+(2)	VISIBILITY.  Surface visibility as reported in the body of the report decreases to less than, or if below, increases to equal or exceed:
+
+(a)	3 miles.
+(b)	2 miles.
+(c)	1 mile.
+(d)	The lowest standard instrument approach procedure minimum as published in the National Ocean Service (NOS) U.S. Terminal Procedures.  If none published, use 1/2 mile.
+
+(3)	RUNWAY VISUAL RANGE (RVR).  The highest value from the designated RVR runway decreases to less than, or if below, increases to equal or exceed 2,400 feet during the preceding 10 minutes.  U.S. military stations may not report a SPECI based on RVR.
+
+(4)	TORNADO, FUNNEL CLOUD, OR WATERSPOUT.
+
+(a)	is observed.
+(b)	disappears from sight, or ends.
+
+(5)	THUNDERSTORM.
+
+(a)	begins (a SPECI is not required to report the beginning of a new thunderstorm if one is currently reported.)
+(b)	ends.
+
+(6)	PRECIPITATION.
+
+(a)	hail begins or ends.
+(b)	freezing precipitation begins, ends, or changes intensity.
+(c)	ice pellets begin, end, or change intensity.
+
+(7)	SQUALLS.  When squalls occur.
+
+(8).	CEILING.  The ceiling (rounded off to reportable values) forms or dissipates below, decreases to less than, or if below, increases to equal or exceed:
+
+(a)	3,000 feet.
+(b)	1,500 feet.
+(c)	1,000 feet.
+(d)	500 feet.
+(e)	The lowest standard instrument approach procedure minimum as published in the National Ocean Service (NOS) U.S. Terminal Procedures.  If none published, use 200 feet.
+
+(9)	SKY CONDITION.  A layer of clouds or obscurations aloft is present below 1,000 feet and no layer aloft was reported below 1,000 feet in the preceding METAR or SPECI.
+
+(10)	VOLCANIC ERUPTION.  When an eruption is first noted.
+
+(11)	AIRCRAFT MISHAP.	Upon notification of an Aircraft Mishap unless there has been an intervening observation.
+
+(12)	MISCELLANEOUS.  Any other meteorological situation designated by the responsible agency, or which, in the opinion of the observer, is critical.
+
+b.	The SPECI criteria are only applicable to stations that have the capability of evaluating the event.  For example, visually evaluated elements, such as a tornado, are not applicable to non-staffed automated stations.
+
+3.	Observing Standards Applicable to All Stations
+
+a.	Time used in Reports.  With the exception of designated stations which transmit reports in accordance with agency instructions, METAR shall be transmitted at fixed intervals with SPECI transmitted when any of the criteria above occurs or is noted.  
+
+(1)	Accuracy of Time in Reports.  A procedure shall be established to assure that the accuracy of the timing device used to establish times in the observation program are within ±1 minute of the Coordinated Universal Time as determined by the U.S. Naval Observatory.
+
+(2)	Scheduled Time of Report.  The scheduled time of the METAR shall be the Coordinated Universal Time (UTC) a METAR is required to be available for transmission.
+
+(3)	Actual Date and Time of Observation.  The actual date and time of METAR shall be the time the last element of the observation was observed.  The actual time of a SPECI shall be the time the criteria for the SPECI was met or noted.
+
+(4)	Time Disseminated in Observations.  All times disseminated in observations shall reference the 24-hour UTC clock;e.g., 1.47 A.M. shall be referred to as 0147 and 1:47 P.M. as 1347.  The times 0000 and 2359 shall indicate the beginning and ending of the day, respectively.
+
+(5)	Date and Time entered in Observations.  All dates and times entered in observations shall be with reference to the 24-hour clock.  The times that are disseminated as part of the observation shall be entered in UTC.  However, at the discretion of the responsible agency, those times used to otherwise document the observation or other related observational data may be either Local Standard Time (LST) or UTC.  The time standard selected shall be clearly indicated on all records;if LS is used, the number of hours used to convert to UTC shall also be indicated.
+
+4.	Recency of Observed Elements at Automated Stations
+
+	Individual elements entered in an observation shall, as closely as possible, reflect conditions existing at the actual time of observation.  For those elements that the human observer evaluates using spatial averaging techniques (e.g., sky cover and visibility), the automated station substitutes time averaging of sensor data.  Therefore, in an automated observation, sky condition shall be an evaluation of sensor data gathered during the 30-minute period ending at the actual time of the observation.  All other elements shall be based on sensor data that is within 10 minutes or less of the actual time of the observation.
+
+5.	Recency of Observed Elements at Manual Stations  
+
+	Individual elements entered in an observation shall, as closely as possible, reflect conditions existing at the actual time of observation.  Elements entered shall have been observed within 15 minutes of the actual time of the observation.  Gusts and squalls shall be reported if observed within 10 minutes of the actual time of the observation.  Observation of elements shall be made as close to the scheduled time of the observation as possible to meet filing deadlines, but in no case shall these observations be started more than 15 minutes before the scheduled time.
+
+6.	Corrections to Transmitted Data
+
+	Corrections shall be disseminated, as soon as possible, whenever an error is detected in a transmitted report.  However, if the erroneous data has been superseded by a later report (with the same or more complete dissemination), it shall not be necessary to transmit the corrected report.  Corrections transmitted shall consist of the entire corrected report.  The original date and time of the report shall be used as the date and time in the corrected report.
+
+7.	Report Filing Time
+
+	SPECIs shall be completed and transmitted as soon as possible.  Agencies shall establish filing deadlines for all METARs.  The filing deadlines shall be no sooner than necessary to assure the availability of the report at its scheduled time.  METARs shall not be transmitted sooner than 10 minutes before their scheduled time.  
+
+8.	Delayed Reports
+
+When transmission of an observation is delayed until time for the next regularly scheduled report, only the latest report shall be transmitted.  In the record of observations, the remark FIBI (Filed But Impractical to Transmit) shall be appended in parentheses to the report that was not transmitted to indicate the report was not transmitted.  The remark FIBI shall not be included in any local dissemination of the report.
+
+	When a SPECI is not transmitted long-line, the later SPECI shall be transmitted long-line only when the overall change between the last transmitted report and the current report satisfies the criteria for a SPECI.  If the SPECI is not transmitted long-line, the remark FIBI shall be appended to the report in the record of observations.  The SPECI shall be disseminated locally.
+
+	Reports of Volcanic Eruption shall be disseminated, by any means possible, regardless of the delay. 
+B.	METAR/SPECI CODE FORMAT
+
+	The METAR/SPECI code format has two major sections: the Body, consisting of a maximum of 11 groups, and the Remarks, consisting of 2 categories.  Together, the body and remarks make up the complete METAR/SPECI.  
+
+	The following is the international format of the ICAO Aviation Weather Report used by most countries.  The second format is the format used by the United States and contains the modifications relating to the exceptions requested by the United States.  Most exceptions deal with the units used to report certain weather elements.
+
+	The groups of the METAR code format contain a non-uniform number of characters.  When an element or phenomenon does not occur, the corresponding group, or the extension of a group, is omitted from a particular report.  The groups enclosed in brackets are used in accordance with regional or national decisions.
+
+BLC{(AAL(METAR,  or,SPECI))_CCCC_GGggZ _dddff(f)Gfmfm_BLC(AAL(KMH or,KT  or,MPS))_dndndnVdxdxdx
+		 
+
+     _BLC{(AAL(VVVVDv _VxVxVxVxDv,  or, CAVOK)) 
+
+ _BLC{(AAL(RDRDR/VRVRVRVRi ,  or                             _w"w"(ww),RDRDR/VRVRVRVRVVRVRVRVRi)) 
+
+_BLC{(AAL(NsNsNshshshs ,  or,VVhshshs,  or,SKC)) 
+
+
+_T"T"/T"dT"d  _QPHPHPHPH _REw"w"
+_BLC{(AAL(WS_TKOF_RWYDRDR,  and/or,WS_LDG_RWYDRDR)) 
+
+
+_BLC{(AAL([TTTTT TTGGgg ,  or            _dddffGfmfm, NOSIG]))
+
+_BLC{(AAL(KMH or,KT or,MPS)) _BLC{(AAL(VVVV, or,CAVOK)) _BLC{(AAL(w"w, or,NSW))
+_BLC{(AAL(NsNsNshshshs, or,VVhshshs, or,SKC))
+	
+
+	The METAR/SPECI code format as used by the United States.
+
+BLC{(AAL(METAR,  or,SPECI))_CCCC _YYGGggZ_ BLC{(AAL(AUTO,  or,COR))_dddff(f)GfmfmKT _dndndnVdxdxdx  
+
+
+ _VVVVVSM _BLC{(AAL(RDRDR/VRVRVRVRFT ,  or                           _w"w",RDRDR/VNVNVNVNVVXVXVXVXFT))  
+_BLC{(AAL(NsNsNshshshs ,  or,VVhshshs,  or,SKC/CLR))  
+
+  _T"T"/T"dT"d _APHPHPHPH _ RMK_(Automated, Manual, Plain Language)_(Additive Data and Automated Maintenance Indicators)
+	
+	The underline character “_” indicates a required space between the groups.  If a group is not reported, the preceding space is also not reported.  In addition to the format given, agencies shall provide for the inclusion of any special Beginning-of-Message, End-of-Message, or End-of-Transmission signals required by their communication system.
+
+The actual content of a METAR or SPECI depends on the observation program at the individual station.  At designated station, the 0000, 0600, 1200, and 1800 Coordinated Universal Time (UTC) METAR"s include additional data specified by the responsible agency and are known as 6-hourly reports.  At designated stations, the 0300, 0900, 1500, and 2100 UTC METAR"s are known as 3-hourly reports and also contain additional information specified by the responsible agency.
+
+1.	Coding Missing Data in METAR/SPECI
+
+	When an element does not occur, or cannot be observed, the corresponding group and preceding space are omitted from that particular report.
+	
+
+II.	CODING THE BODY OF THE  METAR/SPECI
+
+A.	Type of Report (METAR and SPECI).  
+
+	The type, METAR or SPECI, shall be included in all reports.  The type of report shall be separated from elements following it by a space.  Whenever SPECI criteria are met at the time of the routine METAR, the type of report shall be METAR.
+
+B.	Station Identifier. (CCCC).  
+
+	The station identifier, CCCC, shall be included in all reports to identify the station to which the coded report applies.  The station identifier shall consist of four alphabetic-only characters if the METAR/SPECI is transmitted long-line.  The agency with operational control when the station is first established shall be responsible for coordinating the location identifier with the FAA.  A list of approved identifiers can be found in the FAA Manual 7350 Series, Location Identifiers.
+
+C.	Date and Time of Report (YYGGggZ).  
+
+	The date, YY, and time, GGgg, shall be included in all reports.  The time shall be the actual time of the report or when the criteria for a SPECI is met or noted.  If the report is a correction to a previously disseminated report, the time of the corrected report shall be the same time used in the report being corrected.  The date and time group always ends with a Z indicating Zulu time (or UTC).  For example, METAR KDCA 210855Z would be the 0900 scheduled report from station KDCA taken at 0855 UTC on the 21st of the month.
+
+Note: WMO standards indicate the scheduled time of the report shall be entered unless the actual time deviates by more than 10 minutes from the scheduled time.  WMO standards do not require the date (YY) to be included.
+
+D.	Report Modifier (AUTO or COR).  
+
+	The report modifier, AUTO, identifies the METAR/SPECI as a fully automated report with no human intervention or oversight.  In the event of a corrected METAR or SPECI, the report modifier, COR, shall be substituted in place of AUTO.
+E.	Wind Group (dddff(f)Gfmfm(fm)Kt_dndndnVdxdxdx).  
+
+1.	Standards for observing and reporting wind
+
+Wind Direction.  The direction, in tens of degrees, from which the wind is blowing with reference to true north.  The wind direction shall be determined by averaging the direction over a 2-minute period.  When the wind direction sensor(s) is out of service, at designated stations, the direction may be estimated by observing the wind cone or tee, movement of twigs, leaves, smoke, etc., or by facing into the wind in an unsheltered area.
+
+Variable Wind Direction.  The wind direction may be considered variable if, during the 2-minute evaluation period, the wind speed is 6 knots or less.  Also, the wind direction shall be considered variable if, during the 2-minute evaluation period, it varies by 60 degrees or more when the average wind speed is greater than 6 knots.
+
+Wind Speed.  The rate, in knots, at which the wind passes a given point.  The wind speed shall be determined by averaging the speed over a 2-minute period.  At designated stations, Table A-1 shall be used to estimate wind speeds when instruments are out of service or the wind speed is below the starting speed of the anemometer in use.  Note: WMO standards indicate the wind speed will be determined from the average over the 10 minutes preceding the observation and reported in meters per second.
+
+Wind Gust.  The wind speed data for the most recent 10 minutes shall be examined to evaluate the occurrence of gusts.  Gusts are indicated by rapid fluctuations in wind speed with a variation of 10 knots or more between peaks and lulls.  the speed of a gust shall be the maximum instantaneous wind speed.  Note: WMO standard defines a gust as the maximumwind speed exceeding the “mean speed” by 5 m/s (10 knots) during the 10-minute interval.
+
+Peak Wind Speed.  The maximum instantaneous wind speed measured.  Peak wind data shall be determined with wind speed recorders.  The peak wind speed shall be the maximum instantaneous speed measured since the last routine METAR.
+
+Wind Shifts.  wind data shall be examined to determine the occurrence of a wind shift.  A wind shift is indicated by a change in wind direction of 45 degrees or more in less than 15 minutes with sustained winds of 10 knots or more throughout the wind shift.
+
+Calm winds.  When no motion of air is detected, the wind shall be reported as calm.  
+
+Table A-1 Estimating Wind Speed
+Knots Specifications Knots Specifications  
+<1 
+Calm: smoke rises vertically. 
+22 - 27 Large branches in motion;whistling heard in overhead wires;umbrellas used with difficulty.  1 - 3 Direction of wind shown by smoke drift not by wind vanes. 28 - 33 Whole trees in motion;inconvenience felt walking against wind.  4 - 6 Wind felt on face;leaves rustle;vanes moved by wind. 34 - 40 Breaks twigs off trees;impedes progress.  
+7 - 10 Leaves and small twigs in constant motion;wind extends light flag. 
+41 - 47 
+Slight structural damage occurs.  11 - 16 Raises dust, loose paper;small branches moved. 48 - 55 Trees uprooted;considerable damage occurs.  
+17 - 21 Small trees in leaf begin to sway;crested wavelets form on inland waters. 
+56 - 71 
+Widespread damage.   Wind observing and reporting standards are sumarized in Table A-2.
+
+Table A-2  Summary of Wind Observing and Reporting Standards
+Parameter Observing and Reporting Standard  
+Wind direction 2-minute average in 10 degree increments with respect to true north is reported.  Wind speed 2-minute average speed in knots is reported.  
+Wind gust The maximum instantaneous speed in knots in the past 10 minutes is reported.  
+Peak wind The maximum instantaneous speed in knots (since the last scheduled report) shall be reported whenever the speed is greater than 25 knots.  Wind shifts Wind shift and the time the shift occurred is reported.  
+2.	Coding the Wind Group
+
+The wind direction ddd, shall be coded in tens of degrees using three figures.  Directions less than 100 degrees shall be preceded with a “0”.  For example, a wind direction of 90o is coded as “090”.  The wind speed, ff(f), shall be coded in two or three digits immediately following the wind direction.  The wind speed shall be coded, in whole knots, using the units and tens digits and, if required, the hundreds digit.  Speeds of less than 10 knots shall be coded using a leading zero.  The wind group shall always end with KT to indicate that wind speeds are reported in knots.  For example, a wind speed of 8 knots shall be coded “08KT”;a wind speed of 112 knots shall be coded “112KT”.
+
+a.	Gust.  Wind gusts shall be coded in the format, Gfmfm(fm).  The wind gust shall be coded in two or three digits immediately following the wind speed.  The wind gust shall be coded, in whole knots, using the units and tens digits and, if required, the hundreds digit.  For example, a wind from due west at 20 knots with gusts to 35 knots would be coded “27020G35KT”.
+
+b.	Variable Wind Direction (Speeds 6 knots or less).  Variable wind direction with wind speed 6 knots or less may be coded as VRB in place of the ddd.  For example, if the wind is variable at three knots, it would be coded “VRB03KT”.
+
+c.	Variable Wind Direction (Speeds greater than 6 knots).  Variable wind direction with wind speed greater than 6 knots shall be coded in the format, dndndnVdxdxdx.  The variable wind direction group shall immediately follow the wind group.  The directional variability shall be coded in a clockwise direction.  For example, if the wind is variable from 180o to 240o at 10 knots, it would be coded “21010KT 180V240”.
+
+d.	Calm Wind.  Calm wind shall be coded as “00000KT”.
+
+F.	Visibility Group (VVVVVSM)
+
+1.	Standards for observing and reporting visibility
+
+Visibility is a measure of the opacity of the atmosphere.  An automated, instrumentally-derived visibility value is a sensor value converted to an appropriate visibility value using standard algorithms and is considered to be representative of the visibility in the vicinity of the airport runway complex.  A manually-derived visibility value is obtained using the “prevailing visibility” concept.  In this section, the term “prevailing visibility” shall refer to both manual and instrument derived visibility values.
+
+Units of Measure.  Visibility shall be reported in statute miles.  Note: WMO standard is to report visibility in meters, where 2800 represents 2,800 meters and 9999 represents a visibility greater than 9500 meters (9.5 km).
+
+Prevailing visibility.  The greatest distance that can be seen throughout at least half the horizon circle, not necessarily continuous;the visibility that is considered representative of visibility at the station.  
+
+Sector visibility.  The visibility in a specified direction that represents at least a 45 degree arc of the horizon circle.
+
+Surface visibility.  The prevailing visibility determined from the usual point of observation.
+
+Tower visibility.  The prevailing visibility determined from the airport traffic control tower (ATCT) at stations that also report surface visibility. 
+
+Visibility Observing Standards.  Visibility may be manually determined at either the surface, the tower level, or both.  If visibility observations are made from just one level, e.g., the airport traffic control tower, that level shall be considered the “usual point of observation” and that visibility shall be reported as surface visibility.  If visibility observations are made from both levels, the visibility at the tower level may be reported as tower visibility.
+
+Visibility may be automatically determined by sensors operating in accordance with the Federal Standard Algorithms for Automated Weather Observing Systems Used for Aviation Purposes.  This visibility algorithm calculates a mean visibility which is the sensor equivalent of prevailing visibility.  The visibility data during the period of observation are examined to determine if variable visibility shall be reported.
+
+Manual Observing Aids.  Agencies shall establish procedures to ensure that insofar as possible, dark or nearly dark objects viewed against the horizon sky shall be used during the day, and unfocused lights of moderate intensity (about 25 candela) shall be used during the night as reference points for manually determining visibility.  In addition, visibility sensors may be used to assist the observer in the evaluation.
+
+Visibility.  Manually-derived visibility shall be evaluated as frequently as practicable.  All available visibility reference points shall be used.  The greatest distances that can be seen in all directions around the horizon circle shall be determined.  When the visibility is greater than the distance to the farthest reference point, the greatest distance seen in each direction shall be estimated.  The estimate shall be based on the appearance of the most distant visible reference points.  If they are visible with sharp outlines and little blurring of color, the visibility is much greater than the distance to them.  If they can barely be seen and identified, the visibility is about the same as the distance to them.  After visibilities have been determined around the entire horizon circle, they shall be resolved into a single value for reporting purposes.  To do this, the greatest distance that can be seen throughout at least half the horizon circle, not necessarily continuous shall be used;this is prevailing visibility.  If the visibility is varying rapidly during the time of the observation, the average of all observed values across the horizon circle shall be used for reporting purposes.  Prevailing visibility shall be reported in all weather observations.  The reportable values for visibility are listed in Table A-3.  If the actual visibility falls halfway between two reportable values, the lower value shall be reported.
+
+Variable Prevailing Visibility.  If the prevailing visibility rapidly increases and decreases by 1/2 statute mile or more, during the time of the observation, and the prevailing visibility is less than 3 miles, the visibility is considered to be variable.  The minimum and maximum visibility values observed shall be reported in the remarks section.
+
+Sector Visibility.  When the manually-derived visibility is not uniform in all directions, the horizon circle shall be divided into arcs that have uniform visibility and represent at least one eighth of the horizon circle (45 degrees).  The visibility that is evaluated in each sector is sector visibility.  Sector visibility shall be reported in remarks when it differs from the prevailing visibility by one or more reportable values and either the prevailing or sector visibility is less than 3 statute miles.  
+
+Tower Visibility.  Tower visibility shall be reported in accordance with agency procedures.
+
+Visibility at Second Location.  When an automated station uses a meteorological discontinuity visibility sensor, remarks shall be added to identify visibility at the second location which differ from the visibility in the body of the report.
+
+Table A-4 summarizes the applicability of visibility standards.
+
+Table A-3  Reportable Visibility Values
+Source of Visibility Report  Automated Manual  M1/4 2 9a 0 5/8 1 5/8 4 12  1/4 2 1/2 10 1/16 3/4 1 3/4 5 13  1/2 3  1/8 7/8 1 7/8 6 14  3/4 4  3/16 1 2 7 15  1 5  1/4 1 1/8 2 1/4 8 20  1 1/4 6a  5/16 1 1/4 2 1/2 9 25  1 1/2 7  3/8 1 3/8 2 3/4 10 30  1 3/4 8a  1/2 1 1/2 3 11 35b  a.     These values may not be reported by some automated stations.
+b.     Further values in increments of 5 statute miles may be reported, i.e., 40, 45, 50, etc.  
+Table A-4 Summary of Visibility Observing and Reporting Standards and Procedures
+
+Visibility Type of Station   Automated Manual  Surface Represents 10-minutes of sensor outputs. Visual evaluation of visibility around the horizon.  Variable Reported when the prevailing visibility varies by 1/2 mile or more and the visibility is less than 3 miles.   Tower Augmented. Reported at stations with an ATCT.  Sector Not reported. Reported at all stations.  
+2.	Coding the Visibility Group
+
+The surface visibility, VVVVVSM, shall be coded in statute miles using the values listed in Table A-3.  A space shall be coded between whole numbers and fractions of reportable visibility values.  The visibility group shall always end with SM to indicate that the visibility is in statute miles.  For example, a visibility of one and a half statute miles would be coded “1 1/2SM”. 
+
+Automated stations shall use an M to indicate “less than” when reporting visibility.  For example, “M1/4SM” means a visibility of less than one-quarter statute mile.
+
+Note: The term CAVOK is not used in the United States.  It indicates that :
+
+(1) No clouds exist below 5,000 feet or below the highest minimum sector altitude, whichever is greater, and no cumulonimbus are present,
+(2)	Visibility is 10 kilometers or more and,
+(3)	No precipitation, thunderstorms, sandstorm, duststorm,shallow fog, or low drifting dust, sand or snow is occurring.
+
+ WMO standards indicate that when the horizontal visibility is not the same in all directions, the minimum visibility is given for VVVV followed, without a space, by Dv, the direction of the visibility observed given by one or two letter indicator of the eight points of the compas (N, NE, etc.).  If the minimum visibility reported by VVVVDv is less than 1500 meters and the maximum visibility in another direction is greater than 5000 meters, then the visibility group VVVVDv is followed by the group VxVxVxVxDv which is the maximum visibility and direction.
+
+	
+
+G.	Runway Visual Range Group (RDRDR/VRVRVRVRFT or 
+	RDRDR/VnVnVnVnVVxVxVxVxFT).
+
+1.	Standards for observing and reporting Runway Visual Range
+
+Runway Visual Range (RVR).	The runway visual range is the maximum distance at which the runway, or the specified lights or markers delineating it, can be seen from a position above a specified point on its centerline.  This value is normally determined by visibility sensors located alongside and higher than the center line of the runway.  RVR is calculated from visibility, ambient light level, and runway light intensity.  It is common practice to use a transmissometer or forward scatter meter as the RVR visibility sensor.  A transmissometer measures the transmittance of the atmosphere over a baseline distance while a forward scatter meter measures the extinction coefficient of the atmosphere.  RVR is then derived from equations that also account for ambient light (background luminance) and runway light intensity based on the expected detection sensitivity of the pilot"s eye.  
+
+Observing Positions.  The location of the RVR visibility sensor should be within 500 feet of the runway centerline and within 1,000 feet of the designated runway threshold.
+
+Day-Night Observations for Transmissometers.  The day scale shall be used in the evening until low intensity lights on or near the airport complex are clearly visible.  The night scale shall be used in the morning until these lights begin to fade.  Alternately, a day-night switch may be used to determine which scale should be used.
+
+Multiple Runway Visual Range Sensors.  At automated stations where it is applicable, RVR values for as many as four designated runways can be reported for long-line dissemination.  At manual stations, only RVR for the designated runway shall be reported.
+
+Units of Measure.  RVR is measured in increments of 100 feet up to 1,000 feet, increments of 200 feet from 1,000 feet to 3,000 feet, and increments of 500 feet above 3,000 feet to 6,000 feet.
+
+Runway Visual Range Based on a Transmissometer.  Ten-minute extreme values (highest and lowest) of transmittance shall be reported.  Manually reported RVR shall be based on light setting 5 for either day or night time conditions, regardless of the light setting actually in use.  One RVR value shall be reported if the ten-minute high and low value are the same.
+
+Table A-5 summarizes the runway visual range observing and reporting standards.
+
+Table A-5  Summary of RVR Observing and Reporting Standards
+RVR Observing and Reporting Standard  Number of RVRs Up to 4a  RVR Light Setting 5 for transmissometer systems  
+When Reported When visibility ≤ 1 statute mile 
+AND/OR 
+RVR ≤ 6,000 feet      a.       Manual observations shall contain only one RVR.  
+2.	Coding the Runway Visual Range Group
+
+a.	RVR shall be coded in the format, RDRDR/VRVRVRVRFT, where R indicates that the runway number follows, DRDR is the runway number (an additional DR may be used for runway approach directions, such as R for right, L for left, and C for center), VRVRVRVR is the constant reportable value, and FT indicates that units of measurement are feet.  A solidus “/” without spaces separates the runway number from the constant reportable value.  For example, an RVR value for runway ) 01L of 800 feet would be coded “R01L/0800FT”.
+
+b.	RVR that is varying shall be coded in the format, RDRDR/VnVnVnVnVVxVxVxVxFT, where R indicates that the runway number follows, DRDR is the runway number (an additional DR may be used for runway approach directions, such as R for right, L for left, and C for center), VnVnVnVn is the lowest reportable value in feet, V separates lowest and highest visual range values, VxVxVxVx is the highest reportable value, and FT indicates that units of measurement are feet.  A solidus “/” without spaces separates the runway number from the reportable values.  For example, the 10-minute RVR for runway 01L varying between 600 and 1,000 feet would be coded “R01L/0600V1000FT”.
+
+c.	The values shall be based on light setting 5 at manual stations regardless of the light setting actually in use.  RVR values shall be coded in increments of 100 feet up to 1,000 feet, increments of 200 feet from 1,000 feet to 3,000 feet, and increments of 500 feet from 3,000 feet to 6,000 feet.  Manual RVR shall not be reported below 600 feet.  For automated stations, RVR may be reported from up to four designated runways.
+
+d.	If the RVR is less than its lowest reportable value, the VRVRVRVR or VnVnVnVn groups shall be preceded by M.  If the RVR is greater than its highest reportable value, the VRVRVRVR or VxVxVxVx groups shall be preceded by a P.  For example, an RVR for runway 01L of less than 600 feet will be coded “R01L/M0600FT”;an RVR for runway 27 of greater than 6,000 feet will be coded “R27/P6000FT”.
+
+Note: ICAO standards indicate runway visual range is reported in meters when visibility is less than 1500 meters.  The designator i in the ICAO format is the RVR tendency, either a U (for increasing) or a D (for decreasing) if during the 10 minutes preceding the observation the runway visual range showed a tendency to increase or decrease.  If not change occurred, it is omitted.
+	
+
+H.	Present Weather Group
+
+1.	Observing and Reporting Standards for Present Weather
+
+Present Weather includes precipitation, obscurations, other weather phenomena;such as, well-developed dust/sand whirls, squalls, tornadic activity, sandstorms, and duststorms.  Present weather may be evaluated instrumentally, manually, or through a combination of instrumental and manual methods.
+
+2.	Present Weather Parameters
+
+Precipitation.  Precipitation is any of the forms of water particles, whether liquid or solid, that fall from the atmosphere and reach the ground.  The types of precipitation are:
+
+	a.	Drizzle.  Fairly uniform precipitation composed exclusively of fine drops with diameters of less than 0.02 inch (0.5 mm) very close together.  Drizzle appears to float while following air currents, although unlike fog droplets, it falls to the ground.
+b.	Rain.  Precipitation, either in the form of drops larger than 0.02 inch (0.5 mm), or smaller drops which, in contrast to drizzle, are widely separated.
+
+c.	Snow.   Precipitation of snow crystals, mostly branched in the form of six-pointed stars.
+
+d.	Snow Grains.  Precipitation of very small, white, and opaque grains of ice.
+
+e.	Ice Crystals (Diamond Dust).  A fall of unbranched (snow crystals are branched) ice crystals in the form of needles, columns, or plates.
+
+f.	Ice Pellets.  Precipitation of transparent or translucent pellets of ice, which are round or irregular, rarely conical, and which have a diameter of 0.2 inch (5 mm), or less.  There are two main types:
+
+(1)	Hard grains of ice consisting of frozen raindrops, or largely melted and refrozen snowflakes.
+
+(2)	Pellets of snow encased in a thin layer of ice which have formed from the freezing, either of droplets intercepted by the pellets, or of water resulting from the partial melting of the pellets.
+
+g.	Hail.  Precipitation in the form of small balls or other pieces of ice falling separately or frozen together in irregular lumps.
+
+h.	Small Hail and/or Snow Pellets.  Precipitation of white, opaque grains of ice.  The grains are round or sometimes conical.  Diameters range from about 0.08 to 0.2 inch (2 to 5 mm).
+
+Obscurations.  Any phenomenon in the atmosphere, other than precipitation, that reduces the horizontal visibility.
+
+a.	Mist.  A visible aggregate of minute water particles suspended in the atmosphere that reduces visibility to less than 7 statute miles but greater than or equal to 5/8 statute miles.
+
+b.	Fog.  A visible aggregate of minute water particles (droplets) which are based at the Earth"s surface and reduces horizontal visibility to less than 5/8 statute mile and, unlike drizzle, it does not fall to the ground.
+
+c.	Smoke.  A suspension in the air of small particles produced by combustion.  A transition to haze may occur when smoke particles have traveled great distances (25 to 100 miles or more) and when the larger particles have settled out and the remaining particles have become widely scattered through the atmosphere.
+
+d.	Volcanic Ash.  Fine particles of rock powder that originate from a volcano and that may remain suspended in the atmosphere for long periods.
+
+e.	Widespread Dust.  Fine particles of earth or other matter raised or suspended in the air by the wind that may have occurred at or far away from the station which may restrict horizontal visibility.
+
+f.	Sand.  Sand particles raised by the wind to a height sufficient to reduce visibility.
+
+g.	Haze.  A suspension in the air of extremely small, dry particles invisible to the naked eye and sufficiently numerous to give the air an opalescent appearance.
+
+h.	Spray.  An ensemble of water droplets torn by the wind from the surface of an extensive body of water, generally from the crests of waves, and carried up a short distance into the air.
+
+3.	Other Weather Phenomena
+
+a.	Well-developed Dust/Sand Whirl.  An ensemble of particles of dust or sand, sometimes accompanied by small liter, raised from the ground in the form of a whirling column of varying height with a small diameter and an approximately vertical axis.
+
+b.	Squall.  A strong wind characterized by a sudden onset in which the wind speed increases at least 16 knots and is sustained at 22 knots or more for at least one minute.
+
+c.	Funnel Cloud (Tornadic Activity).
+
+(1)	Tornado.  A violent, rotating column of air touching the ground.
+
+(2)	Funnel Cloud.  A violent, rotating column of air which does not touch the surface.
+
+(3)	Waterspout.  A violent, rotating column of air that forms over a body of water, and touches the water surface.
+
+d.	Sandstorm.  Particles of sand carried aloft by a strong wind.  The sand particles are mostly confined to the lowest ten feet, and rarely rise more than fifty feet above the ground.
+
+e.	Duststorm.  A severe weather condition characterized by strong winds and dust-filled air over an extensive area.
+
+4.	Present Weather Observing Standards
+
+a.	Intensity/Proximity.  The intensity qualifiers are: light, moderate, and heavy.  The proximity qualifier is vicinity.
+
+(1)	Intensity of Precipitation.  When more than one form of precipitation is occurring at a time or precipitation is occurring with an obscuration, the intensities determined shall be no greater than that which would be determined if any forms were occurring alone.
+
+	The intensity of precipitation shall be identified as light, moderate, or heavy in accordance with one of the following:
+
+(a)	Intensity of Rain or Ice Pellets.  The intensity of rain and ice pellets shall be based on the criteria given in Table A-6, Table A-7, and Table A-8.
+
+Table A-6.  Intensity of Rain or Ice Pellets Based on Rate-of-Fall
+Intensity Criteria  Light Up to 0.10 inch per hour;maximum 0.01 inch in 6 minutes.  Moderate 0.11 inch to 0.30 inch per hour;more than 0.01 inch to 0.03 inch in 6 minutes.  Heavy More than 0.30 inch per hour;more than 0.03 inch in 6 minutes.  
+Table A-7.  Estimating Intensity of Rain
+Intensity Criteria  Light From scattered drops that, regardless of duration, do not completely wet an exposed surface up to a condition where individual drops are easily seen.  Moderate Individual drops are not clearly identifiable;spray is observable just above pavements and other hard surfaces.  Heavy Rain seemingly falls in sheets;individual drops are not identifiable;heavy spray to height of several inches is observed over hard surfaces.  
+Table A-8.  Estimating Intensity of Ice Pellets
+Intensity Criteria  Light Scattered pellets that do not completely cover an exposed surface regardless of duration.  Visibility is not affected.  Moderate Slow accumulation on ground.  Visibility reduced by ice pellets to less than 7 statute miles.  Heavy Rapid accumulation on ground.  Visibility reduced by ice pellets to less than 3 statute miles.  
+(b)	Intensity of Snow and Drizzle.  The intensity of snow and drizzle shall be based on the reported surface visibility in accordance with Table A-9 when occurring alone.
+
+Table A-9. Intensity of Snow or Drizzle Based on Visibility
+Intensity Criteria  Light Visibility > 1/2 mile.  Moderate Visibility > 1/4 mile but ≤1/2 mile.  Heavy Visibility ≤ 1/4 mile  
+(2)	Proximity.  Unless otherwise directed elsewhere in this handbook, weather phenomena occurring beyond the point of observation (between 5 and 10 statute miles) shall be reported as (in the) vicinity.
+
+b.	Descriptors.  Descriptors are qualifiers which further amplify weather phenomena and are used with certain types of precipitation and obscurations.  The descriptor qualifiers are:
+
+(1)	Shallow.  The descriptor shallow shall only be used to further describe fog that has little vertical extent (less than 6 feet).
+
+(2)	Partial and Patches.  The descriptor partial and patches shall only be used to further describe fog that has little vertical extent (normally greater than or equal to 6 feet but less than 20 feet), and reduces horizontal visibility, but to a lesser extent vertically.  The stars may often be seen by night and the sun by day.
+
+(3)	Low Drifting.  When dust, sand, or snow is raised by the wind to less than 6 feet, “low drifting” shall be used to further describe the weather phenomenon.
+
+(4)	Blowing.  When dust, sand, snow, and/or spray is raised by the wind to a height of 6 feet or more, “blowing” shall be used to further describe the weather phenomenon.
+
+(5)	Shower(s).  Precipitation characterized by the suddenness with which they start and stop, by the rapid changes of intensity, and usually by rapid changes in the appearance of the sky.
+
+(6)	Thunderstorm.  A local storm produced by a cumulonimbus cloud that is accompanied by lightning and/or thunder.
+
+(7)	Freezing.  When fog is occurring and the temperature is below 0oC, “freezing” shall be used to further describe the phenomenon.  When drizzle and/or rain freezes upon impact and forms a glaze on the ground or other exposed objects, “freezing” shall be used to further describe the precipitation.
+
+5.	Present Weather Reporting Standards 
+
+Present weather is reported when it is occurring at, or in the vicinity of, the station and at the time of observation.  Unless directed elsewhere, the location of weather phenomena shall be reported as:
+
+8	“occurring at the station” when within 5 statute miles of the point(s) of observation.
+8	“in the vicinity of the station” when between 5 and 10 statute miles of the points(s) of observation.
+8	“distant from the station” when beyond 10 statute miles of the point(s) of observations.  
+
+Note: Precipitation shall be reported when occurring at the point of observation.  Precipitation not occurring at the point of observation but within 10 statute miles shall be reported as in the vicinity.
+
+With the exception of volcanic ash, low drifting dust, low drifting sand, low drifting sand, shallow fog, partial fog, and patches (of) fog, obscurations are reported only when the prevailing visibility is less than 7 statute miles or considered operationally significant.  Volcanic ash shall always be reported when observed.
+
+When more than one type of present weather are reported at the same time, present weather shall be reported in the following order:
+
+8	Tornadic activity — Tornado, Funnel Cloud, or Waterspout.
+8	Thunderstorm(s) with or without associated precipitation.
+8	Present weather in order of decreasing dominance, i.e., the most dominant type is reported first.
+8	Left-to-right in Table A-10 (Columns 1 through 5).
+
+The reporting notations given in Table A-10 shall be used to report present weather.  
+
+Unknown Precipitation.  Unknown precipitation shall only be reported by automated stations to indicate precipitation of unknown type when the automated system cannot identify the precipitation with any greater precision.
+
+Table A-10.  Notations for Reporting Present Weather1
+QUALIFIER WEATHER PHENOMENA  INTENSITY OR PROXIMITY
+1 DESCRIPTOR
+
+2 PRECIPITATION
+
+3 OBSCURATION
+
+4 OTHER
+
+5  -    Light
+
+     Moderate2
+
++  Heavy
+
+VC In the Vicinity3 MI  Shallow
+
+PR  Partial
+
+BC  Patches
+
+DR  Low Drifting
+
+BL  Blowing
+
+SH  Shower(s)
+
+TS  Thunderstorm
+
+FZ  Freezing DZ  Drizzle
+
+RA  Rain
+
+SN  Snow
+
+SG Snow Grains
+
+IC  Ice Crystals
+
+PE  Ice Pellets
+
+GR  Hail> 5mm in diameter
+
+GS Small Hail and/or Snow Pellets
+
+UP Unknown Precipitation BR  Mist
+
+FG  Fog
+
+FU  Smoke
+
+VA  Volcanic Ash
+
+DU  Widespread Dust
+
+SA  Sand
+
+HZ  Haze
+
+PY  Spray PO  Well-Developed Dust/Sand Whirls
+
+SQ  Squalls
+
+FC  Funnel Cloud Tornado Waterspout4
+
+SS  Sandstorm
+
+DS  Duststorm  1.   The weather groups shall be constructed by considering columns 1 to 5 in the table above in sequence;i.e., intensity, followed by description, followed by weather phenomena, e.g., heavy rain shower(s) is coded as +SHRA.
+2.   To denote moderate intensity no entry or symbol is used.
+3.   Used when present weather is within 5 to 10 statute miles of the point(s) of observation.
+4.   Tornadoes and waterspouts shall always be coded as +FC.   
+Other Significant Weather Phenomena.  Observers shall be alert to weather phenomena that are visible from the station but not occurring at the station.  Examples of such phenomena are fog banks, localized rain, snow blowing over runways, etc.  These phenomena shall be reported whenever they are considered to operationally significant.  Volcanic eruptions shall be reported in remarks.
+
+Summary of Weather.  Table A-11 contains a summary of the present weather observing and reporting standards according to the type of station.
+
+Table A-11.  Summary of Present Weather Observing and Reporting Standards
+Present Weather Type of Station   Automated Manual  
+Funnel Cloud
+(Tornadic Activity) 
+Augmented at designated stations. Report FC, or +FC, and in remarks TORNADO, FUNNEL CLOUD, WATERSPOUT, time of beginning and time of ending, source, location, and direction of movement.  Thunderstorms Augmented at designated stations. Report TS, time of beginning/ending, location, and movement.  
+Hail 
+Augmented at designated stations. Report GR, time of beginning and time of ending, estimated size of largest hailstones in inches preceded by “GR”.  Small hail and/or snow pellets Augmented at designated stations. Report GS, time of beginning and time of ending.  
+Obscurations BR, FG and HZ may be reported. Report BR, FG, PRFG, FU, DU, HZ, SA, BLSN, BLSA, BLDU, SS, DS, BLPY, and VA.   N/A Reports non-uniform weather and obscurations.   DZ, RA, SN and UP may be reported. Report RA, SHRA, DZ, FZRA, FZDZ, SN, SHSN, SG, GS, IC, GR, PE, and SHPE.   May be reported as FZ Reports descriptor with precipitation.   May report the intensity of precipitation as light, moderate, or heavy. Reports the intensity of precipitation, other than IC, GR, and GS as light, moderate, or heavy.  Precipitation May report hourly accumulation of liquid precipitation. May report hourly accumulation of liquid precipitation.   May report 3-, 6-, and 24-hour accumulation of precipitation (water equivalent of solid). May report 3-, 6-, and 24-hour accumulation of precipitation (water equivalent of solid).   N/A May report depth and accumulation of solid precipitation.   N/A Reports size of GR.  Squall Report SQ. Report SQ.  
+
+6.	Coding the Present Weather Group (w"w")  
+
+	The appropriate notations used in Table A-10 shall be used to code present weather.
+
+	The following general rules apply when coding present weather for a METAR or SPECI:
+
+	8	Weather occurring at the point of observation (at the station) or in the vicinity of the station shall be coded in the body of the report;weather observed but not occurring at the point of observation (at the station) or in the vicinity shall be coded in Remarks.
+
+	8	With the exceptions of volcanic ash, low drifting dust, low drifting sand, low drifting snow, shallow fog, partial fog, and patches (of) fog, an obscuration shall be coded in the body of the report if the surface visibility is less than 7 miles or considered operationally significant.  Volcanic ash shall always be coded when observed.
+
+	8	Separate groups shall be used for each type of present weather.  Each group shall be separated from the other by a space.  METAR/SPECI shall contain no more than three present weather groups.
+
+	8	The weather groups shall be constructed by considering columns 1 to 5 in Table A-10 in sequence, i.e., intensity, followed by description, followed by weather phenomena, e.g., heavy rain shower(s) is coded as +SHRA.
+
+a.	Intensity or Proximity Qualifier.
+
+(1)	Intensity shall be coded with precipitation types, except ice crystals and hail, including those associated with a thunderstorm (TS) and those of a showery nature (SH).  Tornadoes and waterspouts shall be coded as +FC.  No intensity shall be ascribed to the obscurations of blowing dust (BLDU), blowing sand (BLSA), and blowing snow (BLSN).  Only moderate or heavy intensity shall be ascribed to sandstorm (SS) and duststorm (DS).
+
+(2)	The proximity qualifier for vicinity, VC, (weather phenomena observed in the vicinity of but not at the point(s) of observation) shall be coded in combination with thunderstorm (TS), fog (FG), shower(s) (SH), well-developed dust/sand whirls (PO), blowing dust (BLDU), blowing sand (BLSA), blowing snow (BLSN), sandstorm (SS), and duststorm (DS).  Intensity qualifiers shall not be coded with VC.
+
+	VCFG shall be coded to report any type of fog in the vicinity of the point(s) of observation.
+
+	Precipitation not occurring at the point of observation but within 10 statute miles shall be coded as showers in the vicinity (VCSH).
+
+b.	Descriptor Qualifier.  Only one descriptor shall be coded for each weather phenomena group, e.g., “-FZDZ”.  Mist (BR) shall not be coded with any descriptor.
+
+(1)	The descriptors shallow (MI), partial (PR), and patches (BC) shall only be coded with FG, e.g., “MIFG”.
+
+(2)	The descriptors low drifting (DR) and blowing (BL) shall only be coded with dust (DU), sand (SA), and snow (SN), e.g., “BLSN” or DRSN”.  DR shall be coded for DU, SA, or SN raised by the wind to less than six feet above the ground.
+
+	When blowing snow is observed with snow falling from clouds, both phenomena are reported, e.g., “SN BLSN”.  If there is blowing snow and the observer cannot determine whether or not snow is also falling, then BLSN shall be reported.  PY shall be coded only with blowing (BL).
+
+(3)	The descriptor shower(s) (SH) shall be coded only with one or more of the precipitation types of rain (RA), snow (SN), ice pellets (PE), small hail (GS),or large hail (GR).  The SH descriptor indicates showery-type precipitation.  When any type of precipitation is coded with VC, the intensity and type of precipitation shall not be coded.
+
+(4)	The descriptor thunderstorm (TS) may be coded by itself, i.e., a thunderstorm without associated precipitation, or it may be coded with the precipitation types of rain (RA), snow (SN), ice pellets (PE), small hail and/or snow pellets (GS), or hail (GR).  For example, a thunderstorm with snow and small hail and/or snow pellets would be coded as “TSSNGS”.  TS shall not be coded with SH.
+
+(5)	The descriptor freezing (FZ) shall only be coded in combination with fog (FG), drizzle (DZ), or rain (RA), e.g., “FZRA”.  FZ shall not be coded with SH.
+
+c.	Precipitation.  Up to three types of precipitation may be coded in a single present weather group.  They shall be coded in order of decreasing dominance based on intensity.
+
+(1)	Drizzle shall be coded as DZ;rain shall be coded as RA;snow shall be coded as SN;snow grains shall be coded as SG;ice crystals shall be coded as IC;ice pellets shall be coded as PE;hail shall be coded as GR,;and small hail and/or snow pellets shall be coded as GS.
+
+(2)	At automated stations, precipitation of unknown type shall be coded as UP.
+
+d.	Obscuration.
+
+(1)	Mist shall be coded as BR;fog shall be coded as FG;smoke shall be coded as FU;volcanic ash shall be coded as VA;widespread dust shall be coded as DU;sand shall be coded as SA;and haze shall be coded as HZ.
+
+(2)	Shallow fog (MIFG), patches (of) fog (BCFG), and partial fog (PRFG) may be coded with prevailing visibility of 7 statute miles or greater.
+
+(3)	Spray shall be coded only as BLPY.
+
+e.	Other Weather Phenomena
+
+(1)	Well-developed dust/sand whirls shall be coded as PO;squalls shall be coded as SQ;sandstorm shall be coded as SS;and duststorm shall be coded as DS.
+
+(2)	Tornadoes and waterspouts shall be coded as +FC.  Funnel clouds shall be coded as FC.
+	
+
+I.	Sky Condition Group.
+
+1.	Standards for Observing and Reporting Sky Condition
+
+	Sky condition is a description of the appearance of the sky.  Sky condition may be evaluated either automatically by instrument or manually with or without instruments.
+
+2.	Sky Condition Parameters
+
+	Sky condition parameters are:
+
+a.	Sky cover.  The amount of the celestial dome hidden by clouds and/or obscurations.  
+
+b.	Layer amount.  The amount of sky cover for each layer shall be the eighths (or oktas) of the sky cover attributable to clouds or obscurations (i.e., smoke, haze, fog, etc.) in the layer being evaluated.
+
+		Automated stations shall report no more than three layers.  Manual stations shall report no more than six layers.  The selection of layers reported shall be made in accordance with Table A-12.  Additionally, all layers with associated cumulonimbus or towering cumulus shall be identified by appending the contractions CB and TCU, respectively.
+
+		Sky condition shall be reported in an ascending order up to the first overcast layer.  Layers above 12,000 feet are not reported by automated sky condition sensors.  At mountain stations, if the cloud layer is below station level, the height of the layer shall be reported as ///.
+
+Table A-12.  Priority for Reporting Layers
+Priority Layer Description  1 lowest few layer.  2 lowest broken layer.  3 overcast layer.  4 lowest scattered layer.  5 second lowest scattered layer.  6 second lowest broken layer.  7 highest broken layer.  8 highest scattered layer.  c.	Summation layer amount.  The sum of the sky cover for the layer being evaluated plus the sky cover of all lower layers including obscurations.  Portions of layers aloft detected through lower layers aloft shall not increase the summation amount of the higher layer.  No layer can have a summation amount greater than 8/8ths.
+
+d.	Layer height.  The height of the bases of each reported layer of clouds and/or obscurations;or the vertical visibility into an indefinite ceiling.  A ceilometer, if available, or ceiling light, or known heights of unobscured portions of abrupt, isolated objects within 1 1/2 statute miles of a runway shall be used to measure the height of layers aloft.  Otherwise, an alternative method shall be used to estimate the heights.  The height may be estimated by using a ceiling balloon, pilot report, other agency guidelines, or observer experience.  
+
+		Heights of sky cover layers and vertical visibility shall be evaluated in feet above the surface.  The reportable values of sky cover height are hundreds of feet..  Heights of layers shall be reported in hundreds of feet, rounded to the nearest reportable increment.  The reportable value increments are given in Table A-17.  When a value falls halfway between two reportable increments, the lower value shall be reported.  When a cloud layer is 50 feet or less above the surface, the height shall be reported at 000.  
+
+e.	Ceiling.  The height above the earth"s surface of the lowest layer that is reported as broken or overcast;or, if the sky is totally obscured, the vertical visibility shall be the ceiling.  
+
+		When the height of a ceiling layer increases and decreases rapidly by the amounts given in Table A-13, during the period of evaluation, it shall be considered variable and the ascribed height shall be the average of all the varying values.  At mountain stations, clouds below the level of the station may be observed.
+
+Table A-13.  Criteria for Variable Ceiling
+Ceiling (feet) Variation (feet)  ≤ 1,000 ≥ 200  < 1,000 and ≤ 2,000 ≥ 400  > 2,000 and < 3,000 ≥ 500  
+f.	Vertical visibility.  Vertical visibility shall be either:
+
+8	The distance that an observer can see vertically into an indefinite ceiling;
+8	The height corresponding to the top of a ceiling light projector beam;
+8	The height at which a ceiling balloon completely disappears during the presence of an indefinite ceiling;or
+8	The height determined by the sensor algorithm at automated stations.
+
+g.	Indefinite Ceiling Height (Vertical Visibility).  The height into an indefinite ceiling shall be the vertical visibility measured in hundreds of feet. 
+
+h.	Type of clouds.  The variety of clouds present.
+
+i.	Significant Clouds and Cloud Types.	Cloud types shall be identified in accordance with the WMO International Cloud Atlas-Volumes I and II, the WMO Abridged International Cloud Atlas, or agency observing aids for cloud identification.  Cumulonimbus, including cumulonimbus mammatus, towering cumulus, altocumulus castellanus, standing lenticular, or rotor clouds are significant clouds.
+
+j.	Variable Amounts of Sky Cover.  The sky cover shall be considered variable if it varies by one or more of these reportable values, FEW, SCT, BKN, or OVC, during the period it is being evaluated.
+
+k.	Obscuration.  The portion of the sky (including higher clouds, the moon, or stars) hidden by weather phenomena either surface-based or aloft.  If 8/8ths of the sky is obscured the obscuration is considered a total obscuration.  If only a portion of the sky is obscured, the obscuration is considered a partial obscuration.  Surface-based obscurations shall have a height of 000 feet.  If this surface-based obscuration is total, the ceiling is the vertical visibility into the obscuration.
+
+3.	Sky Condition Standards
+
+Sky Condition Observing Standards.	Sky condition shall be evaluated at all stations with this capability.  Automated stations shall have the capability to evaluate sky condition from the surface to at least 12,000 feet.  Observers at manual stations shall evaluate all clouds and obscurations visible;the 12,000 foot restriction shall not apply.
+
+a.	Layer Opacity.  All cloud layers and obscurations shall be considered as opaque.
+
+b.	Surface.  The surface shall be the assigned field elevation of the station.  At stations where the field elevation has not been established, the surface shall be the ground elevation at the observation site.
+
+c.	Sky Cover.  Sky cover shall include any clouds or obscurations detected from the observing location.  See Table A-14.
+
+Table A-14.  Sky Cover Evaluation
+Angle of Advancing or Receding Layer Edge Eighths of Sky Cover Angular Elevation of Layer Surrounding Station  > 0 to 50 degrees 1 > 0 to 10 degrees  51 to 68 degrees 2 11 to 17 degrees  69 to 82 degrees 3 18 to 24 degrees  83 to 98 degrees 4 25 to 32 degrees  99 to 112 degrees 5 33 to 41 degrees  113 to 129 degrees 6 42 to 53 degrees  130 to < 179 degrees 7 54 to 89 degrees  180 degrees 8 90 degrees  d.	Stratification of Sky Cover. Sky cover shall be separated into layers with each layer containing clouds and/or obscurations (i.e., smoke, haze, fog, etc.) with bases at about the same height.
+
+e.	Evaluation of Interconnected Layers.  Clouds formed by the horizontal extension of swelling cumulus or cumulonimbus, that are attached to a parent cloud, shall be regarded as a separate layer only if their bases appear horizontal and at a different level from the parent cloud.  Otherwise, the entire cloud system shall be regarded as a single layer at a height corresponding to the base of the parent cloud.
+
+Table A-15 is a summary of the sky condition observing and reporting standards.
+
+Table A-15.  Summary of Sky Condition Observing and Reporting Standards
+Parameter Reporting Standard  Sky Cover (General) Sky condition shall be included in all reports.  Height/Number of layers Report a maximum of three layers at automated stations;otherwise, a maximum of six layers at manual stations.  Variable sky condition Not evaluated at automated stations.  Variable ceiling height Evaluated at all stations.  Ceiling height at a second location Evaluated at automated stations with multiple sensors.  Clout Types Not evaluated at automated stations.  
+4.	Coding the Sky Condition Group (NsNsNshshshs or VVhshshs or 	SKC/CLR)
+
+	Sky cover shall be included in all reports.  
+
+a.	Sky condition shall be coded in the format, NsNsNshshshs, where NsNsNs is the summation layer amount of sky cover and hshshs is the height of the layer.  There shall be no space between the summation layer amount of sky cover and the height of the layer.  Sky condition shall be coded in an ascending order up to the first overcast layer.  At mountain stations, if the layer is below station level, the height of the layer shall be coded as ///.
+
+b.	Vertical visibility shall be coded in the format, VVhshshs, where VV identifies an indefinite ceiling and hshshs is the vertical visibility into the indefinite ceiling.  There shall be no space between the VV identifier and the vertical visibility.  
+
+c.	Clear skies shall be coded in the format, SKC or CLR, where SKC is the abbreviation used by manual stations to indicate no layers are present and CLR is the abbreviation used by automated stations to indicate no layers are detected at or below 12,000 feet.
+
+	Each layer shall be separated from other layers by a space.  The sky cover for each layer reported shall be coded by using the appropriate reportable contraction from Table A-16.  The report of clear skies (SKC or CLR) are complete layer reports within themselves.  The abbreviations FEW, SCT, BKN, and OVC shall be followed, without a space, by the height of the layer.
+
+Table A-16.  Contractions for Sky Cover
+Reportable Contraction Meaning Summation Amount
+of Layer  VV Vertical Visibility 8/8  SKC or CLR1 Clear 0  FEW2 Few 1/8 — 2/8  SCT Scattered 3/8 — 4/8  BKN Broken 5/8 — 7/8  OVC Overcast 8/.8  1.     The abbreviation CLR shall be used at automated stations when no layers at or below 12,000 feet are reported/ the abbreviation SKC shall be used at manual stations when no layers are reported.
+2.    Any layer amount less than 1/8 is reported as FEW.  
+	The height of the base of each layer, hshshs, shall be coded in hundreds of feet above the surface using three digits in accordance with Table A-17.
+
+Table A-17.  Increments of Reportable Values of Sky Cover Height.
+Range of Height Values (feet) Reportable Increment (feet)  ≤ 5,000 To nearest 100  > 5,000 but ≤ 10,000 To nearest 500  > 10,000 To nearest 1,000  
+	At manual stations, cumulonimbus (CB) or towering cumulus (TCU) shall be appended to the associated layer.  For example, a scattered layer of towering cumulus at 1,500 feet would be coded “SCT015TCU” and would be followed by a space if there were additional higher layers to code.
+
+J.	Temperature/Dew Point Group (T"T"/T"dT"d).  
+
+1.	Standards for observing and reporting temperature and dew point
+
+	On a daily basis, temperature is one of the most widely monitored and disseminated weather parameters obtained from the surface observation.
+
+2.	Temperature and Dew Point Parameters
+
+a.	Temperature.  In general, the degree of hotness or coldness of the ambient air as indicated on some definite scale as measured by any suitable instrument.
+
+b.	Dew point.  The temperature to which a given parcel of air must be cooled at constant pressure and constant water-vapor content in order for saturation to occur.
+
+c.	Maximum temperature.  The highest temperature recorded/measured during a specified time period.
+
+d.	Minimum temperature.  The lowest temperature recorded/measured during a specified time period.
+
+3.	Temperature and Dew Point Observing Standards
+
+	The method of obtaining temperature and dew point varies according to the system in use at the station.  The data may be read directly from digital or analog readouts, or calculated from other measured values.
+
+a.	Temperature and Dew Point Sensor Range.  The range for the temperature and dew point sensors shall be determined by the responsible agency considering the local climatology.  See Table A-18.
+
+Table A-18.  Temperature and Dew Point Sensor Accuracy and Resolution (Co)
+Parameter Range Accuracy Resolution  
+Temperature -62 to -50
+-50 to +50
++50 to +54 ±1.1
+±0.6
+±1.1 0.1
+0.1
+0.1  
+Dew point -34 to -24
+-24 to -01
+-01 to +30 ±2.2
+±1.7
+±1.1 0.1
+0.1
+0.1  
+b.	Temperature.  Temperature shall be determined to the nearest tenth of a degree Celsius at all stations.
+
+c.	Dew Point.  At designated stations, dew point shall be determined to the nearest tenth of a degree Celsius with respect to water at all temperatures.
+
+d.	Maximum and Minimum Temperature.  At designated stations, maximum and minimum temperatures that occurred in the previous 6 hours shall be determined to the nearest tenth of a degree Celsius for the 0000, 0600, 1200, and 1800 UTC observations.  The maximum and minimum temperatures for the previous 24 hours shall be determined to the nearest tenth of a degree Celsius for the 0000 LST observation.
+
+4.	Temperature and Dew Point Reporting Standards
+
+a.	Resolution for Temperature and Dew Point.  The reporting resolution for the temperature and the dew point in the body of the report shall be whole degrees Celsius.  The reporting resolution for the temperature and dew point in the remarks section of the report shall be to the nearest tenth of a degree Celsius.  Dew point shall be calculated with respect to water at all temperatures.
+
+b.	Maximum and Minimum Temperatures.  At designated stations, maximum and minimum temperatures shall be reported as additive data in the 0000, 0600, 1200, and 1800 UTC and 0000LST observations.
+
+c.	Reporting Procedures.  Temperature and dew point are reported in the body of the report.  Temperature and dew point in the remarks section shall only be reported in METARs.  Maximum and minimum temperatures shall be reported in the remarks section of the METAR.  
+
+Table A-19 is a summary of the temperature and dew point observing and reporting standards.
+
+Table A-19.  Summary of Temperature and Dew Point Observing and Reporting Standards
+Parameter Section of Report   Body of METAR & SPECI Remarks of METAR  Temperature Reported in whole degrees Celsius at all stations. Reported to tenths of degrees Celsius at designated stations.  Dew Point Reported in whole degrees Celsius at designated stations. Reported to tenths of degrees Celsius at designated stations.  Maximum and Minimum Temperatures  Designated stations report at 0000, 0600, 1200, and 1800 UTC.  24-hour Maximum and Minimum Temperatures  Designated stations report at 0000 LST.  
+5.	Coding the Temperature/Dew Point Group ((T"T"/T"dT"d).  
+
+	The temperature shall be separated from the dew point with a solidus “/”.  The temperature and dew point shall be coded as two digits rounded to the nearest whole degree Celsius.  For example, a temperature of 0.3oC would be coded as “00”.  Sub-zero temperatures and dew points shall be prefixed with an M.  For example, a temperature of 4oC with a dew point of -2oC would be coded as “04/M02”;a temperature of -0.5oC would be coded as “M00”.
+	If the temperature is not available, the entire temperature/dew point group shall not be coded.  If the dew point is not available, the temperature shall be coded followed by a solidus “/” and no entry made for dew point.  For example, a temperature of 1.5oC and a missing dew point would be coded as “02/”.
+	
+
+K.	Pressure
+
+Atmospheric pressure is the force per unit area exerted by the atmosphere at a given point.  The term “barometric pressure” refers to the actual pressure sensor value.  The sensor value may be an altimeter setting, station pressure, or simply a direct pressure value without applied corrections depending on the type of sensor.
+
+1.	Pressure Parameters
+
+a.	Station pressure.  The atmospheric pressure at the designated station elevation.
+
+b.	Altimeter setting.  The pressure value to which an aircraft altimeter scale is set so that it will indicate the altitude above mean sea level of an aircraft on the ground at the location for which the value was determined.
+
+c.	Sea-level pressure.  A pressure value obtained by the theoretical reduction of barometric pressure to sea level.  Where the Earth"s surface is above sea level, it is assumed that the atmosphere extends to sea level below the station and that the properties of that hypothetical atmosphere are related to conditions observed at the station.
+
+2.	Pressure Observing Standards
+
+a.	Barometer Comparisons.  Each agency shall establish an agency standard barometer traceable to the standard of the National Institute of Standards and Technology.  Each agency shall also establish a system of routine barometer comparisons to determine corrections required to keep the station"s pressure sensors within the required accuracy.  See table A-20.
+
+Table A-20.  Units of Measure, Range, Accuracy and Resolution of Pressure Parameters
+Parameter Units of Measure Range Accuracy Resolution  Station Pressure Inches of Mercury 4 ±0.02 0.005 inch  Altimeter Setting Inches of Mercury 4 ±0.02 0.01 inch  Sea-Level Pressure Hectopascals 136 ±0.68 0.1 hectopascal  
+b.	Atmospheric Pressure.  The various pressure parameters shall be determined from the barometric pressure after appropriate corrections are applied.  The method used shall depend on the type of sensor and the available computational aids.  These aids may be systems that result in a direct readout of the desired parameter, pressure reduction calculators, or tables.  Designated stations may use constants to convert measured pressure to the desired pressure parameter.
+
+c.	Station Pressure.  Station pressure shall be determined by adjusting the corrected barometric pressure to compensate for the difference between the height of the barometer and the designated station elevation.
+
+d.	Sea-Level Pressure.  At designated stations, sea-level pressure shall be computed by adjusting the station pressure to compensate for the difference between the station elevation and sea level.  This adjustment shall be based on the station elevation and the 12-hour mean temperature at the station.  The 12-hour mean temperature shall be the average of the present ambient temperature and the ambient temperature 12 hours ago.
+
+		Stations within ±50 feet of sea level may be authorized by their agency to use a constant value to adjust station pressure to sea-level pressure.  Otherwise, stations shall use reduction ratios provided by their responsible agency to calculate sea-level pressure.
+
+e.	Altimeter setting.  The altimeter setting shall be determined either directly from an altimeter setting indicator or computed from the station pressure by applying a correction for the difference between the station elevation and field elevation in the standard atmosphere.  Where this difference is 30 feet or less, agencies may authorize the use of a constant correction.
+
+f.	Pressure Change (Rising/Falling).  At designated stations, the pressure calculated for each report shall be examined to determine if a pressure change is occurring.  If the pressure is rising or falling at a rate of at least 0.06 inch per hour and the pressure change totals 0.02 inch or more at the time of the observation, a pressure change remark shall be reported.
+
+g.	Pressure Tendency.  Designated stations shall include pressure tendency data in each 3- and 6-hourly report.  The pressure tendency includes two parts: the characteristic (an indication of how the pressure has been changing over the past three hours) and the amount of the pressure change in the past three hours.  The characteristic shall be based on the observed or recorded (barogram trace) changes in pressure over the past three hours.  The amount of pressure change is the absolute value of the change in station pressure or altimeter setting in the past three hours converted to tenths of hectopascals.
+
+3.	Pressure Reporting Standards
+
+a.	Rounding Pressure Values.  When computations of pressure values require that a number be rounded to comply with standards on reportable values, the number shall be rounded down to the next reportable value.  For example, an altimeter reading of 29.248 inches becomes 29.24 and a station pressure reading of 29.249 inches becomes 29.245.
+
+b.	Units of Measure.  Table A-21 lists the units of measure for pressure parameters.
+
+Table A-21.  Units of Measure of Pressure Parameters
+Parameter Units of Measure  Altimeter Setting Inches of Mercury  Sea-Level Pressure Hectopascals  Station Pressure Inches of Mercury  
+c.	Altimeter Setting.  Altimeter setting shall be reported in all reports.
+
+d.	Sea-Level Pressure.  At designated stations, sea-level pressure shall be included in the remarks section of all METARs.
+
+e.	Remarks.  At designated stations, the pressure change remarks (PRESRR or PRESFR) shall be reported if occurring at the time of observation.  The pressure tendency group shall only be included in 3- and 6-hourly reports.
+
+4.	Summary of Pressure Observing and Reporting Standards
+
+Table A-22 is a summary of the pressure observing and reporting standards.
+
+Table A-22.  Summary of Pressure Observing and Reporting Standards
+Parameter Reporting Standard  Altimeter Setting Reported in inches of mercury at all stations.  Sea-level pressure Reported in hectopascals at designated stations.  Remarks:
+Rising Rapidly
+Falling Rapidly 
+Reported at designated stations.  Pressure Tendency Reported at designated stations.  
+5.	Coding the Altimeter Setting Group (APnPnPnPn)
+
+	The altimeter group always starts with an A (the international indicator for altimeter in inches of mercury).  The altimeter shall be coded as a four digit group immediately following the A using the tens, units, tenths, and hundredths of inches of mercury.  The decimal point is not coded.  
+
+	Note: The WMO standard is to report the altimeter in whole hectopascals.  In this case, the altimeter setting group will be begin with a Q instead of an A.
+
+	
+
+II.	CODING THE REMARKS (RMK) OF THE METAR/SPECI 
+	
+
+	Remarks shall be included in all METAR and SPECI, if appropriate.
+
+	Note: The United States does not report remarks in the same mannr as the WMO standard.
+
+	Remarks shall be separated from the body of the report by a space and the contraction RMK.  If there are no remarks, the contraction RMK is not required.
+
+	METAR/SPECI remarks fall into 2 categories: (1) Automated, Manual, and Plain Language, and (2) Additive and Maintenance Data.
+
+	Remarks shall be made in accordance with the following:
+
+al.	Where plain language is called for, authorized contractions, abbreviations, and symbols should be used to conserve time and space.  However, in no case should an essential remark, of which the observer is aware, be omitted for the lack of readily available contractions.  In such a case, the only requirement is that the remark be clear.  
+
+b.	Time entries shall be made in minutes past the hour if the time reported occurs during the same hour the observation is taken.  Hours and minutes shall be used if the hour is different, or this handbook prescribes the use of the hour and minutes.  
+
+c.	Present weather coded in the body of the report as VC may be further described, i.e., direction from the station, if known.  Weather phenomena beyond 10 statute miles of the point(s) of observation shall be coded as distant (DSNT) followed by the direction from the station.  For example, precipitation of unknown intensity within 10 statute miles east of the station would be coded as “VCSH E”;lightning 25 statute miles west of the station would be coded as “LTG DSNT W”.
+
+d.	Distance remarks shall be statute miles except for automated lightning remarks which are in nautical miles.
+
+e.	Movement of clouds of weather, if known, shall be coded with respect to the direction toward which the phenomena is moving.  For example, a thunderstorm moving toward the northeast would be coded as “TS MOV NE”.
+
+f.	Directions shall use the eight points of the compass coded in clockwise order.
+
+g.	Insofar as possible, remarks shall be entered in the order they are presented in the following paragraphs.
+
+A.	Automated, Manual, and Plain Language Remarks
+
+	These remarks generally elaborate on parameters reported in the body of the report.  Automated and manual remarks may be generated either by an automated or manual station.  Plain language remarks are only provided from manual stations.
+
+a.	Volcanic Eruptions (Plain Language).  Volcanic eruptions shall be coded.  
+		The remark shall be plain language and contain the following, if known:
+
+(1)	Name of volcano.
+
+(2)	Latitude and longitude or the direction and the approximate distance from the station.
+
+(3)	Date/Time (UTC) of the eruption.
+
+(4)	Size description, approximate height, and direction of movement of the ash cloud.
+
+(5)	Any other pertinent data about the eruption.
+
+For example, a remark on a volcanic eruption would look like the following:
+
+MT. AUGUSTINE VOLCANO 70 MILES SW ERUPTED 231505 LARGE ASH CLOUD EXTENDING TO APRX 30000 FEET MOVING NE.
+
+Pre-eruption volcanic activity shall not be coded.  Pre-eruption refers to unusual and/or increasing volcanic activity which could presage a volcanic eruption.
+
+b.	Funnel Cloud (Tornadic activity_B/E(hh)mm_LOC/DIR_(MOV)).  At manual station, tornadoes, funnel clouds, or waterspouts shall be coded in the format, TORNADIC ACTIVITY_B/E(hh)mm_LOC/DIR_(MOV), where TORNADO, FUNNEL CLOUD, or WATERSPOUT identifies the specific tornadic activity, B/E denotes the beginning and/or ending time, (hh)mm is the time of occurrence (only the minutes are required if the hour can be inferred from the time of the report), LOC/DIR is the location and/or direction of the phenomena from the station, and MOV is the movement, if known. from the station.  Tornadic activity shall be coded as the first remark after the “RMK” entry.  For example, “TORNADO B13 6 NE” would indicate that a tornado, which began at 13 minutes past the hour, was 6 statute miles northeast of the station.
+
+c.	Type of Automated Station (AO1 or AO2).  AO1 or AO2 shall be coded in all METAR/SPECI from automated stations.  Automated stations without a precipitation discriminator shall be identified as AO1;automated stations with a precipitation discriminator shall be identified as AO2.
+
+d.	Peak Wind (PK_WND_dddff(f)/(hh)mm).  The peak wind shall be coded in the format, PK_WND_dddff(f)/(hh)mm of the next METAR, where PK_WND is the remark identifier, ddd is the direction of the peak wind, ff(f) is the peak wind speed since the last METAR, and (hh)mm is the time of occurrence (only the minutes are required if the hour can be inferred from the report time).  There shall be a space between the two elements of the remark identifier and the wind direction/speed group;a solidus “/” (without spaces) shall separate the wind direction/speed group and the time.  For example, a peak wind of 45 knots from 280 degrees that occurred at 15 minutes past the hour would be coded “PK WND 28045/15”.
+
+e.	Wind Shift (WSHFT_(hh)mm).  A wind shift shall be coded in the format WSHFT_(hh)mm, where WSHFT is the remark identifier and (hh)mm is the time the wind shift began (only the minutes are required if the hour can be inferred from the report time).  The contraction FROPA may be entered following the time if it is reasonably certain that the wind shift was the result of a frontal passage.  There shall be a space between the remark identifier and the time and, if applicable, between the time and the frontal passage contraction.  For example, a remark reporting a wind shift accompanied by a frontal passage that began at 30 minutes after the hour would be coded as “WSHFT 30 FROPA”.
+
+f.	Tower or Surface Visibility (TWR_VIS_vvvvv or SFC_VIS_vvvvv).  Tower visibility or surface visibility shall be coded in the formats, TWR_VIS_vvvvv or SFC_VIS_vvvvv, respectively, where vvvvv is the observed tower/surface visibility value.  A space shall be coded between each of the remark elements.  For example, the control tower visibility of 1 1/2 statute miles would be coded “TWR VIS 1 1/2”.
+
+g.	Variable Prevailing Visibility (VIS_vnvnvnvnvnVvxvxvxvxvx).  Variable prevailing visibility shall be coded in the format VIS_vnvnvnvnvnVvxvxvxvxvx where VIS is the remark identifier, vnvnvnvnvn is the lowest visibility evaluated, V denotes variability between two values, and vxvxvxvxvx is the highest visibility evaluated.  There shall be one space following the remark identifier;no spaces between the letter V and the lowest/highest values.  For example, a visibility that was varying between 1/2 and 2 statute miles would be coded “VIS 1/2V2”.
+
+h.	Sector Visibility (VIS_[DIR]_vvvvv){Plain Language].  The sector visibility shall be coded in the format VIS_[DIR]_vvvvv, where VIS is the remark identifier, [DIR] defines the sector to 8 points of the compass, and vvvvv is the sector visibility in statute miles, using the appropriate set of values in Table A-3.  For example, a visibility of 2 1/2 statute miles in the northeastern octant would be coded “VIS NE 2 1/2”.
+
+i.	Visibility At Second Location (VIS_vvvvv_[LOC]).  At designated automated stations, the visibility at a second location shall be coded in the format VIS_vvvvv_[LOC], where VIS is the remark identifier, vvvvv is the measured visibility value, and [LOC] is the specific location of the visibility sensor(s) at the station.  This remark shall only be generated when the condition is lower than that contained in the body of the report.  For example, a visibility of 2 1/2 statute miles measured by a second sensor located at runway 11 would be coded “VIS 2 1/2 RWY11”. 
+
+j.	Lightning (Frequency_LTG(type)_[LOC]).
+
+(1)	When lightning is observed at a manual station, the frequency, type of lightning, and location shall be reported.  The remark shall be coded in the format Frequency_LTG(type)_[LOC].  The contractions for the type and frequency of lightning shall be based on Table A-22.  For example, “OCNL LTGICCG OHD”, “FRQ LTG VC”, or “LTG DSNT W”.
+
+(2)	When lightning is detected by an automated system:
+
+(a)	Within 5 nautical miles of the Airport Location Point (ALP), it will be reported as TS in the body of the report with no remarks.
+
+(b)	Between 5 and 10 nautical miles of the ALP, it will be reported as VCTS in the body of the report with no remarks;
+
+(c)	Beyond 10 but less than 30 nautical miles of the ALP, it will be reported in remarks only as LTG DSNT followed by the direction from the ALP. 
+
+Table A-22.  Type and Frequency of Lightning
+Type of Lightning  Type Contraction Definition  Cloud-ground CG Lightning occurring between cloud and ground  In-cloud IC Lightning which takes place within the cloud.  Cloud-cloud CC Streaks of lightning reaching from one cloud to another.  Cloud-air CA Streaks of lightning which pass from a cloud to the air, but do not strike the ground.  Frequency of Lightning  Frequency Contraction Definition  Occasional OCNL Less than 1 flash/minute.  Frequent FRQ About 1 to 6 flashes/minute.  Continuous CONS More than 6 flashes/minute.  
+k.	Beginning and Ending of Precipitation (w"w"B(hh)mmE(hh)mm).  At designated stations, the beginning and ending of precipitation shall be coded in the format, w’w’B(hh)mmE(hh)mm, where w"w" is the type of precipitation, B denotes the beginning, E denotes the ending, and (hh)mm is the time of occurrence (only the minutes are required if the hour can be inferred from the report time).  There shall be no spaces between the elements.  The coded remarks are not required in SPECI and should be reported in the next METAR.  Intensity qualifiers shall not be coded.  For example, if rain began at 0005, ended at 0030, and snow began at 0020, and ended at 0055, the remarks would be coded “RAB05E30SNB20E55”.  If the precipitation were showery, the remark would be coded “SHRAB05E30SHSNB20E55”.
+
+l.	Beginning and Ending of Thunderstorms (TSB(hh)mmE(hh)mm).  The beginning and ending of thunderstorm(s) shall be coded in the format, TSB(hh)mmE(hh)mm, where TS indicated thunderstorm, B denotes the beginning, E denotes the ending, and (hh)mm is the time of occurrence (only the minutes are required if the hour can be inferred from the report time).  There shall be no spaces between the elements.  For example, if a thunderstorm began at 0159 and ended at 0230, the remark would be coded “TBS0159E30”.
+
+m.	Thunderstorm Location (TS_LOC_(MOV_DIR)) [Plain Language].  Thunderstorm(s) shall be coded in the format, TS_LOC_((MOV_DIR), where TS identifies the thunderstorm activity, LOC is the location of the thunderstorm(s) from the station, and MOV_DIR is the movement with direction, if known.  For example, a thunderstorm southeast of the station and moving toward the northeast would be coded “TS SE MOV NE”.
+
+n.	Hailstone Size (GR_[size])[Plain Language].  At designated stations, the hailstone size shall be coded in the format, GR_[size], where GR is the remark identifier and [size] is the diameter of the largest hailstone.  The hailstone size shall be coded in 1/4 inch increments.  For example, “GR 1 3/4” would indicate that the largest hailstones were 1 3/4 inches in diameter.  If GS is coded in the body of the report, no hailstone size remark is required.
+
+o.	Virga (VIRGA_(DIR)) [Plain Language].  Virga shall be coded in the format, VIRGA_(DIR) where VIRGA is the remark identifier and DIR is the direction from the station.  The direction of the phenomena from the station is optional, e.g., “VIRGA” or “VIRGA SW”.
+
+p.	Variable Ceiling Height (CIG_hnhnhnVhxhxhx).  The variable ceiling height shall be coded in the format, CIG_hnhnhnVhxhxhx, where CIG is the remark identifier, hnhnhn is the lowest ceiling height evaluated, V denotes variability between two values, and hxhxhx is the highest ceiling height evaluated.  There shall be one space following the remark identifier;no spaces between the letter V and the lowest/ highest ceiling values.  For example, “CIG 005V010” would indicate a ceiling that was varying between 500 and 1,000 feet.
+
+q.	Obscurations (w"w"_[NsNsNs]hshshs) [Plain Language].  Obscurations (surface-based or aloft) shall be coded in the format, w"w"_[NsNsNs]hshshs, where w"w" is the weather causing the obscuration at the surface or aloft, NsNsNs, is the applicable sky cover amount of the obscurations aloft (FEW, SCT, BKN, OVC) or at the surface (FEW, SCT, BKN), and hshshs is the applicable height.  Surface-based obscurations shall have a height of “000”.  There shall be a space separating the weather causing the obscuration and the sky cover amount;there shall be no space between the sky cover amount and the height.  For example, fog hiding 3-4 oktas of the sky would be coded “FG SCT000”;a broken layer at 2,000 feet composed of smoke would be coded “FU BKN 020”.
+
+r.	Variable Sky Condition (NsNsNs(hshshs)_V_NsNsNs) [Plain Language].  The variable sky condition remark shall be coded in the format, NsNsNs(hshshs)_V_NsNsNs, where NsNsNs(hshshs) and NsNsNs identifies the two operationally significant sky conditions and V denotes the variability between the two ranges.  If there are several layers with the same sky condition amount, the layer height (hshshs) of the variable layer shall be coded.  For example, a cloud layer at 1,4000 feet that is varying between broken and overcast would be coded “BKN014 V OVC”.  
+
+s.	Significant Cloud Types [Plain Language].  The significant cloud type remark shall be coded in all reports in the following manner:
+
+(1)	Cumulonimbus or Cumulonimbus Mammatus (CB or CBMAM_LOC_(MOV_DIR).  Cumulonimbus or cumulonimbus mammatus, as appropriate, (for which no thunderstorm is being reported) shall be coded in the format, CB or CBMAM_LOC_(MOV_DIR), where CB or CBMAM is the cloud type, LOC is the direction from the station, and MOV_DIR is the movement with direction (if known).  The cloud type, location, movement, and direction entries shall be separated from each other with a space.  For example, a CB up to 10 statute miles west of the station moving toward the east would be coded “CB W MOV E”.  If the CB was more than 10 statute miles to the west, the remark would be coded “CB DSNT W”.  
+
+(2)	Towering Cumulus (TCU_[DIR]).  Towering cumulus clouds shall be coded in the format, TCU_[DIR], where TCU is the cloud type and DIR is the direction from the station.  The cloud type and direction entries shall be separated by a space.  For example, a towering cumulus cloud up to 10 statute miles west of the station would be coded “TCU W”.
+
+(3)	Altocumulus castellanus (ACC_[DIR]).  Altocumulus castellanus shall be coded in the format, ACC_[DIR], where ACC is the cloud type and DIR is the direction from the station.  The cloud type and direction entries shall be separated by a space.  For example, an altocumulus cloud 5 to 10 statute miles northwest of the station would be coded “ACC NW”. 
+
+(4)	Standing lenticular or Rotor clouds (CLD_[DIR]).  Stratocumulus (SCSL), altocumulus (ACSL), or cirrocumulus (CCSL), or rotor clouds shall be coded in the format, CLD_[DIR], where CLD is the cloud type and DIR is the direction from the station.  The cloud type and direction entries shall be separated by a space.  For example, altocumulus standing lenticular clouds observed southwest through west of the station would be coded “ACSL SW-W”;an apparent rotor cloud 5 to 10 statute miles northeast of the station would be coded “APRNT ROTOR CLD NE”;and cirrocumulus clouds south of the station would be coded “CCSL S”.
+
+t.	Ceiling Height at Second Location (CIG_hhh_[LOC]). At designates stations, the ceiling height at a second location shall be coded in the format, CIG_hhh_[LOC], where CIG is the remark identifier.  hhh is the measured height of the ceiling, and [LOC] is the specific location of the ceilometer(s) at the station.  This remark shall only be generated when the ceiling is lower than that contained in the body of the report.  For example, if the ceiling measured by a second sensor located at runway 11 is broken at 200 feet, the remark would be “CIG 002 RWY11”.  
+
+u.	Pressure Rising or Falling Rapidly (PRESRR/PRESFR).  At designated stations, when the pressure is rising or falling rapidly at the time of the observation, the remark PRESRR (pressure rising rapidly) or PRESFR (pressure falling rapidly) shall be included in the report.
+
+v.	Sea-Level Pressure (SLPppp).  At designated stations, the sea-level pressure shall be coded in the format SLPppp, where SLP is the remark identifier and ppp is the tens, units, and tenths of the sea-level pressure in hectopascals.  For example, a sea-level pressure of 998.2 hectopascals would be coded as “SLP982”.  For a METAR, if sea-level pressure is not available, it is coded as “SLPNO”. 
+
+w.	Aircraft Mishap (ACFT_MSHP) [Plain Language].  If a report is taken to document weather conditions when notified of an aircraft mishap, the remark ACFT_MSHP shall be coded in the report but not transmitted.  The act of non-transmission shall be indicated by enclosing the remark in parentheses in the record, i.e., “ACFT MSHP)”.
+
+x.	No SPECI Reports Taken (NOSPECI) [Plain Language].  At manual stations where SPECI"s are not taken, the remark NOSPECI shall be coded to indicate that no changes in weather conditions will be reported until the next METAR.
+
+y.	Snow Increasing Rapidly (SNINCR_[inches-hour/inches on ground]).  At designated stations, the snow increasing rapidly remark shall be reported, in the next METAR, whenever the snow depth increases by 1 inch or more in the past hour.  The remark shall be coded in the format, SNINCR_[inches-hour/inches on ground], where SNINCR is the remark indicator, inches-hour is the depth increase in the past hour, and inches on ground is the total depth of snow on the ground at the time of the report.  The depth increase in the past hour and the total depth on the ground are separated from each other by a solidus “/”.  For example, a snow depth increase of 2 inches in the past hour with a total depth on the ground of 10 inches would be coded “SNINCR2/10”.
+
+z.	Other Significant Information [Plain Language].  Agencies may add to a report other information significant to their operations, such as information on fog dispersal operations, runway conditions, “FIRST” or “LAST” report from station, etc.
+
+B.	Additive Coded and Automated Maintenance Data.  
+
+Additive data groups are only reported at designated stations.  The maintenance data groups are only reported from automated stations.
+
+a.	Precipitation
+
+(1)	Amount of Precipitation.  The amount of liquid precipitation shall be coded as the depth of precipitation that accumulates in an exposed vessel during the time period being evaluated.  The amount of freezing or frozen precipitation shall be the water equivalent of the solid precipitation accumulated during the appropriate time period.
+
+(2)	Units of Measure for Precipitation.  Precipitation measurements shall be in inches, tenths of inches, or hundredths of inches depending on the precipitation being measured.  See Table A-23.
+
+Table A-23.  Units of Measure for Precipitation
+Type of Measurement Unit of Measure  Liquid Precipitation 0.01 inch  Water Equivalent of Solid Precipitation 0.01  Solid Precipitation 0.1 inch  Snow Depth 1.0 inch  
+(3)	Depth of Freezing or Frozen Precipitation.  The depth of freezing and/or frozen precipitation shall be the actual vertical depth of the precipitation accumulated on a horizontal surface during the appropriate time period.  If snow falls, melts, and refreezes, the depth of ice formed shall be included in the measurement.
+
+(a)	Hourly Precipitation Amount (Prrrr).  At designated automated stations, the hourly precipitation amount shall be coded in the format, Prrrr, where P is the group indicator and rrrr is the water equivalent of all precipitation that has occurred since the last METAR.  The amount shall be coded in hundredths of an inch.  For example, “P0009” would indicate 9/100 of an inch of precipitation fell in the past hour;“P0000” would indicate that less than 1/100 of an inch of precipitation (considered a trace) fell in the past hour.  
+
+	This group is omitted if no precipitation occurred since the last METAR.
+
+(b)	3- and 6-hour Precipitation (6RRRR).  At designated stations, the 3- and 6-hourly precipitation group shall be coded in the format 6RRRR, where 6 is the group indicator and RRRR is the amount of precipitation.  The amount of precipitation (water equivalent) accumulated in the past 3 hours shall be reported in the 3-hourly report;the amount accumulated in the past 6 hours shall be reported in the 6-hourly report.  The amount of precipitation shall be coded in inches, using the tens, units, tenths and hundredths digits of the amount.  When an indeterminable amount of precipitation has occurred during the period, 6RRRR shall be coded 6////.  For example, 2.17 inches of precipitation would be coded “60217”.  A trace shall be coded “60000”.
+
+(c)	24-Hour Precipitation Amount (7R24R24R24R24).  At designated stations, the 24-hour precipitation amount shall be coded in the format, 7R24R24R24R24, where 7 is the group indicator and R24R24R24R24 is the 24-hour precipitation amount.  The 24-hour precipitation amount shall be included in the 1200 UTC (or other agency designated time) report whenever more than a trace of precipitation (water equivalent) has fallen in the preceding 24 hours.  The amount of precipitation shall be coded by using the tens, units, tenths, and hundredths of inches (water equivalent) for the 24-hour period.  If more than a trace (water equivalent) has occurred and the amount cannot be determined, the group shall be coded 7////.  For example, 1.25 inches of precipitation (water equivalent) in the past 24 hours shall be coded “70125”.
+
+(d)	Snow Depth on Ground (4/sss).  At designated stations, the total snow depth on the ground group shall be coded in the 0000 and 1200 UTC observation whenever there is more than a trace of snow on the ground.  It shall be coded in the 0600 and 1800 UTC observation if there is more than a trace of snow on the ground and more than a trace of precipitation (water equivalent) has occurred within the past 6 hours.  The remark shall be coded in the format 4/sss, where 4/ is the group indicator and sss is the snow depth in whole inches using three digits.  For example, a snow depth of 21 inches shall be coded as “4/021”.
+
+(e)	Water Equivalent of Snow on Ground (933RRR).  At designated stations, the water equivalent of snow on the ground shall be coded each day, in the 1800 UTC report, if the average snow depth is 2 inches or more.  The remark shall be coded in the format, 933RRR, where 933 is the group indicator and RRR is the water equivalent of snow, i.e., snow, snow pellets, snow grains, ice pellets, ice crystals, and hail, on the ground.  The water equivalent shall be coded in tens, units, and tenths of inches, using three digits.  If the water equivalent of consists entirely of hail, the group shall not be coded.  A water equivalent of 3.6 inches of snow would be coded as “933036”;a water equivalent of 12.5 would be coded as “933125”.
+b.	Cloud Types (8/CLCMCH).  At designated stations, the group, 8/CLCMCH, shall be reported and coded in 3- and 6-hourly reports when clouds are observed.  The predominant low cloud (CL), middle cloud (CM), and high cloud (CH), shall be identified in accordance with the WMO International Cloud Atlas, Volumes I and II, or the WMO Abridged International Cloud Atlas or agency observing aids for cloud identification.  A 0 shall be coded for the low, middle, or high cloud type if no cloud is present in that classification. A solidus “/” shall be coded for layers above an overcast.  If no clouds are observed due to clear skies, the cloud type group shall not be coded.  For example, a report of “8/6//” would indicate an overcast layer of stratus clouds;a report of “8/903” would indicate cumulonimbus type low clouds, no middle clouds, and dense cirrus high clouds.  
+
+c.	Duration of Sunshine (98mmm).  At sunshine duration reporting sites, the duration of sunshine that occurred the previous calendar day shall be coded in the 0800 UTC report.  If the station is closed at 0800 UTC, the group shall be coded in the first 6-hourly METAR after the station opens.  The duration of sunshine shall be coded in the format, 98mmm, where 98 is the group indicator and mmm is the total minutes of sunshine.  The minutes of sunshine shall be coded using the hundreds, tens, and units digits.  For examples, 96 minutes of sunshine would be coded “98096”.  If no sunshine occurred, the group would be coded “98000”.
+
+d.	Hourly Temperature and Dew Point (TsnT"T"T"snT"dT"dT"d).  At designated stations, the hourly temperature and dew point group shall be coded to the tenth of a degree Celsius in the format, TsnT"T"T"snT"dT"dT"d where T is the group indicator, sn is the sign of the temperature, T"T"T" is the temperature, and T"dT"dT"d is the dew point.  The sign of the temperature and dew point shall be coded as 1 if the value is below 0oC and 0 if the value is 0oC or higher.  The temperature and dew point shall be reported in tens, units, and tenths of degree Celsius.  There shall be no spaces between the entries.  For example, a temperature of 2.6oC and dew point of -1.5oC would be reported in the body of the report as “03/M01” and the TsnT"T"T"snT"dT"dT"d group as “T00261015”.  If dew point is missing, report the temperature;if the temperature is missing, do not report the temperature/dew point group.
+
+e.	6-Hourly Maximum Temperature (1snTxTxTx).  At designated stations, the 6-hourly maximum temperature group shall be coded in the format, 1snTxTxTx, where 1 is the group indicator, sn is the sign of the temperature, TxTxTx is the maximum temperature in tenths of degrees Celsius using three digits.  The sign of the maximum temperature shall be coded as 1 if the maximum temperature is below 0oC and 0 if the maximum temperature is 0oC or higher.  For example, a maximum temperature of -2.1oC would be coded “11021”;14.2oC would be coded “10142”.
+
+f.	6-Hourly Minimum Temperature (2snTnTnTn).  At designated stations, the 6-hourly minimum temperature group shall be coded in the format, 2snTnTnTn, where 2 is the group indicator, sn is the sign of the temperature, TnTnTn is the minimum temperature in tenths of degrees Celsius using three digits.  The sign of the minimum temperature shall be coded as 1 if the minimum temperature is below 0oC and 0 if the minimum temperature is 0oC or higher.  For example, a minimum temperature of -0.1oC would be coded “21001”;1.2oC would be coded “20012”.
+g.	24-hour Maximum and Minimum Temperature (4snTxTxTxsnTnTnTn).  At designated stations, the 24-hour maximum temperature and the 24-hour minimum temperature shall be coded in the format, 4snTxTxTxsnTnTnTn, where 4 is the group indicator, sn is the sign of the temperature, TxTxTx is the maximum 24-hour temperature, and TnTnTn is the 24-hour minimum temperature.  TxTxTx and TnTnTn shall be coded in tenths of degrees Celsius using three digits.  The sign of the maximum or minimum temperature shall be coded as 1 if it is below 0oC and 0 if it is 0oC or higher.  For example, a 24-hour maximum temperature of 10oC and a 24-hour minimum temperature of -1.5oC would be coded “401001015”;a 24-hour maximum temperature of 11.2oC and a 24-hour minimum temperature of 8.4oC would be coded as “401120084”.
+
+h.	3-Hourly Pressure Tendency (5appp).  At designated stations, the 3-hourly pressure tendency group shall be coded in the format, 5appp, where 5 is the group indicator, a is the character of pressure change over the past 3 hours and ppp is the amount of barometric change in tenths of hectopascals.  See table A-24.  The amount of barometric change shall be coded using the tens, units, and tenths digits.  For example, a steady increase of 3.2 hectopascals in the past three hours would be coded “52032”.
+
+Table A-24.  Characteristics of Barometer Tendency
+Primary Requirement Description Code Figure    Increasing, then decreasing. 0  Atmospheric pressure now Increasing, then steady, or increasing then increasing more slowly. 1  higher than 3 hours ago. Increasing steadily or unsteadily. 2   Decreasing or steady, then increasing;or increasing then increasing more rapidly. 3  Atmospheric   Increasing, then decreasing. 0  Pressure now same as 3 hours Steady. 4  ago. Decreasing, then increasing. 5    Decreasing, then increasing. 5  Atmospheric pressure now Decreasing then steady;or decreasing then decreasing more slowly. 6  lower than 3 hours ago. Decreasing steadily or unsteadily. 7   Steady or increasing, then decreasing;or decreasing then decreasing more rapidly. 8  i.	Sensor Status Indicators.  Sensor status indicators should be reported as indicated below:
+
+(1)	if the Runway Visual Range should not be reported but is missing, RVRNO shall be coded.
+
+(2)	when automated stations are equipped with a present weather identifier and that sensor is not operating, the remark PWINO shall be coded.
+
+(3)	when automated stations are equipped with a tipping bucket rain gauge and that sensor is not operating, PNO shall be coded. 
+
+(4)	when automated stations are equipped when a freezing rain sensor and that sensor is not operating, the remark FZRANO shall be coded.
+
+(5)	when automated stations are equipped with a lightning detection system and that sensor is not operating, the remark TSNO shall be coded.
+
+(6)	when automated stations are equipped with a secondary visibility sensor and that sensor is not operating, the remark VISNO_LOC shall be coded.
+
+(7)	when automated stations are equipped with a secondary ceiling height indicator and that sensor is not operating, the remark CHINO_LOC shall be coded.
+
+j.	Maintenance Indicator.  A maintenance indicator sign, $, shall be coded when an automated system detects that maintenance is needed on the system.  
+	
+
+III.	INTERNATIONAL FORMAT FOR CODING REMARKS SECTION
+
+Supplementary Information groups  
+
+	For international dissemination, the section on supplementary information is used only to report available information on wind shear in the lower layers and recent weather phenomena of operational significance.
+
+REw"w" - Recent weather phenomena of operational significance.  
+
+	Information on recent weather is given by the indicator letters RE followed by the appropriate abbreviations contained in Table A-10 if the following weather phenomena were observed during the hour since the last routine report but not at the time of observation:
+
+	—	Freezing precipitation
+	—	Moderate or heavy rain or snow
+	—	Moderate or heavy ice pellets, hail, small hail or snow pellets;
+	—	Moderate or heavy blowing snow;
+	—	Sandstorm or duststorm;
+	—	Thunderstorm;
+	—	Volcanic ash.
+
+	Weather is only included as recent weather if the same phenomenon (disregarding character of precipitation) of the same or greater intensity is not reported as present weather.  For example, a heavy rainshower 20 minutes before the time of observation, with moderate rain at the time of observation is coded RERA.  However, moderate rain 20 minutes before the time of observation with a moderate rainshower at the time of observation is not reported as recent weather.
+
+BLC{(AAL(WS TKOF RWYDRDR,  and/or,WS LDG RWYDRDR))- Wind Shear
+
+	Recent information on the existence of wind shear along the take-off path or approach path between runway level and 500 meters (1600 feet) significant to aircraft operations is reported whenever available and local circumstances so warrant, using either or both of the two sets of these groups.  DRDR is encoded for the runway direction concerned in the same manner as for runway visibility.
+
+Remarks
+
+	Other supplementary information, such as remarks, will be added in accordance with regional decisions.  Remarks section will usually be preceded by the contraction RMK.  Bermuda is reporting the ceiling to be at 3000 feet and rainshowers of unknown intensity to the east and southwest of the station.
+
+Trend forecasts  -
+
+	Trend forecasts are included when a change, required to be indicated in accordance with the governing criteria for significant changes, is expected for one or several of the observed elements — wind, horizontal visibility, present weather, clouds, or vertical visibility.  The governing criteria for issuing trend forecasts is specified in publication WMO - No. 49 - Technical Regulations.  
+
+TTTTT  -  Change Indicator.  
+
+	One of the following change indicators will be used for TTTTT:  BECMG or TEMPO.
+
+TTGGgg  -  Time Group.
+
+	The time group GGgg is followed by one of the letter indicators FM (from), or TL (until) or AT (at) for TT to indicate the beginning (FM) or the end (TL) of a forecast change, or the time (AT) at which a specific forecast conditions(s) is(are) expected. (in hours and minutes for GGgg) the change is expected to occur.  
+
+ß	BECMG  -  Becoming
+
+The change indicator BECMG is used to describe expected changes to meteorological conditions which reach or pass specified threshold criteria at either a regular or irregular rate.  These changes are indicated as follows:
+
+	(a)	When the change is forecast to begin and end wholly within the trend forecast period: by the change indicator BECMG followed by the letter indicators FM and TL respectively with their associated time groups, to indicate the beginning and end of the change.  For example, a trend forecast period from 1000 to 1200 UTC is in the form BECMG FM1030 TL1130;
+
+	(b)	When the change is forecast to occur from the beginning of the trend forecast period and be completed before the end of that period: by the change indicator BECMG followed only by the letter indicator TL and its associated time group (the letter indicator FM and its associated time group being omitted), to indicate the end of the change.  For example:  BECMG TL1100;
+
+	(c)	When the change is forecast to begin during the trend forecast period and be completed at the end of that period:  by the change indicator BECMG followed only the letter indicator FM and its associated time group (the letter indicator TL and its associated time group being omitted), to indicate the beginning of the change.  For example: BECMG FM1100.
+
+	(d)	When the change is forecast to occur at a specific time during the trend forecast period:  by the change indicator BECMG followed by the letter indicator AT and its associated time group, to indicate the time of the change.  For example:  BECMG AT1100.
+
+	(e)	When changes are forecast to take place at midnight UTC, the time shall be indicated:
+
+		(i)	By 0000 when associated with FM and AT;
+
+		(ii)	By 2400 when associated with TL.
+
+	(f)	When the change is forecast to commence at the beginning of the trend forecast period and be completed by the end of that period, or when the change is forecast to occur within the trend forecast period but the time of the change is uncertain (possibly shortly after the beginning of the trend forecast period, or midway or near the end of that period), the change shall be indicated by only the change indicator BECMG (letter indicator(s) FM and TL or AT and associated time group(s) being omitted).
+
+ß	TEMPO  -  Temporary
+
+	This change indicator is used to describe expected temporary fluctuations to meteorological conditions which reach or pass specified threshold criteria and last for a period of less than one hour in each instance and in the aggregate cover less than half of the forecast period during which the fluctuations are expected to occur.  The time indicators FM and TL, with the associated time group, is used with TEMPO in the same manner as used with BECMG in a, b, c and f above.
+
+	Following the change groups TTTTT (TTGGgg), only the group(s) referring to the element(s) which is(are) forecast to change significantly shall  be included.  However, in the case of significant changes of the clouds, all cloud groups including any significant layer(s) or masses not expected to change, shall be included.
+
+	Inclusion of significant forecast weather w"w" using appropriate abbreviations from Table A-10 is restricted to indicate the onset, cessation, or change in intensity of the following weather phenomena
+
+	ß	Freezing precipitation;
+	ß	Moderate or heavy rain, snow, ice pellets, hail, small hair, snow pellets, rain and snow mixed;
+	ß	Drifting dust, sand, or snow.
+	ß	Blowing dust, sand, or snow (including duststorm or sandstorm);
+	ß	Thunderstorm (with rain, ice pellets, hail or soft hail, or snow, or combination thereof);
+	ß	Squall;
+	ß	Funnel cloud (tornado or waterspout);
+	ß	Other weather phenomena given in Table A-10 which are expected to cause a significant change in visibility.
+
+NSW	-  No Significant Weather
+
+	To indicate the end of significant weather phenomena w"w", the abbreviation NSW will replace w"w".
+
+SKC	-  Sky Clear
+
+	To indicate a change to clear sky, the abbreviation SKC will replace NsNsNshshshs or VVhshshs.
+
+NOSIG  -  No Significant change
+
+	When none of the elements are expected to change significantly as to require a change to be indicated, this shall be indicated by the code word NOSIG.  NOSIG (no significant change) is used to indicate meteorological conditions which do not reach or pass specified threshold criteria.
+
+	EXCEPTION:	The U.S. will not use the trend forecast.
+
+	The following shows examples of  U.S. METAR formatted observations.
+
+METAR KOXC 231155Z AUTO 34003KT 10SM BKN036 OVC042 17/13 A2994 RMK
+    AO1=
+
+PKMJ 231155Z 00000KT 15SM FEW015TCU SCT050 BKN300 27/24 A2985
+     RMK TCU VC E SLP110 60003 70015 8/801 T02720241 10290 20256
+     50002=
+
+KTBN 231155Z 34004KT 2 1/2SM BR BKN002 BKN100 OVC250 21/20 A3007 RMK SLP172 70009 8/671 9/521 5////=
+
+
+SAPM31 MPTO 231200
+METAR
+MPTO  1200Z 00000KT 8000 -TSRA FEW006 SCT015CB BKN090 22/22 Q1014
+            RWY WET=
+
+EDDL 1150Z  07009KT 9999 SCT030 BKN120 BKN250 20/18 Q1010 RETS NOSIG=
+
+EGLL 1150Z 01004KT 320V040 9999 -TSRA SCT060CB BKN080 25/13 Q1008 BEC
+MG NSW=
+
+OOSA 231150Z 16005KT 4000 HZ FEW007 BKN010 OVC018 25/24 Q1001 RH 95=
+
+MYNN 231200Z 18008KT 9999 FEW018CB SCT020 28/26 Q1018 RADAT 97145:=
+
+EGPD 06006KT 020V080 8000 VCSH FEW006 BKN012TCU BKN050 16/15 Q1008
+     TEMPO 4000 SHRA BKN010TCU=
+
+EGDL 1150Z 28007KT 6000 HZ FEW030 BKN100 22/15 Q1009 WHT BECMG
+     9999 NSW BLU=
+
+EGOV 1150Z 33008KT 7000 FEW003 BKN006 16/14 Q1011 YLO TEMPO BKN007
+     GRN=
+
+EGQS 1150Z 34008KT 8000 -RA FEW006 BKN026 15/13 Q1009 BLU TEMPO
+     3000 SCT006 YLO=
+
+METAR CYFO 231200Z 01007KT 15SM SCT008 BKN040 BKN250 14/12 A2991 RMK SF1SC6CI1 SLP133=
+
+METAR CYYR 231200Z 04006KT 15SM BKN015 BKN070 09/07 A2989 RMK SC6ACC2 /WHITE/ ACC W QUAD SLP125=

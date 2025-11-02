@@ -1,0 +1,655 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+  <head>
+    <title>E6B Calculations</title>
+<style type="text/css">
+body
+{
+  font-family:Tahoma;
+  font-size:12px;
+}
+th
+{
+  text-align:center;
+  font-weight:normal;
+}
+td
+{
+  vertical-align:middle;
+  min-width:100px;
+}
+.button
+{
+  font-family:Tahoma;
+  font-size:12px;
+  font-weight:normal;
+  border-radius:3px;
+  border:1px solid black;
+  box-shadow: 0px 0px 3px #000000;
+}
+.button:hover
+{
+  border:1px solid grey;
+}
+.button:focus
+{
+  border:1px solid grey;
+}
+.button:active
+{
+  box-shadow: 0px 0px 0px #000000;
+}
+</style>
+<script type="text/javascript">
+function GetCookie(cname)
+{
+  var name = cname + "=";
+  var ca = document.cookie.split(";");
+  
+  for(var i = 0;i < ca.length;i++)
+  {
+    var c = ca[i];
+    while (c.charAt(0) === " ")
+    {
+      c = c.substring(1);
+    }
+    
+    if (c.indexOf(name) === 0)
+    {
+      return c.substring(name.length, c.length);
+    }
+  }
+
+  return "";
+}
+
+function SetCookie(cname, cvalue, exdays)
+{
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires;
+}
+
+function LoadFormValues()
+{
+  document.form2.elements["speed"].value = GetCookie("form2speed");
+  document.form2.elements["fpnm"].value = GetCookie("form2fpnm");
+  document.form2.elements["roc"].value = GetCookie("form2roc");
+
+  document.form3.elements["speed"].value = GetCookie("form3speed");
+  document.form3.elements["gsa"].value = GetCookie("form3gsa");
+  document.form3.elements["rod"].value = GetCookie("form3rod");
+
+  document.form4.elements["altitude"].value = GetCookie("form4altitude");
+  document.form4.elements["faltitude"].value = GetCookie("form4faltitude");
+  document.form4.elements["fpm"].value = GetCookie("form4fpm");
+  document.form4.elements["speed"].value = GetCookie("form4speed");
+  document.form4.elements["distance"].value = GetCookie("form4distance");
+
+  document.form5.elements["temp"].value = GetCookie("form5temp");
+  document.form5.elements["dp"].value = GetCookie("form5dp");
+  document.form5.elements["cb"].value = GetCookie("form5cb");
+
+  var tdtype = GetCookie("form5tdtype");
+
+  if (tdtype === "C")
+  {
+    document.form5.elements["tdtyper2"].checked = true;
+  }
+  else
+  {
+    document.form5.elements["tdtyper1"].checked = true;
+  }
+
+  document.form6.elements["temp"].value = GetCookie("form6temp");
+  document.form6.elements["tempCF"].value = GetCookie("form6tempCF");
+
+  tdtype = GetCookie("form6tdtype");
+
+  if (tdtype === "C")
+  {
+    document.form6.elements["tdtyper2"].checked = true;
+  }
+  else
+  {
+    document.form6.elements["tdtyper1"].checked = true;
+  }
+
+  document.form7.elements["windDir"].value = GetCookie("form7windDir");
+  document.form7.elements["windSpeed"].value = GetCookie("form7windSpeed");
+  document.form7.elements["airspeed"].value = GetCookie("form7airspeed");
+  document.form7.elements["course"].value = GetCookie("form7course");
+  document.form7.elements["correction"].value = GetCookie("form7correction");
+  document.form7.elements["groundspeed"].value = GetCookie("form7groundspeed");
+
+  document.form8.elements["latitude"].value = GetCookie("form8latitude");
+  document.form8.elements["longitude"].value = GetCookie("form8longitude");
+  document.form8.elements["gps"].value = GetCookie("form8gps");
+  
+  document.Convert.elements["Temp"].value = GetCookie("Converttemp");
+  document.Convert.elements["StatPress"].value = GetCookie("Convertpressure");
+  document.Convert.elements["Dewpoint"].value = GetCookie("Convertdewpoint");
+  document.Convert.elements["DensityAltfeet"].value = GetCookie("Convertdaft");
+  document.Convert.elements["DensityAltmetric"].value = GetCookie("Convertdamt");
+}
+
+function RateOfClimb()
+{
+  var speed = Number(document.form2.elements["speed"].value);
+  var fpnm = Number(document.form2.elements["fpnm"].value);
+
+  var roc = ((speed / 60) * fpnm);
+
+  SetCookie("form2speed", speed.toFixed(0), 10);
+  SetCookie("form2fpnm", fpnm.toFixed(0), 10);
+  SetCookie("form2roc", roc.toFixed(0), 10);
+}
+
+function RateOfDecent()
+{
+  var speed = Number(document.form3.elements["speed"].value);
+  var gsa = Number(document.form3.elements["gsa"].value);
+
+  var rod = Math.tan(gsa * Math.PI/180) * ((speed * 6076) / 60);
+
+  SetCookie("form3speed", speed.toFixed(0), 10);
+  SetCookie("form3gsa", gsa.toFixed(2), 10);
+  SetCookie("form3rod", rod.toFixed(0), 10);
+}
+
+function AltitudeDistance()
+{
+  var altitude = Number(document.form4.elements["altitude"].value);
+  var faltitude = Number(document.form4.elements["faltitude"].value);
+  var fpm = Number(document.form4.elements["fpm"].value);
+  var speed = Number(document.form4.elements["speed"].value);
+  var distance = 0;
+
+  if(speed > 0)
+  {
+    distance = Math.abs((((altitude - faltitude) / 60) / fpm) * speed);
+  }
+
+  SetCookie("form4altitude", altitude.toFixed(0), 10);
+  SetCookie("form4faltitude", faltitude.toFixed(0), 10);
+  SetCookie("form4fpm", fpm.toFixed(0), 10);
+  SetCookie("form4speed", speed.toFixed(0), 10);
+  SetCookie("form4distance", distance.toFixed(0), 10);
+}
+
+function CloudBase()
+{
+  var temp = Number(document.form5.elements["temp"].value);
+  var dp = Number(document.form5.elements["dp"].value);
+  var radios = document.form5.elements["tdtype"];
+  var tdtype = "F";
+
+  for (var i = 0;i < radios.length;i++)
+  {
+    if (radios[i].checked)
+    {
+      tdtype = radios[i].value;
+      break;
+    }
+  }
+
+  var cb = 0;
+
+  if (tdtype === "C")
+  {
+    cb = ((temp - dp) / 2.5) * 1000;
+  }
+  else
+  {
+    cb = ((temp - dp) / 4.4) * 1000;
+  }
+
+  SetCookie("form5temp", temp.toFixed(2), 10);
+  SetCookie("form5dp", dp.toFixed(2), 10);
+  SetCookie("form5tdtype", tdtype, 10);
+  SetCookie("form5cb", cb.toFixed(0), 10);
+}
+
+function CelsiusFahrenheit()
+{
+  var temp = Number(document.form6.elements["temp"].value);
+  var radios = document.form6.elements["tdtype"];
+  var tdtype = "F";
+  var tempCF = 0;
+
+  for (var i = 0;i < radios.length;i++)
+  {
+    if (radios[i].checked)
+    {
+      tdtype = radios[i].value;
+      break;
+    }
+  }
+
+  if(tdtype === "C")
+  {
+    tempCF = (temp * (9 / 5)) + 32;
+  }
+  else
+  {
+    tempCF = (temp - 32) * (5 / 9);
+  }
+
+  SetCookie("form6temp", temp.toFixed(2), 10);
+  SetCookie("form6tdtype", tdtype, 10);
+  SetCookie("form6tempCF", tempCF.toFixed(2), 10);
+}
+
+function WindCorrection()
+{
+  var windDir = Number(document.form7.elements["windDir"].value);
+  var windSpeed = Number(document.form7.elements["windSpeed"].value);
+  var airspeed = Number(document.form7.elements["airspeed"].value);
+  var course = Number(document.form7.elements["course"].value);
+  
+  var wd = (Math.PI/180) * windDir;
+  var hd = (Math.PI/180) * course;
+  
+  var groundspeed = Math.round(Math.sqrt(Math.pow(windSpeed, 2) +
+                              Math.pow(airspeed, 2) - 2 * windSpeed *
+                              airspeed * Math.cos(hd - wd)));
+
+  var wca = Math.atan2(windSpeed * Math.sin(hd - wd),
+                               airspeed - windSpeed * 
+                               Math.cos(hd - wd));
+
+  var WCA = Math.round((180/Math.PI) * (wca * -1));
+
+  SetCookie("form7windDir", windDir.toFixed(0), 10);
+  SetCookie("form7windSpeed", windSpeed.toFixed(0), 10);
+  SetCookie("form7airspeed", airspeed.toFixed(0), 10);
+  SetCookie("form7course", course.toFixed(0), 10);
+  SetCookie("form7correction", WCA.toFixed(0), 10);
+  SetCookie("form7groundspeed", groundspeed.toFixed(0), 10);
+}
+
+function GPSConversion()
+{
+  var latitude = document.form8.elements["latitude"].value;
+  var longitude = document.form8.elements["longitude"].value;
+  var gps = document.form8.elements["gps"].value;
+
+  var partsLat = latitude.split("-");
+  if(partsLat.length !== 3)
+  {
+    return;
+  }
+
+  var a = partsLat[2];
+  var hemiLat = a.substr(a.length - 1);
+
+  partsLat[2] = "";
+  for(var x = 0;x < (a.length - 1);x++)
+  {
+    partsLat[2] += a.substr(x, 1);
+  }
+      
+  var decimalLat = Number(partsLat[0]) + (Number(partsLat[1]) / 60) + (Number(partsLat[2]) / 3600);
+      
+  if( (hemiLat.localeCompare("S") === 0) || (hemiLat.localeCompare("W") === 0) )
+  {
+    decimalLat *= -1;
+  }
+
+  var partsLon = longitude.split("-");
+  if(partsLon.length !== 3)
+  {
+    return;
+  }
+      
+  var a = partsLon[2];
+  var hemiLon = a.substr(a.length - 1);
+
+  partsLon[2] = "";
+  for(var x = 0;x < (a.length - 1);x++)
+  {
+    partsLon[2] += a.substr(x, 1);
+  }
+      
+  var decimalLon = Number(partsLon[0]) + (Number(partsLon[1]) / 60) + (Number(partsLon[2]) / 3600);
+
+      
+  if( (hemiLon.localeCompare("S") === 0) || (hemiLon.localeCompare("W") === 0) )
+  {
+    decimalLon *= -1;
+  }
+
+  gps = decimalLat.toString() + "," + decimalLon.toString();
+
+  SetCookie("form8latitude", latitude, 10);
+  SetCookie("form8longitude", longitude, 10);
+  SetCookie("form8gps", gps, 10);
+}
+
+function decideConvert(temp, pressure, dewpoint)
+{
+	temp = parseFloat(document.Convert.Temp.value);
+	pressure = parseFloat(document.Convert.StatPress.value);
+	dewpoint = parseFloat(document.Convert.Dewpoint.value);
+	var INpressure, Cdewpoint;
+
+	if (document.Convert.pressureunit[0].checked)
+	{
+		INpressure = pressure;
+	}
+	
+	if (document.Convert.pressureunit[1].checked)
+	{
+		INpressure = parseFloat(convertmmHGtoinHG(pressure));
+	}
+	
+	if (document.Convert.pressureunit[2].checked)
+	{
+		INpressure = parseFloat(convertmbtoinHG(pressure));
+	}
+
+	if (document.Convert.dewunit[0].checked)				
+	{
+		Cdewpoint=parseFloat(convertFtoC(dewpoint));
+	}
+
+	if (document.Convert.dewunit[1].checked)
+	{
+		Cdewpoint = dewpoint;
+	}
+
+	if (document.Convert.dewunit[2].checked)
+	{
+		Cdewpoint = dewpoint - 273.15;
+	}
+
+	var Kel, Tv, Da;
+	
+	if (document.Convert.tempunit[0].checked)
+	{
+		Kel = parseFloat(convertCtoK(convertFtoC(temp)));
+		Tv = parseFloat(virtualTemperature(Kel, INpressure, Cdewpoint));
+		Da = parseFloat(densityAltitude(INpressure, Tv));
+		document.Convert.DensityAltfeet.value = roundOff(Da.toString());
+		document.Convert.DensityAltmetric.value= roundOff(convertfeettometer(Da));
+	}
+
+	if (document.Convert.tempunit[1].checked)
+	{
+		Kel =parseFloat(convertCtoK(temp));
+		Tv = parseFloat(virtualTemperature(Kel, INpressure, Cdewpoint));
+		Da = parseFloat(densityAltitude(INpressure, Tv));
+		document.Convert.DensityAltfeet.value = roundOff(Da.toString());
+		document.Convert.DensityAltmetric.value= roundOff(convertfeettometer(Da));
+	}
+	
+	if(document.Convert.tempunit[2].checked)
+	{
+		Kel = temp;
+		Tv = parseFloat(virtualTemperature(Kel, INpressure, Cdewpoint));
+		Da = parseFloat(densityAltitude(INpressure, Tv));
+		document.Convert.DensityAltfeet.value = roundOff(Da.toString());
+		document.Convert.DensityAltmetric.value = roundOff(convertfeettometer(Da));
+	}
+	
+  SetCookie("Converttemp", temp, 10);
+  SetCookie("Convertpressure", pressure, 10);
+  SetCookie("Convertdewpoint", dewpoint, 10);
+  SetCookie("Convertdaft", document.Convert.DensityAltfeet.value, 10);
+  SetCookie("Convertdamt", document.Convert.DensityAltmetric.value, 10);
+	
+}
+	
+function convertFtoC(Fahr)
+{
+	var Cels;
+	Cels = .55556 * (Fahr - 32);
+	return Cels;
+}
+
+function convertCtoK(Cels)
+{
+	var Kel;
+	Kel = Cels + 273.15;
+	return Kel;
+}
+
+function convertCtoF(Cels)
+{
+	var Fahr;
+	Fahr = 1.8 * Cels +32;
+	return Fahr;
+}
+
+function convertKtoC(Kel)
+{
+	var Cels;
+	Cels = Kel - 273.15;
+	return Cels;
+}
+
+function convertKtoR(Kel)
+{
+	var Fahr, Cels, Rank;
+	Cels = parseFloat(convertKtoC(Kel));
+	Fahr = parseFloat(convertCtoF(Cels));
+	Rank = Fahr + 459.69;
+	return Rank;
+}
+
+function convertmmHGtoinHG(mmHG)
+{
+	var inHG;
+	inHG = 0.03937008*mmHG;
+	return inHG;
+	
+}
+
+function convertmbtoinHG(mb)
+{
+	var inHG;
+	inHG = 0.0295300*mb;
+	return inHG;
+}
+
+function convertinHGtomb(inHG)
+{
+	var mb;
+	mb = 33.8639*inHG;
+	return mb;
+}
+
+function convertfeettometer(feet)
+{
+	var meter;
+	meter = 0.3048 * feet;
+	return meter;
+}
+
+function virtualTemperature(Kel, INpressure, Cdewpoint)
+{
+	var Tempv, dewpoint, E;
+	dewpoint = parseFloat(convertKtoC(Kel));
+	E = parseFloat(vaporPressure(Cdewpoint));
+	mbpressure = parseFloat(convertinHGtomb(INpressure));
+	Tempv = Kel / ( 1 - (E / mbpressure ) * ( 1 - 0.622));
+	return Tempv;
+}
+
+function vaporPressure(Cdewpoint)
+{
+	var E;
+	E = 6.11 * Math.pow(10, (7.5 * Cdewpoint / (237.7 + Cdewpoint)));
+	return E;
+}
+
+function densityAltitude(INpressure, Tempv)
+{
+	var DensityAlt, dummy, Rank;
+	Rank = parseFloat(convertKtoR(Tempv));
+	dummy = (17.326 * INpressure) / Rank;
+	DensityAlt = 145366 * (1 - (Math.pow(dummy, 0.235)));
+	return DensityAlt;
+}
+
+
+function roundOff(value)
+{
+	value = Math.round(10*value)/10;
+	return value;
+}
+
+function setToNull()
+{
+	document.Convert.DensityAltfeet.value="";
+	document.Convert.DensityAltmetric.value="";
+	document.Convert.Dewpoint.value="";
+	document.Convert.StatPress.value="";
+	document.Convert.Temp.value="";
+}
+</script>
+</head>
+  <body onload="LoadFormValues()">
+  <table><tr><td>
+    <table><tr>
+    <td>
+    <form name="form2" action="#" id="form2">
+    <table style="border:1px solid black;height:200px;">
+    <tr><th colspan="2">Takeoff Minimums</th></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td style="text-align:right;">Ground Speed</td><td><input size="5" name="speed" type="text" id="speed"/></td></tr>
+    <tr><td style="text-align:right;">Feet per NM</td><td><input size="5" name="fpnm" type="text" id="fpnm"/></td></tr>
+    <tr><td style="text-align:right;">Rate Of Climb</td><td><input readonly size="5" name="roc" type="text" id="roc"/></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="RateOfClimb()"/></td></tr>
+    </table>
+    </form>
+    </td>
+    <td>
+    <form name="form3" action="#" id="form3">
+    <table style="border:1px solid black;height:200px;">
+    <tr><th colspan="2">GS Rate Of Decent</th></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td style="text-align:right;">Ground Speed</td><td><input size="5" name="speed" type="text" id="speed"/></td></tr>
+    <tr><td style="text-align:right;">Glide Slope Angle</td><td><input size="5" name="gsa" type="text" id="gsa"/></td></tr>
+    <tr><td style="text-align:right;">Rate Of Decent</td><td><input readonly size="5" name="rod" type="text" id="rod"/></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="RateOfDecent()"/></td></tr>
+    </table>
+    </form>
+    </td>
+    <td>
+    <form name="form4" action="#" id="form4">
+    <table style="border:1px solid black;height:200px;">
+    <tr><th colspan="2">Decent Distance</th></tr>
+    <tr><td style="text-align:right;">Altitude</td><td><input size="5" name="altitude" type="text" id="altitude"/></td></tr>
+    <tr><td style="text-align:right;">Final Altitude</td><td><input size="5" name="faltitude" type="text" id="faltitude"/></td></tr>
+    <tr><td style="text-align:right;">Vertical FPM</td><td><input size="5" name="fpm" type="text" id="fpm"/></td></tr>
+    <tr><td style="text-align:right;">Ground Speed</td><td><input size="5" name="speed" type="text" id="speed"/></td></tr>
+    <tr><td style="text-align:right;">Distance (nm.)</td><td><input readonly size="5" name="distance" type="text" id="distance"/></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="AltitudeDistance()"/></td></tr>
+    </table>
+    </form>
+    </td>
+    <td>
+    <form name="form5" action="#" id="form5">
+    <table style="border:1px solid black;height:200px;">
+    <tr><th colspan="2">Cloud Base</th></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td style="text-align:right;">Temperature</td><td><input size="5" name="temp" type="text" id="temp"/></td></tr>
+    <tr><td style="text-align:right;">Dew Point</td><td><input size="5" name="dp" type="text" id="dp"/></td></tr>
+    <tr><td style="text-align:right;">Cloud Base</td><td><input readonly size="5" name="cb" type="text" id="cb"/></td></tr>
+    <tr><td>&nbsp;</td><td style="height:24px;">F<input type="radio" name="tdtype" id="tdtyper1" value="F" />C<input type="radio" name="tdtype" id="tdtyper2" value="C" /></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="CloudBase()"/></td></tr>
+    </table>
+    </form>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <form name="form6" action="#" id="form6">
+    <table style="border:1px solid black;height:200px;">
+    <tr><th colspan="2">Celsius/Fahrenheit</th></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>    
+    <tr><td style="text-align:right;">Temperature</td><td><input size="5" name="temp" type="text" id="temp"/></td></tr>
+    <tr><td style="text-align:right;">&nbsp</td><td><input readonly size="5" name="tempCF" type="text" id="tempCF"/></td></tr>
+    <tr><td>&nbsp;</td><td style="height:24px;">F<input type="radio" name="tdtype" id="tdtyper1" value="F" />C<input type="radio" name="tdtype" id="tdtyper2" value="C" /></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="CelsiusFahrenheit()"/></td></tr>
+    </table>
+    </form>
+    </td>
+    <td>
+    <form name="form7" action="#" id="form7">
+    <table style="border:1px solid black;height:200px;">
+    <tr><th colspan="2">Wind Correction</th></tr>
+    <tr><td style="text-align:right;">Wind Direction</td><td><input size="5" name="windDir" type="text" id="windDir"/></td></tr>
+    <tr><td style="text-align:right;">Wind Speed</td><td><input size="5" name="windSpeed" type="text" id="windSpeed"/></td></tr>    
+    <tr><td style="text-align:right;">Airspeed</td><td><input size="5" name="airspeed" type="text" id="airspeed"/></td></tr>
+    <tr><td style="text-align:right;">Desired Course</td><td><input size="5" name="course" type="text" id="course"/></td></tr>
+    <tr><td style="text-align:right;">Correction</td><td><input readonly size="5" name="correction" type="text" id="correction"/></td></tr>
+    <tr><td style="text-align:right;">Ground Speed</td><td><input readonly size="5" name="groundspeed" type="text" id="groundspeed"/></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="WindCorrection()"/></td></tr>
+    </table>
+    </form>
+    </td>
+    <td colspan="2">
+    <form name="form8" action="#" id="form8">
+    <table style="width:428px;border:1px solid black;height:200px;">
+    <tr><th colspan="2">GPS Conversion</th></tr>
+    <tr><td colspan="2" style="text-align:center;">(FAA Format)</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td style="text-align:right;">Latitude</td><td><input size="25" name="latitude" type="text" id="latitude" /></td></tr>
+    <tr><td style="text-align:right;">Longitude</td><td><input size="25" name="longitude" type="text" id="longitude" /></td></tr>
+    <tr><td style="text-align:right;">GPS</td><td><input readonly size="45" name="gps" type="text" id="gps"/></td></tr>
+    <tr><td>&nbsp;</td><td><input type="submit" value="Calculate" id="Submit" class="button" onclick="GPSConversion()"/></td></tr>
+    </table>
+    </form>
+    </td>
+  </tr>
+  <tr>
+	<td colspan="3">
+	<form name="Convert" action="#" id="Convert">
+	<table style="width:628px;border:1px solid black;height:200px;">
+	<tr><th>Density Altitude</th></tr>
+	<tr>
+		<td>Enter the air temperature and choose a unit:</td>
+		<td>Density Altitude in feet:</td>
+	</tr>
+	<tr>
+		<td><input type="text" name="Temp" /><input type="radio" checked="" value="degF" name="tempunit" />Fahrenheit<input type="radio" value="degC" name="tempunit" />Celsius <input type="radio" value="degK" name="tempunit" />Kelvin</td>
+		<td><input type="text" name="DensityAltfeet" /></td>
+	</tr>
+	<tr>
+		<td>Enter the actual station pressure (not the altimeter setting) and choose a unit:</td>
+		<td>Density Altitude in meters:</td>
+	</tr>
+	<tr>
+		<td><input type="text" name="StatPress" /><input type="radio" checked="" name="pressureunit" />in of mercury <input type="radio" name="pressureunit" />mm of mercury <input type="radio" name="pressureunit" />millibars (hPA)</td>
+		<td><input type="text" name="DensityAltmetric" /></td>
+	</tr>
+	<tr>
+		<td>Enter the dewpoint and choose a unit:</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><input type="text" name="Dewpoint" /><input type="radio" checked="" value="degF" name="dewunit" />Fahrenheit<input type="radio" value="degC" name="dewunit" />Celsius <input type="radio" value="degK" name="dewunit" />Kelvin</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<input class="button" type="button" onclick="decideConvert(document.Convert.Temp.value, document.Convert.StatPress.value, document.Convert.Dewpoint.value)" value="Convert" />
+			<input class="button" type="button" onclick="setToNull()" value="Clear Values" />
+		</td>
+	</tr>
+	</table>			
+	</form>
+	</td>
+  </tr>
+  </table>
+</td></tr></table>
+</body>
+</HTML>

@@ -1,0 +1,164 @@
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>International Format for Coding Remarks Section</H2>
+    </CENTER>
+    <H2>Index</H2>
+    <TABLE>
+      <TR>
+        <TD>
+          <A HREF="metar-pg14-rmk-inter.htm#SUPP">Supplementary Information Groups</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="metar-pg14-rmk-inter.htm#TREND">Trend Forecasts</A>
+        </TD>
+      </TR>
+    </TABLE>
+    <BR/>
+    <A NAME="#SUPP">
+      <H3>
+        <B>Supplementary Information Groups</B>
+      </H3>
+    </A>
+    <BR/>
+    For international dissemination, the section on supplementary information is used only to report available information on wind shear in the lower layers and recent weather phenomena of operational significance.<BR/>
+    <OL>
+      <LI>
+        <B>REs"s" - Recent weather phenomena of operational significance.</B> Information on recent weather is given by the indicator letters <B>RE</B> followed by the appropriate abbreviations contained in <A HREF="metar-pg9-ww.htm#A-10">Table A-10</A> if the following weather phenomena were observed during the hour since the last routine report but not at the time of the observation:
+      </LI>
+      <UL>
+        <LI>-	Freezing precipitation;</LI>
+        <LI>-	Moderate or heavy rain or snow;</LI>
+        <LI>-	Moderate or heavy ice pellets, hail, small hail or snow pellets;</LI>
+        <LI>-	Moderate or heavy blowing snow;</LI>
+        <LI>-	Sandstorm or duststorm;</LI>
+        <LI>-	Thunderstorm;</LI>
+        <LI>-	Volcanic ash.</LI>
+      </UL>
+      Weather is only included as recent weather if the same phenomenon (disregarding character of precipitation) of the same or greater intensity is not reported as present weather. For example, a heavy rainshower 20 minutes before the time of observation, with moderate rain at the time of observation is coded <B>RERA</B>. However, moderate rain 20 minutes before the time of observation with a moderate rainshower at the time of observation is not reported as recent weather.<BR/>
+      <LI>
+        <TABLE>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>
+                WS TKOF RWYD<SUB>R</SUB>D<SUB>R</SUB>
+              </B><BR/>
+              and/or<BR/>
+              <B>
+                WS LDG RWYD<SUB>R</SUB>D<SUB>R</SUB>
+              </B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>
+                <I> - Wind Shear</I>
+              </B>
+            </TD>
+          </TR>
+        </TABLE>
+      </LI>
+      Recent information on the existence of wind shear along the take-off path or approach path between runway level and 500 meters (1600 feet) significant to aircraft operations is reported whenever available and local circumstances so warrant, using either or both of the two sets of these groups. <B>
+        D<SUB>R</SUB>D<SUB>R</SUB>
+      </B> is encoded for the runway direction concerned in the same manner as for runway visibility.<BR/>
+      <LI>
+        <B>Remarks</B>  Other supplementary information, such as remarks, will be added in accordance with regional decisions. Remarks section will usually be preceded by the contraction <B>RMK</B>.
+      </LI>
+      <A NAME="#TREND">
+        <H3>
+          <B>Trend Forecasts</B>
+        </H3>
+      </A>
+      <BR/>
+      <B>EXCEPTION:</B>The U.S. will not use the trend forecast.  Trend forecasts are included when a change, required to be indicated in accordance with the governing criteria for significant changes, is expected for one or several of the observed elements - wind, horizontal visibility, present weather, clouds, or vertical visibility. The governing criteria for issuing trend forecasts is specified in publication WMO-No. 49-Technical Regulations.
+      <UL>
+        <LI>
+          <B>TTTTT - Change Indicator.</B>One of the following change indicators will be used for <B>TTTTT</B>:
+        </LI>
+        <UL>
+          <LI>
+            <B>BECMG</B> or
+          </LI>
+          <LI>
+            <B>TEMPO</B>.
+          </LI>
+        </UL>
+        <LI>
+          <B>TTGGgg - Time Group</B>  The time group <B>GGgg</B> is followed by one of the letter indicators <B>FM</B> (from), or <B>TL</B> (until) or <B>AT</B> (at) for <B>TT</B> to indicate the beginning (<B>FM</B>) or the end (<B>TL</B>) of a forecast change, or the time (<B>AT</B>) at which a specific forecast conditions(s) is(are) expected (in hours and minutes for <B>GGgg</B>) the change is expected to occur.
+        </LI>
+        <LI>
+          <B>* BECMG - Becoming</B>  The change indicator <B>BECMG</B> is used to describe expected changes to meteorological conditions which <I>reach or pass specified threshold criteria at either a regular or irregular rate </I>. These changes are indicated as follows:
+        </LI>
+        <UL>
+          <LI>
+            (a) When the change is forecast to begin and end wholly within the trend forecast period: by the change indicator <B>BECMG</B> followed by the letter indicators <B>FM</B> and <B>TL</B> respectively with their associated time groups, to indicate the beginning and end of the change. For example, a trend forecast period from 1000 to 1200 UTC is in the form <B>BECMG FM1030 TL1130</B>;
+          </LI>
+          <LI>
+            (b) When the change is forecast to occur from the beginning of the trend forecast period and be completed before the end of that period: by the change indicator <B>BECMG</B> followed only by the letter indicator <B>TL</B> and its associated time group (the letter indicator <B>FM</B> and its associated time group being omitted), to indicate the end of the change. For example: <B>BECMG TL1100</B>.
+          </LI>
+          <LI>
+            (c) When the change is forecast to begin during the trend forecast period and be completed at the end of that period: by the change indicator <B>BECMG</B> followed only the letter indicator <B>FM</B> and its associated time group (the letter indicator <B>TL</B> and its associated time group being omitted), to indicate the beginning of the change. For example: <B>BECMG FM1100</B>.
+          </LI>
+          <LI>
+            (d) When the change is forecast to occur at a specific time during the trend forecast period: by the change indicator <B>BECMG</B> followed by the letter indicator <B>AT</B> and its associated time group, to indicate the time of the change. For example: <B>BECMG AT1100</B>.
+          </LI>
+          <LI>(e) When changes are forecast to take place at midnight UTC, the time shall be indicated:</LI>
+          <UL>
+            <LI>
+              (i) By 0000 when associated with <B>FM</B> and <B>AT</B>;
+            </LI>
+            <LI>
+              (ii) By 2400 when associated with <B>TL</B>.
+            </LI>
+          </UL>
+          <LI>
+            (f) When the change is forecast to commence at the beginning of the trend forecast period and be completed by the end of that period, or when the change is forecast to occur within the trend forecast period but the time of the change is uncertain (possibly shortly after the beginning of the trend forecast period, or midway or near the end of that period), the change shall be indicated by only the change indicator <B>BECMG</B> (letter indicator(s) <B>FM</B> and <B>TL</B> or <B>AT</B> and associated time group(s) being omitted).
+          </LI>
+        </UL>
+        <LI>
+          <B>*	TEMPO - Temporary</B>  This change indicator is used to describe expected temporary fluctuations to meteorological conditions which reach or pass specified threshold criteria and <I>last for a period of less than one hour in each instance and in the aggregate cover less than half of the forecast period during which the fluctuations are expected to occur</I>. The time indicators <B>FM</B> and <B>TL</B>, with the associated time group, is used with <B>TEMPO</B> in the same manner as used with <B>BECMG</B> in a, b, c and f above.
+        </LI>
+      </UL>
+      Following the change groups <B>TTTTT (TTGGgg)</B>, only the group(s) referring to the element(s) which is(are) forecast to change significantly shall be included. However, in the case of significant changes of the clouds, all cloud groups including any significant layer(s) or masses not expected to change, shall be included.<BR/>
+      Inclusion of significant forecast weather <B>w"w"</B> using appropriate abbreviations from Table A-10 is restricted to indicate the onset, cessation, or change, in intensity of the following weather phenomena.<BR/>
+      <UL>
+        <LI>- Freezing precipitation;</LI>
+        <LI>-	Moderate or heavy rain, snow, ice pellets, hail, small hail, snow pellets, rain and snow mixed;</LI>
+        <LI>-	Drifting dust, sand, or snow.</LI>
+        <LI>-	Blowing dust, sand, or snow (including duststorm and sandstorm);</LI>
+        <LI>- Thunderstorm (with rain, ice pellets, hail or soft hail, or snow, or combination therof);</LI>
+        <LI>- Squall;</LI>
+        <LI>-	Funnel Cloud (tornado or waterspout);</LI>
+        <LI>
+          -	Other weather phenomena given in <A HREF="metar-pg9-ww.htm#A-10">Table A-10</A> which are expected to cause a significant change in visibility.
+        </LI>
+      </UL>
+      <LI>
+        <B>NSW	-	No Significant Weather</B>  To indicate the end of significant weather phenomena <B>w"w"</B>, the abbreviation <B>NSW</B> will replace <B>w"w"</B>.
+      </LI>
+      <LI>
+        <B>SKC	-	Sky Clear</B>  To indicate a change to clear sky, the abbreviation <B>SKC</B> will replace<B>
+          N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>
+        </B> or <B>
+          VVh<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>
+        </B>.
+      </LI>
+      <LI>
+        <B>NOSIG	-	No Significant change</B>  When none of the elements are expected to change significantly as to require a change to be indicated, this shall be indicated by the code word <B>NOSIG</B>. <B>NOSIG</B> (no significant change) is used to indicate meteorological conditions which do not reach or pass specified threshold criteria.
+      </LI>
+    </OL>
+    <HR/>
+    The following shows an example of an international <B>METAR</B> formatted observation.<BR/>
+    <BR/>
+    EGPD 06006KT 020V080 8000 VCSH FEW006 BKN012TCU BKN050 16/15 Q1008 TEMPO 4000 SHRA BKN010TCU=<BR/>
+    <BR/>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

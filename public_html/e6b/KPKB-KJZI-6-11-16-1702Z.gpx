@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpx
+	version="1.1"
+	creator="iFlightPlanner.com - http://iFlightPlanner.com"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.topografix.com/GPX/1/1"
+	xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<metadata>
+		<time>2016-06-11T16:07:32Z</time>
+		<bounds minlat="32.7010277777778" minlon="-81.4393055555555" maxlat="39.3449722222222" maxlon="-79.5879369444444" />
+	</metadata>
+	<wpt lat="39.3449722222222" lon="-81.4393055555555">
+		<name>KPKB</name>
+		<type>AIRPORT</type>
+	</wpt>
+	<wpt lat="39.1179944444444" lon="-81.32495">
+		<name>EDSOE</name>
+		<type>INT</type>
+	</wpt>
+	<wpt lat="37.7802997222222" lon="-81.1234555555556">
+		<name>BKW</name>
+		<type>VOR</type>
+	</wpt>
+	<wpt lat="37.087705" lon="-80.7129005555555">
+		<name>PSK</name>
+		<type>VOR</type>
+	</wpt>
+	<wpt lat="36.5447305555556" lon="-80.2782194444444">
+		<name>FREON</name>
+		<type>INT</type>
+	</wpt>
+	<wpt lat="36.0456919444444" lon="-79.9763752777778">
+		<name>GSO</name>
+		<type>VOR</type>
+	</wpt>
+	<wpt lat="35.2154808333333" lon="-79.5879369444444">
+		<name>SDZ</name>
+		<type>VOR</type>
+	</wpt>
+	<wpt lat="34.64875" lon="-79.6280388888889">
+		<name>TOWEY</name>
+		<type>INT</type>
+	</wpt>
+	<wpt lat="34.2329680555556" lon="-79.6571611111111">
+		<name>FLO</name>
+		<type>VOR</type>
+	</wpt>
+	<wpt lat="32.8943191666667" lon="-80.0378141666667">
+		<name>CHS</name>
+		<type>VOR</type>
+	</wpt>
+	<wpt lat="32.7010277777778" lon="-80.00325">
+		<name>KJZI</name>
+		<type>AIRPORT</type>
+	</wpt>
+	<rte>
+		<name>KPKB/KJZI 6/11 1702Z</name>
+		<number>1</number>
+		<rtept lat="39.3449722222222" lon="-81.4393055555555">
+			<name>KPKB</name>
+			<type>AIRPORT</type>
+			<ele>274</ele>
+		</rtept>
+		<rtept lat="39.1179944444444" lon="-81.32495">
+			<name>EDSOE</name>
+			<type>INT</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="37.7802997222222" lon="-81.1234555555556">
+			<name>BKW</name>
+			<type>VOR</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="37.087705" lon="-80.7129005555555">
+			<name>PSK</name>
+			<type>VOR</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="36.5447305555556" lon="-80.2782194444444">
+			<name>FREON</name>
+			<type>INT</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="36.0456919444444" lon="-79.9763752777778">
+			<name>GSO</name>
+			<type>VOR</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="35.2154808333333" lon="-79.5879369444444">
+			<name>SDZ</name>
+			<type>VOR</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="34.64875" lon="-79.6280388888889">
+			<name>TOWEY</name>
+			<type>INT</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="34.2329680555556" lon="-79.6571611111111">
+			<name>FLO</name>
+			<type>VOR</type>
+			<ele>2591</ele>
+		</rtept>
+		<rtept lat="32.8943191666667" lon="-80.0378141666667">
+			<name>CHS</name>
+			<type>VOR</type>
+			<ele>975</ele>
+		</rtept>
+		<rtept lat="32.7010277777778" lon="-80.00325">
+			<name>KJZI</name>
+			<type>AIRPORT</type>
+			<ele>0</ele>
+		</rtept>
+	</rte>
+</gpx>

@@ -1,0 +1,2780 @@
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>Present Weather Group w"w"(ww)</H2>
+    </CENTER>
+    <H2>Index</H2>
+    <TABLE>
+      <TR>
+        <TD>
+          <A HREF="metar-pg9-ww.htm#Weather Definitions">Definitions of Present Weather Elements</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="metar-pg9-ww.htm#Observing">Present Weather Observing Standards</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="metar-pg9-ww.htm#Reporting">Present Weather Reporting Standards</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="metar-pg9-ww.htm#CODING">Coding Present Weather Groups</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="metar-pg9-ww.htm#DECODE">Decoding Present Weather Groups</A>
+        </TD>
+      </TR>
+    </TABLE>
+    <A NAME="#A-10">Present Weather</A> includes precipitation, obscurations, other weather phenomena;such as, well-developed dust/sand whirls, squalls, tornadic activity, sandstorms, and duststorms. Present weather may be evaluated instrumentally, manually, or through a combination of instrumental and manual methods. The <B>links in the table below</B> will take you to the definitions and/or standards for the various elements and descriptors.
+    <TABLE WIDTH="100%" BORDER="1">
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="5" WIDTH="100%">
+          <B>
+            Table A-10 Notations for Reporting Present Weather<SUP>1</SUP>
+          </B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="2">
+          <B>QUALIFIER</B>
+        </TD>
+        <TD ALIGN="CENTER" COLSPAN="3">
+          <B>WEATHER PHENOMENA</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <B>
+            Intensity<BR/>or<BR/>Proximity<BR/>1
+          </B>
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <B>
+            Descriptor<BR/><BR/>2
+          </B>
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <B>
+            Precipitation<BR/>3
+          </B>
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <B>
+            Obscuration<BR/>4
+          </B>
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <B>
+            Other<BR/>5
+          </B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg9-ww.htm#INT-PROX">
+            - Light Moderate<SUP>2</SUP> + Heavy<B> VC</B> In the<BR/>vicinity<SUP>3</SUP>
+          </A>
+        </TD>
+        <TD VALIGN="TOP">
+          <A HREF="metar-pg9-ww.htm#SHALLOW">
+            <B> MI</B> Shallow
+          </A>
+          <A HREF="metar-pg9-ww.htm#PARTIAL">
+            <B> PR</B> Partial<B> BC</B> Patches
+          </A>
+          <A HREF="metar-pg9-ww.htm#LDRIFT">
+            <B> DR</B> Low Drifting
+          </A>
+          <A HREF="metar-pg9-ww.htm#BLOW">
+            <B> BL</B> Blowing
+          </A>
+          <A HREF="metar-pg9-ww.htm#SHOWER">
+            <B> SH</B> Shower(s)
+          </A>
+          <A HREF="metar-pg9-ww.htm#THUNDER">
+            <B> TS</B> Thunderstorm
+          </A>
+          <A HREF="metar-pg9-ww.htm#FREEZE">
+            <B> FZ</B> Freezing
+          </A>
+        </TD>
+        <TD VALIGN="TOP">
+          <A HREF="metar-pg9-ww.htm#DRIZZLE">
+            <B> DZ</B> Drizzle
+          </A>
+          <A HREF="metar-pg9-ww.htm#RAIN">
+            <B> RA</B> Rain
+          </A>
+          <A HREF="metar-pg9-ww.htm#SNOW">
+            <B> SN</B> Snow
+          </A>
+          <A HREF="metar-pg9-ww.htm#GRAINS">
+            <B> SG</B> Snow Grains
+          </A>
+          <A HREF="metar-pg9-ww.htm#CRYSTALS">
+            <B> IC</B> Ice Crystals
+          </A>
+          <A HREF="metar-pg9-ww.htm#PELLETS">
+            <B> PL</B> Ice Pellets
+          </A>
+          <A HREF="metar-pg9-ww.htm#HAIL">
+            <B> GR</B> Hail
+          </A><BR/> >5mm in<BR/> diameter
+          <A HREF="metar-pg9-ww.htm#SHAIL">
+            <B> GS</B> Small Hail
+          </A><BR/> and/or<BR/> Snow Pellets
+          <A HREF="metar-pg9-ww.htm#UP">
+            <B> UP</B> Unknown<BR/>Precipitation
+          </A>
+        </TD>
+        <TD VALIGN="TOP">
+          <A HREF="metar-pg9-ww.htm#MIST">
+            <B>BR</B>Mist
+          </A>
+          <A HREF="metar-pg9-ww.htm#FOG">
+            <B> FG</B>Fog
+          </A>
+          <A HREF="metar-pg9-ww.htm#SMOKE">
+            <B> FU</B>Smoke
+          </A>
+          <A HREF="metar-pg9-ww.htm#VOLCANIC">
+            <B> VA</B>Volcanic Ash
+          </A>
+          <A HREF="metar-pg9-ww.htm#DUST">
+            <B> DU</B>Widespread<BR/>Dust
+          </A>
+          <A HREF="metar-pg9-ww.htm#SAND">
+            <B> SA</B>Sand
+          </A>
+          <A HREF="metar-pg9-ww.htm#HAZE">
+            <B> HZ</B> Haze
+          </A>
+          <A HREF="metar-pg9-ww.htm#SPRAY">
+            <B> PY</B>Spray
+          </A>
+        </TD>
+        <TD VALIGN="TOP">
+          <A HREF="metar-pg9-ww.htm#WHIRLS">
+            <B> PO</B> Well-<BR/>developed<BR/>Dust/Sand<BR/>Whirls
+          </A>
+          <A HREF="metar-pg9-ww.htm#SQUALLS">
+            <B> SQ</B> Squalls
+          </A>
+          <A HREF="metar-pg9-ww.htm#FUNNEL">
+            <B> FC</B> Funnel<BR/>Cloud,<BR/>Tornado,<BR/>Waterspout<SUP>4</SUP>
+          </A>
+          <A HREF="metar-pg9-ww.htm#SANDSTORM">
+            <B> SS</B> Sandstorm
+          </A>
+          <A HREF="metar-pg9-ww.htm#DUSTSTORM">
+            <B> DS</B> Duststorm
+          </A>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="5" WIDTH="100%">
+          <OL>
+            <LI>
+              The weather groups shall be constructed by considering columns 1 to 5 in the table above in sequence;i.e., intensity, followed by description, followed by weather phenomena, e.g., heavy rain shower(s) is coded as <B>+SHRA</B>.
+            </LI>
+            <LI>To denote moderate intensity, no entry or symbol is used.</LI>
+            <LI>Used when present weather is within 5 to 10 statute miles of the point(s) of observation.</LI>
+            <LI>
+              Tornadoes and waterspouts shall always be coded as <B>+FC</B>.
+            </LI>
+          </OL>
+        </TD>
+      </TR>
+    </TABLE>
+    <A NAME="#Weather Definitions">
+      <H3>Definitions of Present Weather Elements</H3>
+    </A>
+    <B>Precipitation</B> Precipitation is any of the forms of water particles, whether liquid or solid, that fall from the atmosphere and reach the ground. The types of precipitation are:
+    <UL>
+      <A NAME="#DRIZZLE">
+        <B>Drizzle</B>
+      </A>  Fairly uniform precipitation composed exclusively of fine drops with diameters of less than 0.02 inch (0.5 mm) very close together.  Drizzle appears to float while following air currents, although unlike fog droplets, it falls to the ground.
+      <A NAME="#RAIN">
+        <B>Rain</B>
+      </A>  Precipitation, either in the form of drops larger than 0.02 inch (0.5 mm), or smaller drops which, in contrast to drizzle, are widely separated.
+      <A NAME="#SNOW">
+        <B>Snow</B>
+      </A>  Precipitation of snow crystals, mostly branched in the form of six-pointed stars.
+      <A NAME="#GRAINS">
+        <B>Snow Grains</B>
+      </A>  Precipitation of very small, white, and opaque grains of ice.
+      <A NAME="#CRYSTALS">
+        <B>Ice Crystals (Diamond Dust)</B>
+      </A>  A fall of unbranched (snow crystals are branched) ice crystals in the form of needles, columns, or plates.
+      <A NAME="#PELLETS">
+        <B>Ice Pellets</B>
+      </A>  Precipitation of transparent or translucent pellets of ice, which are round or irregular, rarely conical, and which have a diameter of 0.2 inch (5 mm), or less. There are two main types:
+      <OL>
+        <LI>Hard grains of ice consisting of frozen raindrops, or largely melted and refrozen snowflakes.</LI>
+        <LI>Pellets of snow encased in a thin layer of ice which have formed from the freezing, either of droplets intercepted by the pellets, or of water resulting from the partial melting of the pellets.</LI>
+      </OL>
+      <A NAME="#HAIL">
+        <B>Hail</B>
+      </A>  Precipitation in the form of small balls or other pieces of ice falling separately or frozen together in irregular lumps.
+      <A NAME="#SHAIL">
+        <B>Small Hail and/or Snow Pellets</B>
+      </A>  Precipitation of white, opaque grains of ice. The grains are round or sometimes conical. Diameters range from about 0.08 to 0.2 inch (2 to 5 mm).
+    </UL>
+    <B>Obscurations</B>  Any phenomenon in the atmosphere, other than precipitation, that reduces the horizontal visibility. These include:
+    <UL>
+      <A NAME="#MIST">
+        <B>Mist</B>
+      </A>  A visible aggregate of minute water particles suspended in the atmosphere that reduces visibility to less than 7 statute miles but greater than or equal to 5/8 statute mile.
+      <A NAME="#FOG">
+        <B>Fog</B>
+      </A>  A visible aggregate of minute water particles (droplets) which are based at the Earth"s surface and reduces horizontal visibility to less than 5/8 statute mile and, unlike drizzle, it does not fall to the ground.
+      <A NAME="#SMOKE">
+        <B>Smoke</B>
+      </A>  A suspension in the air of small particles produced by combustion. A transition to haze may occur when smoke particles have traveled great distances (25 to 100 miles or more) and when the larger particles have settled out and the remaining particles have become widely scattered through the atmosphere.
+      <A NAME="#VOLCANIC">
+        <B>Volcanic Ash</B>
+      </A>  Fine particles of rock powder that originate from a volcano and that may remain suspended in the atmosphere for long periods.
+      <A NAME="#DUST">
+        <B>Widespread Dust</B>
+      </A>  Fine particles of earth or other matter raised or suspended in the air by the wind that may have occurred at or far away from the station which may restrict horizontal visibility.
+      <A NAME="#SAND">
+        <B>Sand</B>
+      </A>  Sand particles raised by the wind to a height sufficient to reduce visibility.
+      <A NAME="#HAZE">
+        <B>Haze</B>
+      </A>  A suspension in the air of extremely small, dry particles invisible to the naked eye and sufficiently numerous to give the air an opalescent appearance.
+      <A NAME="#SPRAY">
+        <B>Spray</B>
+      </A>  An ensemble of water droplets torn by the wind from the surface of an extensive body of water, generally from the crests of waves, and carried up a short distance into the air.
+    </UL>
+    <H2>
+      <B>Other Weather Phenomena</B>
+    </H2>
+    <A NAME="#WHIRLS">
+      <B>Well-developed Dust/Sand Whirl</B>
+    </A>  An ensemble of particles of dust or sand, sometimes accompanied by small liter, raised from the ground in the form of a whirling column of varying height with a small diameter and an approximately vertical vertical axis.
+    <A NAME="#SQUALLS">
+      <B>Squall</B>
+    </A>  A strong wind characterized by a sudden onset in which the wind speed increases at least 16 knots and is sustained at 22 knots or more for at least one minute.
+    <A NAME="#FUNNEL">
+      <B>Funnel Cloud (Tornadic Activity)</B>
+    </A>
+    These include:
+    <OL>
+      <LI>
+        <B>Tornado</B>  A violent, rotating column of air touching the ground.
+      </LI>
+      <LI>
+        <B>Funnel Cloud</B>  A violent, rotating column of air which does not touch the surface.
+      </LI>
+      <LI>
+        <B>Waterspout</B>  A violent, rotating column of air that forms over a body of water, and touches the water surface.
+      </LI>
+    </OL>
+    <A NAME="#SANDSTORM">
+      <B>Sandstorm</B>
+    </A>  Particles of sand carried aloft by a strong wind.  The sand particles are mostly confined to the lowest ten feet, and rarely rise more than fifty feet above the ground.
+    <A NAME="#DUSTSTORM">
+      <B>Duststorm</B>
+    </A>  A severe weather condition characterized by strong winds and dust-filled air over an extensive area.
+    <A NAME="#Observing">
+      <H3> Present Weather Observing Standards</H3>
+    </A>
+    <A NAME="#INT-PROX">
+      <B>Intensity/Proximity</B>
+    </A>The intensity qualifiers are: <B>light</B>, <B>moderate</B>, and<B>heavy</B>. The proximity qualifier is
+    <A HREF="#PROXIMITY">
+      <B>vicinity</B>
+    </A>.
+    <UL>
+      <LI>
+        <B>Intensity of Precipitation</B>. When more than one form of precipitation is occurring at a time or precipitation is occurring with an obscuration, the intensities determined shall be no greater than that which would be determined if any forms were occurring alone.
+      </LI>
+      <LI>
+        The intensity of <A HREF="#RAIN-ICE">rain or ice pellets</A> and the intensity of <A HREF="#SNOW-DRIZ">snow or drizzle</A> shall be identified as light, moderate, or heavy in accordance with the following:
+      </LI>
+      <OL>
+        <LI>
+          <A NAME="#RAIN-ICE">
+            <B>Intensity of Rain or Ice Pellets</B>
+          </A>. The intensity of rain and ice pellets shall be based on the criteria given in Table A-6, Table A-7, and Table A-8 below.
+        </LI>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="2" WIDTH="100%">
+              <B>Table A-6 Intensity of Rain or Ice Pellets based on Rate-of-Fall</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Intensity</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Criteria</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Light</TD>
+            <TD>Up to 0.10 inch per hour;maximum 0.01 inch in 6 minutes.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Moderate</TD>
+            <TD>0.11 inch to 0.30 inch per hour;more than 0.01 inch to 0.03 inch in 6 minutes.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Heavy</TD>
+            <TD>More than 0.30 inch per hour;more than 0.03 inch in 6 minutes.</TD>
+          </TR>
+        </TABLE>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="2" WIDTH="100%">
+              <B>Table A-7 Estimating Intensity of Rain</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Intensity</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Criteria</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Light</TD>
+            <TD>From scattered drops that, regardless of duration, do not completely wet an exposed surface up to a condition where individual drops are easily seen.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Moderate</TD>
+            <TD>Individual drops are not clearly identifiable;spray is observable just above pavements and other hard surfaces.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Heavy</TD>
+            <TD>Rain seemingly falls in sheets;individual drops are not identifiable;heavy spray to height of several inches is observed over hard surfaces.</TD>
+          </TR>
+        </TABLE>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="2" WIDTH="100%">
+              <B>Table A-8 Estimating Intensity of Ice Pellets</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Intensity</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Criteria</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Light</TD>
+            <TD>Scattered pellets that do not completely cover an exposed surface regardless of duration. Visibility is not affected.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Moderate</TD>
+            <TD>Slow accumulation on ground. Visibility reduced by ice pellets to less than 7 statute miles.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Heavy</TD>
+            <TD>Rapid accumulation on ground. Visibility reduced by ice pellets to less than 3 statute miles.</TD>
+          </TR>
+        </TABLE>
+        <A NAME="#SNOW-DRIZ">
+          <B>Intensity of Snow and Drizzle</B>
+        </A>. The intensity of snow and drizzle shall be based on the reported surface visibility in accordance with Table A-9 when occurring alone.
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="2" WIDTH="100%">
+              <B>Table A-9 Intensity of Snow or Drizzle Based on Visibility</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Intensity</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Criteria</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Light</TD>
+            <TD>Visibility &gt;1/2 mile.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Moderate</TD>
+            <TD>Visibility &gt;1/4 mile but &lt;or = 1/2 mile.</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Heavy</TD>
+            <TD>Visibility &lt;or = 1/4 mile.</TD>
+          </TR>
+        </TABLE>
+      </OL>
+      <UL>
+        <LI>
+          <A NAME="#PROXIMITY">
+            <B>Proximity</B>
+          </A> Unless otherwise directed elsewhere in this handbook, weather phenomena occurring beyond the point of observation (between 5 and 10 statute miles) shall be reported as <B>(in the) vicinity</B>.
+        </LI>
+        <LI>
+          <B>Descriptors</B>  Descriptors are qualifiers which further amplify weather phenomena and are used with certain types of precipitation and obscurations. The descriptor qualifiers are:
+        </LI>
+        <LI>
+          <A NAME="#SHALLOW">
+            <B>Shallow</B>
+          </A>  The descriptor shallow shall only be used to further describe fog that has little vertical extent (less than 6 feet).
+        </LI>
+        <LI>
+          <A NAME="#PARTIAL">
+            <B>Partial and Patches</B>
+          </A>  The descriptor partial and patches shall only be used to further describe fog that has little vertical extent (normally greater than or equal to 6 feet but less than 20 feet), and reduces horizontal visibility, but to a lesser extent vertically. The stars may often be seen by night and the sun by day.
+        </LI>
+        <LI>
+          <A NAME="#LDRIFT">
+            <B>Low Drifting</B>
+          </A>  When dust, sand, or snow is raised by the wind to less than 6 feet, "low drifting" shall be used to further describe the weather phenomenon.
+        </LI>
+        <LI>
+          <A NAME="#BLOW">
+            <B>Blowing</B>
+          </A>  When dust, sand, snow, and/or spray is raised by the wind to a height of 6 feet or more, "blowing" shall be used to further describe the weather phenomenon.
+        </LI>
+        <LI>
+          <A NAME="#SHOWER">
+            <B>Shower(s)</B>
+          </A>  Precipitation characterized by the suddenness with which they start and stop, by the rapid changes of intensity, and usually by rapid changes in the appearance of the sky.
+        </LI>
+        <LI>
+          <A NAME="#THUNDER">
+            <B>Thunderstorm</B>
+          </A>  A local storm produced by a cumulonimbus cloud that is accompanied by lightning and/or thunder.
+        </LI>
+        <LI>
+          <A NAME="#FREEZE">
+            <B>Freezing</B>
+          </A>  When fog is occurring and the temperature is below 0<SUP>o</SUP>C, "freezing" shall be used to further describe the phenomenon. When drizzle and/or rain freezes upon impact and forms a glaze on the ground or other exposed objects, "freezing" shall be used to further describe the phenomenon.
+        </LI>
+      </UL>
+      <A NAME="#Reporting">
+        <H3> Present Weather Reporting Standards</H3>
+      </A>
+      Present weather is reported when it is occurring <B>at</B>, or <B>in the vicinity of</B>, the station and <B>at the time of observation</B>. Unless directed elsewhere, the location of the weather phenomena shall be reported as:
+      <OL>
+        <LI>
+          <B>occurring at the station</B> when within 5 statute miles of the point(s) of observation.
+        </LI>
+        <LI>
+          <B>in the vicinity of the station</B> when between 5 and 10 statute miles of the points(s) of observation.
+        </LI>
+        <LI>
+          <B>distant from the station</B> when beyond 10 statute miles of the point(s) of observation.
+        </LI>
+      </OL>
+      <B>Note:</B> Precipitation shall be reported when occurring at the point of observation. Precipitation not occurring at the point of observation but within 10 statute miles shall be reported as <B>in the vicinity</B>.  Obscurations are reported <B> only when the prevailing visibility is less than 7 statute miles or considered operationally significant </B> with the exception of:
+      <UL>
+        <UL>
+          <OL>
+            <LI>
+              Volcanic ash. Volcanic ash shall <B>always</B> be reported when observed.
+            </LI>
+            <LI>low drifting dust,</LI>
+            <LI>low drifting sand,</LI>
+            <LI>low drifting sand,</LI>
+            <LI>shallow fog,</LI>
+            <LI>partial fog,</LI>
+            <LI>and patches (of) fog.</LI>
+          </OL>
+        </UL>
+      </UL>
+      When more than one type of present weather are reported at the same time, present weather shall be reported in the following order:
+      <UL>
+        <UL>
+          <OL>
+            <LI>Tornadic activity - Tornado, Funnel Cloud, or Waterspout.</LI>
+            <LI>Thunderstorm(s) with or without associated precipitation.</LI>
+            <LI>Present weather in order of decreasing dominance, i.e., the most dominant type is reported first.</LI>
+            <LI>
+              Left-to-right in <A HREF="#A-10">Table A-10</A> (Columns 1 through 5.)
+            </LI>
+          </OL>
+        </UL>
+      </UL>
+      The reporting notations given in <A HREF="#A-10">Table A-10</A> shall be used to report present weather.
+      <A NAME="#UP">
+        <B>Unknown Precipitation</B>
+      </A>. Unknown precipitation shall only be reported by automated stations to indicate precipitation of unknown type when the automated system cannot identify the precipitation with any greater precision.
+      <A NAME="#OTHER">Other Significant Weather Phenomena</A>. Observers shall be alert to weather phenomena that are visible from the station but not occurring at the station. Examples of such phenomena are fog banks, localized rain, snow blowing over runways, etc. These phenomena shall be reported whenever they are considered to be operationally significant. Volcanic eruptions shall be reported in remarks.
+      <A NAME="#SUMMARY">
+        <H3> Summary of Weather</H3>
+      </A>  Table A-11 contains a summary of the present weather observing and reporting standards according to the type of station.
+      <TABLE BORDER="1" WIDTH="100%">
+        <TR>
+          <TD COLSPAN="4" ALIGN="CENTER">
+            <B>Table A-11 Summary of Present Weather Observing and Reporting Standards</B>
+          </TD>
+        </TR>
+        <TR>
+          <TD ROWSPAN="2" COLSPAN="2" ALIGN="CENTER" VALIGN="CENTER" WIDTH="30%">
+            <B>Present Weather</B>
+          </TD>
+          <TD COLSPAN="2" ALIGN="CENTER" WIDTH="70%">
+            <B>Type of Station</B>
+          </TD>
+        </TR>
+        <TD ALIGN="CENTER" WIDTH="35%">
+          <B>Automated</B>
+        </TD>
+        <TD ALIGN="CENTER" WIDTH="35%">
+          <B>Manual</B>
+        </TD>
+        <TR>
+          <TD COLSPAN="2" ALIGN="CENTER" WIDTH="40%">
+            Funnel Cloud<BR/>(Tornadic Activity)
+          </TD>
+          <TD ALIGN="CENTER" WIDTH="35%">Augmented at designated stations</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Report <B>FC</B>, or <B>+FC</B> and in remarks <B>TORNADO</B>, <B>FUNNEL CLOUD</B>, <B>WATERSPOUT</B>, time of beginning and time of ending, source, location, and direction of movement.
+          </TD>
+        </TR>
+        <TR>
+          <TD COLSPAN="2" ALIGN="CENTER" WIDTH="40%">Thunderstorm</TD>
+          <TD ALIGN="CENTER" WIDTH="35%">Augmented at designated stations</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Report <B>TS</B>, time of beginning/ending, location and movement.
+          </TD>
+        </TR>
+        <TR>
+          <TD COLSPAN="2" ALIGN="CENTER" WIDTH="40%">Hail</TD>
+          <TD ALIGN="CENTER" WIDTH="35%">
+            Augmented at<BR/>designated stations
+          </TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Report <B>GR</B>, time of begining and time of ending, estimated size of largest hailstones in inches preceded by <B>GR</B>.
+          </TD>
+        </TR>
+        <TR>
+          <TD COLSPAN="2" ALIGN="CENTER" WIDTH="40%">Small hail and/or snow pellets</TD>
+          <TD ALIGN="CENTER" WIDTH="35%">Augmented at designated stations</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Report <B>GS</B>, time of beginning and time of ending.
+          </TD>
+        </TR>
+        <TR>
+          <TD ROWSPAN="2" COLSPAN="2" ALIGN="CENTER" VALIGN="CENTER" WIDTH="30%">Obscurations</TD>
+          <TD ALIGN="CENTER" WIDTH="35%">
+            <B>BR</B>, <B>FG</B> and <B>HZ</B> may reported
+          </TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Report <B>BR</B>, <B>FG</B>, <B>PRFG</B>,<B>FU</B>, <B>DU</B>, <B>HZ</B>, <B>SA</B>, <B>BLSN</B>, <B>BLSA</B>,<B>BLDU</B>, <B>SS</B>, <B>DS</B>, <B>BLPY</B>, and <B>VA</B>.
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">N/A</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">Reports non-uniform weather and obscurations.</TD>
+        </TR>
+        <TR>
+          <TD ROWSPAN="7" COLSPAN="2" ALIGN="CENTER" VALIGN="CENTER" WIDTH="30%">Precipitation</TD>
+          <TD ALIGN="CENTER" WIDTH="35%">
+            <B>DZ</B>, <B>RA</B>, <B>SN</B> and <B>UP</B> may be<BR/>reported
+          </TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Report <B>RA</B>, <B>SHRA</B>,<B>DZ</B>,<B>FZRA</B>, <B>FZDZ</B>, <B>SN</B>, <B>SHSN</B>, <B>SG</B>, <B>GS</B>,<B>IC</B>, <B>GR</B>, <B>PL</B>, and <B>SHPL</B>.
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">
+            May be reported as <B>FZ</B>
+          </TD>
+          <TD ALIGN="LEFT" WIDTH="35%">Reports descriptor with precipitation.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">May report the intensity of precipitation as light, moderate,or heavy.</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Reports the intensity of precipitation, other than <B>IC</B>, <B>GR</B>, and <B>GS</B> as light, moderate, or heavy.
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">May report hourly accumulation of liquid precipitation.</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">May report hourly accumulation of liquid precipitation.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">May report 3-, 6-, and 24-hour accumulation of precipitation (water equivalent of solid).</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">May report 3-, 6-, and 24-hour accumulation of precipitation (water equivalent of solid).</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">N/A</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">May report depth and accumulation of solid precipitation.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER" WIDTH="35%">N/A</TD>
+          <TD ALIGN="LEFT" WIDTH="35%">
+            Reports size of <B>GR</B>.
+          </TD>
+        </TR>
+        <TR>
+          <TD COLSPAN="2" ALIGN="CENTER" WIDTH="40%">Squall</TD>
+          <TD ALIGN="CENTER" WIDTH="35%">
+            Report <B>SQ</B>.
+          </TD>
+          <TD ALIGN="CENTER" WIDTH="35%">
+            Report <B>SQ</B>.
+          </TD>
+        </TR>
+      </TABLE>
+      <A NAME="#CODING">
+        <H3> Coding and Decoding the Present Weather Group (w"w")</H3>
+      </A>  The appropriate notations used in <A HREF="#A-10">Table A-10</A> shall be used to code present weather.  The following general rules apply when coding present weather for a METAR or SPECI.
+      <UL>
+        <OL>
+          <LI>Weather occurring at the point of observation (at the station) or in the vicinity of the station shall be coded in the body of the report;weather observed but not occurring at the point of observation (at the station) or in the vicinity shall be coded in Remarks.</LI>
+          <LI>With the exceptions of volcanic ash, low drifting dust, low drifting sand, low drifting snow, shallow fog, partial fog, and patches (of) fog, an obscuration shall be coded in the body of the report if the surface visibility is less than 7 miles or considered operationally significant. Volcanic ash shall always be coded when observed.</LI>
+          <LI>Separate groups shall be used for each type of present weather. Each group shall be separated from the other by a space. METAR/SPECI shall contain no more than three present weather groups.</LI>
+          <LI>
+            The weather groups shall be constructed by considering columns 1 to 5 in <A HREF="#A-10">Table A-10</A> in sequence, i.e., intensity, followed by description, followed by weather phenomena, e.g., heavy rain shower(s) is coded as <B>+SHRA</B>.
+          </LI>
+        </OL>
+      </UL>
+      <OL>
+        <LI>
+          <B>Intensity or Proximity Qualifier</B>
+          <OL>
+            <LI>
+              Intensity shall be coded with precipitation types, except ice crystals and hail, including those associated with a thunderstorm (<B>TS</B>) and those of a showery nature (<B>SH</B>). Tornadoes and waterspouts shall be coded as <B>+FC</B>.
+            </LI>
+            <LI>
+              No intensity shall be ascribed to the obscurations of blowing dust (<B>BLDU</B>), blowing sand (<B>BLSA</B>), and blowing snow (<B>BLSN</B>). Only moderate or heavy intensity shall be ascribed to sandstorm (<B>SS</B>) and duststorm (<B>DS</B>).
+            </LI>
+            <LI>
+              The proximity qualifier for vicinity, <B>VC</B>, (weather phenomena observed in the vicinity of but not at the point(s) of observation) shall be coded in combination with thunderstorm (<B>TS</B>), fog (<B>FG</B>), shower(s) (<B>SH</B>), well-developed dust/sand whirls (<B>PO</B>), blowing dust (<B>BLDU</B>), blowing sand (<B>BLSA</B>), blowing snow (<B>BLSN</B>), sandstorm (<B>SS</B>), and duststorm (<B>DS</B>).  Intensity qualifiers shall not be coded with <B>VC</B>.
+            </LI>
+            <LI>
+              <B>VCFG</B> shall be coded to report any type of fog in the vicinity of the point(s) of observation.
+            </LI>
+            <LI>
+              Precipitation not occurring at the point of observation but within 10 statute miles shall be coded as showers in the vicinity (<B>VCSH</B>).
+            </LI>
+          </OL>
+          <LI>
+            <B>Descriptor Qualifier</B>Only one descriptor shall be coded for each weather phenomena group, e.g., <B>-FZDZ</B>. Mist (<B>BR</B>) shall not be coded with any descriptor.
+          </LI>
+          <OL>
+            <LI>
+              The descriptors shallow (<B>MI</B>), partial (<B>PR</B>), and patches (<B>BC</B>) shall only be coded with <B>FG</B>, e.g., <B>MIFG</B>.
+            </LI>
+            <LI>
+              The descriptors low drifting (<B>DR</B>) and blowing (<B>BL</B>) shall only be coded with dust (<B>DU</B>), sand (<B>SA</B>), and snow (<B>SN</B>), e.g., <B>BLSN</B> or <B>DRSN</B>. <B>DR</B> shall be coded for <B>DU</B>, <B>SA</B>, or <B>SN</B> raised by the wind to less than six feet above the ground.  When blowing snow is observed with snow falling from clouds, both phenomena are reported, e.g., <B>SN BLSN</B>. If there is blowing snow and the observer cannot determine whether or not snow is also falling, then <B>BLSN</B> shall be reported.
+            </LI>
+            <LI>
+              <B>PY</B> shall be coded only with blowing (<B>BL</B>).
+            </LI>
+            <LI>
+              The descriptor shower(s) (<B>SH</B>) shall be coded only with one or more of the precipitation types of rain (<B>RA</B>), snow (<B>SN</B>), ice pellets (<B>PL</B>), small hail (<B>GS</B>), or large hail (<B>GR</B>).  The <B>SH</B> descriptor indicates showery-type precipitation. When any type of precipitation is coded with <B>VC</B>, the intensity and type of precipitation shall not be coded.
+            </LI>
+            <LI>
+              The descriptor thunderstorm (<B>TS</B>) may be coded by itself, i.e., a thunderstorm without associated precipitation, or it may be coded with the precipitation types of rain (<B>RA</B>), snow (<B>SN</B>), ice pellets (<B>PL</B>), small hail and/or snow pellets (<B>GS</B>), or hail (<B>GR</B>). For example, a thunderstorm with snow and small hail and/or snow pellets would be coded as <B>TSSNGS</B>. <B>TS</B> shall not be coded with <B>SH</B>.
+            </LI>
+            <LI>
+              The descriptor freezing (<B>FZ</B>) shall only be coded in combination with fog (<B>FG</B>), drizzle (<B>DZ</B>), or rain (<B>RA</B>), e.g., <B>FZRA</B>. <B>FZ</B> shall not be coded with <B>SH</B>.
+            </LI>
+          </OL>
+          <LI>
+            <B>Precipitation</B>. Up to three types of precipitation may be coded in a single present weather group. They shall be coded in order of decreasing dominance based on intensity.
+          </LI>
+          <OL>
+            <LI>
+              Drizzle shall be coded as <B>DZ</B>;rain shall be coded as <B>RA</B>;snow shall be coded as <B>SN</B>;snow grains shall be coded as <B>SG</B>;ice crystals shall be coded as <B>IC</B>;ice pellets shall be coded as <B>PL</B>;hail shall be coded as <B>GR</B>, and small hail and/or snow pellets shall be coded as <B>GS</B>.
+            </LI>
+            <LI>
+              At automated stations, precipitation of unknown type shall be coded as <B>UP</B>.
+            </LI>
+          </OL>
+          <LI>
+            <B>Obscuration</B>
+          </LI>
+          <OL>
+            <LI>
+              Mist shall be coded as <B>BR</B>;fog shall be coded as <B>FG</B>;smoke shall be coded as <B>FU</B>;volcanic ash shall be coded as <B>VA</B>;widespread dust shall be coded as <B>DU</B>;sand shall be coded as <B>SA</B>;and haze shall be coded as <B>HZ</B>.
+            </LI>
+            <LI>
+              Shallow fog (<B>MIFG</B>), patches (of) fog (<B>BCFG</B>), and partial fog (<B>PRFG</B>) may be coded with prevailing visibility of 7 statute miles or greater.
+            </LI>
+            <LI>
+              Spray shall be coded only as <B>BLPY</B>.
+            </LI>
+          </OL>
+          <LI>
+            <B>Other Weather Phenomena</B>
+          </LI>
+          <OL>
+            <LI>
+              Well-developed dust/sand whirls shall be coded as <B>PO</B>;squalls shall be coded as <B>SQ</B>;sandstorm shall be coded as <B>SS</B>;and duststorm shall be coded as <B>DS</B>.
+            </LI>
+            <LI>
+              Tornadoes and waterspouts shall be coded as <B>+FC</B>. Funnel clouds shall be coded as <B>FC</B>.
+            </LI>
+          </OL>
+        </LI>
+      </OL>
+    </UL>
+    <A NAME="#DECODE">
+      <H3> Decoding the Present Weather Group (w"w")</H3>
+    </A>  Find the reported present weather code in the body of the matrix.  Follow the row to the left to find the present weather phenomena. Follow the column up to find the qualifier of the present weather phenomena.
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="14">
+          <B>Weather Phenomena Matrix</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="2" ROWSPAN="3">
+          <B>WX PHENOMENA</B>
+        </TD>
+        <TD ALIGN="CENTER" COLSPAN="12">
+          <B>QUALIFIER</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="4">
+          <B>Intensity or Proximity</B>
+        </TD>
+        <TD ALIGN="CENTER" COLSPAN="8">
+          <B>
+            Descriptor<SUP>1</SUP>
+          </B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">Light</TD>
+        <TD ALIGN="CENTER">Moderate</TD>
+        <TD ALIGN="CENTER">Heavy</TD>
+        <TD ALIGN="CENTER">Vicinity</TD>
+        <TD ALIGN="CENTER">Shallow</TD>
+        <TD ALIGN="CENTER">Partial</TD>
+        <TD ALIGN="CENTER">Patches</TD>
+        <TD ALIGN="CENTER">
+          Low<BR/>Drifting
+        </TD>
+        <TD ALIGN="CENTER">Blowing</TD>
+        <TD ALIGN="CENTER">Shower</TD>
+        <TD ALIGN="CENTER">
+          Thunder-<BR/>storm
+        </TD>
+        <TD ALIGN="CENTER">Freezing</TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="2" ALIGN="CENTER">
+          <B>Precipitation</B>
+        </TD>
+        <TD ALIGN="CENTER">-</TD>
+        <TD ALIGN="CENTER"> </TD>
+        <TD ALIGN="CENTER">+</TD>
+        <TD ALIGN="CENTER">
+          <B>
+            VC<SUP>2</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>MI</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>PR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            DR<SUP>3</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SH</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            TS<SUP>4</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FZ</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Drizzle</TD>
+        <TD ALIGN="CENTER">
+          <B>DZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-DZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+DZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FZDZ</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Rain</TD>
+        <TD ALIGN="CENTER">
+          <B>RA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-RA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>RA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+RA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FZRA</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Snow</TD>
+        <TD ALIGN="CENTER">
+          <B>SN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-SN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+SN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DRSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Snow Grains</TD>
+        <TD ALIGN="CENTER">
+          <B>SG</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-SG</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SG</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+SG</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Ice Crystals<SUP>5</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>IC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>IC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Ice Pellets</TD>
+        <TD ALIGN="CENTER">
+          <B>PL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-PL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>PL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+PL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Hail<SUP>5,6</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>GR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>GR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHGR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSGR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Small Hail<SUP>5,7</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>GS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>GS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHGS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSGS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Unknown<BR/>Precipitation
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>UP</B>
+        </TD>
+        <TD ALIGN="CENTER" COLSPAN="4">
+          <B>
+            Automated Stations Only<BR/>- No Intensity
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="6">
+          <B>
+            Thunderstorms, Showers, Freezing, and their<BR/>Proximity Indicator
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Thunderstorm</TD>
+        <TD ALIGN="CENTER">
+          <B>TS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            VCTS<SUP>8</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Thunderstorm &amp;Rain</TD>
+        <TD ALIGN="CENTER">
+          <B>TSRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-TSRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+TSRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Thunderstorm &amp;Snow</TD>
+        <TD ALIGN="CENTER">
+          <B>TSSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-TSSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+TSSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Thunderstorm &amp;Ice Pellets</TD>
+        <TD ALIGN="CENTER">
+          <B>TSPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-TSPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+TSPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Thunderstorm &amp;Snow Grains</TD>
+        <TD ALIGN="CENTER">
+          <B>TSGS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSGS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Thunderstorm &amp;Hail</TD>
+        <TD ALIGN="CENTER">
+          <B>TSGR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>TSGR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Showers</TD>
+        <TD ALIGN="CENTER">
+          <B>SH</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            VCSH<SUP>9</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Rain Showers</TD>
+        <TD ALIGN="CENTER">
+          <B>SHRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-SHRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+SHRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Snow Showers</TD>
+        <TD ALIGN="CENTER">
+          <B>SHSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-SHSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+SHSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Shower of Ice Pellets</TD>
+        <TD ALIGN="CENTER">
+          <B>SHPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-SHPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+SHPL</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Hail Shower</TD>
+        <TD ALIGN="CENTER">
+          <B>SHGR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHGR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Small Hail Shower</TD>
+        <TD ALIGN="CENTER">
+          <B>SHGS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SHGS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Freezing Drizzle</TD>
+        <TD ALIGN="CENTER">
+          <B>FZDZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-FZDZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FZDZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+FZDZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Freezing Rain</TD>
+        <TD ALIGN="CENTER">
+          <B>FZRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-FZRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FZRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+FZRA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Freezing Fog<SUP>16</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FZFG</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            FZFG<SUP>16</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="2">
+          <B>Obscurations</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+FZDZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Mist<SUP>10</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BR</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            BR<SUP>10</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Fog<SUP>11</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FG</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            FG<SUP>11</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            VCFG<SUP>12</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            MIFG<SUP>13</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            PRFG<SUP>14</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            BCFG<SUP>15</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            FZFG<SUP>16</SUP>
+          </B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Smoke</TD>
+        <TD ALIGN="CENTER">
+          <B>FU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Volcanic Ash<SUP>17</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>
+            VA<SUP>17</SUP>
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Widespread Dust</TD>
+        <TD ALIGN="CENTER">
+          <B>DU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DRDU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLDU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Sand</TD>
+        <TD ALIGN="CENTER">
+          <B>SA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DRSA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Haze</TD>
+        <TD ALIGN="CENTER">
+          <B>HZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>HZ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Spray</TD>
+        <TD ALIGN="CENTER">
+          <B>py</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLPY</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="2">
+          <B>
+            Blowing<BR/>Phenomena
+          </B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Blowing Snow<SUP>18</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCBLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Blowing Sand</TD>
+        <TD ALIGN="CENTER">
+          <B>BLSA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCBLSA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSA</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Blowing Dust</TD>
+        <TD ALIGN="CENTER">
+          <B>BLDU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLDU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCBLDU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLDU</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="2">
+          <B>OTHER</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCBLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>BLSN</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Sand/Dust Whirls</TD>
+        <TD ALIGN="CENTER">
+          <B>PO</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>PO</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCPO</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Squalls<SUP>19</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SQ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SQ</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>Funnel Cloud</TD>
+        <TD ALIGN="CENTER">
+          <B>FC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>FC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Tornado/<BR/>Waterspout<SUP>20</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+FC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+FC</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Sandstorm<SUP>21</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>SS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+SS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCSS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Duststorm<SUP>22</SUP>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>DS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>+DS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>VCDS</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>-</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="14" ALIGN="CENTER">
+          <B>Footnotes for Weather Phenomena Matrix</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD COLSPAN="14">
+          <OL>
+            <LI>- Only 1 descriptor shall be included for each weather phenomena group;e.g., BCFG. Only 2 exceptions to this rule: VCSH and VCTS.</LI>
+            <LI>- Vicinity is defined as >0SM to 10SM of the point of observation for precipitation. Other than precipitation (VCFG, VCBLSN, VCBLSA, BCBLDU, VCPO, VCSS, VCDS), vicinity is 5SM to 10SM.</LI>
+            <LI>- Raised by wind to less than 6 feet above the ground.</LI>
+            <LI>- TS may be reported by itself if no precipitation is associated with the thunderstorm.</LI>
+            <LI>- No intensity is ever given to hail (GR/GS[snow pellets]) or ice crystals(IC).</LI>
+            <LI>- Largest hailstone observed has a diamter of 1/4 inch or more.</LI>
+            <LI>- Hailstone diameter is less than 1/4 inch. No remark is entered for hailstone size.</LI>
+            <LI>- VCTS shall only be used by automated stations. If thunder is heard, TS shall be reported.</LI>
+            <LI>- Showers (SH) when associated with the indicator VC, the type and intensity of the showery precipitation shall not be specified;i.e., +VCSHRA is not allowed;only VCSH would be reported. VCSH shall be used to report any type of precipitation not at point of observation, but >0SM to 10SM.</LI>
+            <LI>- BR (mist) shall only be used when the visibility is at least 5/8SM, but not more than 6SM.</LI>
+            <LI>
+              - For FG (fog) to be reported <U>without</U> the qualifiers VC<SUP>11</SUP>, MI<SUP>12</SUP>, PR<SUP>13</SUP>, or BC<SUP>14</SUP> the visibility shall be less than 5/8 SM.
+            </LI>
+            <LI>- VC is used to report any type of fog observed in the vicinity (5-10 SM) of the station.</LI>
+            <LI>- MIFG (shallow fog) to be reported, the visibility at 6 feet above the ground level shall be 5/8 SM or more and the apparent visibility in the fog layer shall be less than 5/8 SM.</LI>
+            <LI>- PRFG (partial fog) indicates that a substantial part of the station is covered by fog while the remainder is clear of fog.</LI>
+            <LI>- BCFG (patches of fog) indicates that patches of fog randomly cover the station.</LI>
+            <LI>
+              - FZFG is <U>any</U> fog consisting predominantly of water droplets at temperatures below 0<SUP>o</SUP>C, whether it is depositing rime or not.
+            </LI>
+            <LI>- Volcanic Ash is always reported in the body of the METAR/SPECI when present. Visibility is not a factor.</LI>
+            <LI>- SN BLSN indicates snow falling from clouds with blowing snow occurring.  If the observer cannot determine whether or not snow is also falling from clouds, then only BLSN shall be reported.</LI>
+            <LI>- SQ (squall) is a sudden increase in wind speed of at least 16 knots, the speed rising to 22 knots or more and lasting for at least one minute.</LI>
+            <LI>- Tornadoes and Waterspouts shall be reported using the indicator "+", i.e., +FC.</LI>
+            <LI>- SS (sandstorm) reported if the visibility is &gt;or = 5/16 SM and &lt;or = 5/8 SM. Report +SS if the visibility is &lt;5/16 SM.</LI>
+            <LI>- DS (duststorm) reported if the visibility is &gt;or = 5/16 SM and &lt;or = 5/8 SM. Report +DS if the visibility is &lt;5/16 SM.</LI>
+          </OL>
+          <BR/>
+          No more than three weather groups shall be used to report weather phenomena at or near the station. If more than one significant weather phenomena is observed, separate weather phenomena groups shall be included in the report. If more than one form of precipitation is observed, the appropriate abbreviations shall be combined in a single group with the predominant type of precipitation being reported first. In such a single group, the intensity shall refer to the total precipitation and be reported with one or no indicator as appropriate;e.g., -RASN FG HZ.
+        </TD>
+      </TR>
+    </TABLE>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

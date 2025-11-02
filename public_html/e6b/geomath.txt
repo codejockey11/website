@@ -1,0 +1,8 @@
+var p1 = LatLon(lat1, lon1);
+var p2 = LatLon(lat2, lon2);
+
+var p = LatLon.intersection(p1, brng1, p2, brng2)
+
+
+// http://www.movable-type.co.uk/scripts/
+// http://cdn.rawgit.com/chrisveness/geodesy/v1.1.3/

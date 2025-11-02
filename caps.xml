@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><WMS_Capabilities version="1.3.0" updateSequence="18523" xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wms https://opengeo.ncep.noaa.gov/geoserver/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title/>
+    <Abstract/>
+    <KeywordList/>
+    <OnlineResource xlink:type="simple" xlink:href="https://opengeo.ncep.noaa.gov/geoserver/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson/>
+        <ContactOrganization/>
+      </ContactPersonPrimary>
+      <ContactPosition/>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country/>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress/>
+    </ContactInformation>
+    <Fees>none</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="https://opengeo.ncep.noaa.gov/geoserver/conus/conus_cref_qcd/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="https://opengeo.ncep.noaa.gov/geoserver/conus/conus_cref_qcd/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/json;type=geojson</Format>
+        <Format>application/json;type=topojson</Format>
+        <Format>application/json;type=utfgrid</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.mapbox-vector-tile</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>image/vnd.jpeg-png</Format>
+        <Format>image/vnd.jpeg-png8</Format>
+        <Format>text/html; subtype=openlayers</Format>
+        <Format>text/html; subtype=openlayers2</Format>
+        <Format>text/html; subtype=openlayers3</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="https://opengeo.ncep.noaa.gov/geoserver/conus/conus_cref_qcd/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>text/xml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="https://opengeo.ncep.noaa.gov/geoserver/conus/conus_cref_qcd/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+      <Format>JSON</Format>
+    </Exception>
+    <Layer>
+      <Title/>
+      <Abstract/>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>EPSG:4269</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>-130.0</westBoundLongitude>
+        <eastBoundLongitude>-60.0000015646219</eastBoundLongitude>
+        <southBoundLatitude>20.000000782311</southBoundLatitude>
+        <northBoundLatitude>55.0</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="-130.0" miny="20.000000782311" maxx="-60.0000015646219" maxy="55.0"/>
+      <Layer queryable="1" opaque="0">
+        <Name>conus_cref_qcd</Name>
+        <Title>conus_cref_qcd</Title>
+        <Abstract>Quality Controlled 1km x 1km CONUS Radar Composite Reflectivity. This data is provided Multi-Radar-Multi-Sensor (MRMS) algorithm.</Abstract>
+        <KeywordList>
+          <Keyword>conus_cref_qcd</Keyword>
+          <Keyword>WCS</Keyword>
+          <Keyword>ImageMosaic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-130.0</westBoundLongitude>
+          <eastBoundLongitude>-60.0000015646219</eastBoundLongitude>
+          <southBoundLatitude>20.000000782311</southBoundLatitude>
+          <northBoundLatitude>55.0</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-130.0" miny="20.000000782311" maxx="-60.0000015646219" maxy="55.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="20.000000782311" miny="-130.0" maxx="55.0" maxy="-60.0000015646219"/>
+        <Dimension name="time" default="2025-11-02T02:14:38Z" units="ISO8601" nearestValue="1">2025-11-02T00:16:39.000Z,2025-11-02T00:18:41.000Z,2025-11-02T00:20:39.000Z,2025-11-02T00:22:38.000Z,2025-11-02T00:24:38.000Z,2025-11-02T00:26:40.000Z,2025-11-02T00:28:40.000Z,2025-11-02T00:30:36.000Z,2025-11-02T00:32:41.000Z,2025-11-02T00:34:38.000Z,2025-11-02T00:36:37.000Z,2025-11-02T00:38:37.000Z,2025-11-02T00:40:39.000Z,2025-11-02T00:42:37.000Z,2025-11-02T00:44:38.000Z,2025-11-02T00:46:37.000Z,2025-11-02T00:48:43.000Z,2025-11-02T00:50:38.000Z,2025-11-02T00:52:38.000Z,2025-11-02T00:54:40.000Z,2025-11-02T00:56:40.000Z,2025-11-02T00:58:41.000Z,2025-11-02T01:00:36.000Z,2025-11-02T01:02:42.000Z,2025-11-02T01:04:36.000Z,2025-11-02T01:06:37.000Z,2025-11-02T01:08:39.000Z,2025-11-02T01:10:39.000Z,2025-11-02T01:12:35.000Z,2025-11-02T01:14:43.000Z,2025-11-02T01:16:40.000Z,2025-11-02T01:18:44.000Z,2025-11-02T01:20:37.000Z,2025-11-02T01:22:36.000Z,2025-11-02T01:24:38.000Z,2025-11-02T01:26:39.000Z,2025-11-02T01:28:38.000Z,2025-11-02T01:30:38.000Z,2025-11-02T01:32:37.000Z,2025-11-02T01:34:38.000Z,2025-11-02T01:36:40.000Z,2025-11-02T01:38:39.000Z,2025-11-02T01:40:42.000Z,2025-11-02T01:42:38.000Z,2025-11-02T01:44:38.000Z,2025-11-02T01:46:39.000Z,2025-11-02T01:48:36.000Z,2025-11-02T01:50:39.000Z,2025-11-02T01:52:39.000Z,2025-11-02T01:54:38.000Z,2025-11-02T01:56:37.000Z,2025-11-02T01:58:41.000Z,2025-11-02T02:00:41.000Z,2025-11-02T02:02:40.000Z,2025-11-02T02:04:40.000Z,2025-11-02T02:06:40.000Z,2025-11-02T02:08:41.000Z,2025-11-02T02:10:39.000Z,2025-11-02T02:12:38.000Z,2025-11-02T02:14:38.000Z</Dimension>
+        <DataURL>
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="https://mrms.ncep.noaa.gov/data/RIDGEII/L2/CONUS/CREF_QCD"/>
+        </DataURL>
+        <Style>
+          <Name>radar_reflectivity</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style for rasters</Abstract>
+          <LegendURL width="500" height="30">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opengeo.ncep.noaa.gov/geoserver/conus/conus_cref_qcd/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=500&amp;height=30&amp;layer=conus_cref_qcd"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

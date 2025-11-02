@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Radio Button Example</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="../../favicon.ico" />
+<link rel="stylesheet" href="../../base.css" />
+<script type="text/javascript">
+//==========================================================================================
+var radioCheckedImage = new Image();
+var radioUncheckedImage = new Image();
+
+radioCheckedImage.src = '../images/radioChecked.png';
+radioUncheckedImage.src = '../images/radioUnchecked.png';
+
+var checkboxCheckedImage = new Image();
+var checkboxUncheckedImage = new Image();
+
+checkboxCheckedImage.src = '../images/checkboxChecked.png';
+checkboxUncheckedImage.src = '../images/checkboxUnchecked.png';
+//==========================================================================================
+function RadioClicked(radioid, radiosetname, formid)
+{
+    var form = document.getElementById(formid);
+
+    for (var i = 0; i < form.length; i++)
+    {
+        if (form[i].name == radiosetname)
+        {
+            document.getElementById(form[i].id).checked = false;
+
+            document.getElementById('Image' + form[i].id).src = radioUncheckedImage.src;
+        }
+    }
+
+    document.getElementById(radioid).checked = true;
+
+    document.getElementById('Image' + radioid).src = radioCheckedImage.src;
+}
+//==========================================================================================
+function CheckboxClicked(checkid)
+{
+    if (document.getElementById(checkid).checked == true)
+    {
+        document.getElementById('Image' + checkid).src = checkboxUncheckedImage.src;
+
+        document.getElementById(checkid).checked = false;
+    }
+    else
+    {
+        document.getElementById('Image' + checkid).src = checkboxCheckedImage.src;
+
+        document.getElementById(checkid).checked = true;
+    }
+}
+//==========================================================================================
+</script>
+<style>
+td
+{
+    font-family: Verdana;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<form id="MyFormID" action="#">
+    <table>
+        <tr>
+            <td>IFR</td>
+            <td>
+            <span style="display:none;"><input type="radio" name="thisradio" value="IFR" id="IFR"></span>
+            <img id="ImageIFR" src="../images/radioUnchecked.png" width="16" height="16" onclick="RadioClicked('IFR','thisradio','MyFormID')" />
+            </td>
+            <td>VFR</td>
+            <td>
+            <span style="display:none;"> <input type="radio" name="thisradio" value="VFR" id="VFR"></span>
+            <img id="ImageVFR" src="../images/radioChecked.png" width="16" height="16" onclick="RadioClicked('VFR','thisradio','MyFormID')" />
+            </td>
+            <td>COM</td>
+            <td>
+            <span style="display:none;"><input type="checkbox" name="thischeckbox" value="COM" id="COM"></span>
+            <img id="ImageCOM" src="../images/checkboxUnChecked.png" width="16" height="16" onclick="CheckboxClicked('COM')" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
