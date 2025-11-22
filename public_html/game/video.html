@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Movie</title>
+    <meta charset="utf-8">
+    <meta content-type="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <style>
+        body
+        {
+            background-color: black;
+            font-family: Arial;
+            font-size: 16px;
+            color: slategray;
+        }
+
+        .video
+        {
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        video::-webkit-media-controls
+        {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        var video = null;
+
+        document.addEventListener('keydown', function (event)
+        {
+            event.preventDefault();
+
+            if (event.key === 'Escape' || event.key === 'Esc')
+            {
+                video.TogglePlayingState();
+
+                window.chrome.webview.postMessage('<?xml version="1.0"?><result><game><exit>Y</exit></game></result>');
+            }
+            else if (event.key === 'F6')
+            {
+                video.TogglePlayingState();
+
+                window.chrome.webview.postMessage('<?xml version="1.0"?><result><video><exit>Y</exit></video></result>');
+            }
+            else if (event.key === ' ')
+            {
+                video.TogglePlayingState();
+            }
+        });
+
+        class Video
+        {
+            constructor()
+            {
+                this.url = new URL(window.location.href);
+
+                this.width = this.url.searchParams.get('width');
+                this.height = this.url.searchParams.get('height');
+                this.source = this.url.searchParams.get('source');
+
+                this.video = document.getElementById('video');
+                this.duration = document.getElementById('duration');
+                this.title = document.getElementById('title');
+
+                var t = this.source.split('.');
+                this.video.type = 'video/' + t[1];
+
+                this.video.width = this.width;
+                this.video.height = this.height;
+
+                this.video.src = this.source;
+                this.video.isPlaying = false;
+
+                this.title.innerHTML = this.source;
+
+                this.video.disablePictureInPicture = true;
+                this.video.controlslist = 'nodownload';
+
+                this.video.parent = this;
+
+                this.controls = document.getElementById('controls').querySelectorAll('table > tbody > tr > td > input');
+
+                for (var i = 0; i < this.controls.length; i++)
+                {
+                    if (this.controls[i].id === 'play')
+                    {
+                        this.playButton = this.controls[i];
+                    }
+                    if (this.controls[i].id === 'mute')
+                    {
+                        this.muteButton = this.controls[i];
+                    }
+                    if (this.controls[i].id === 'fullscreen')
+                    {
+                        this.fullscreen = this.controls[i];
+                    }
+                    if (this.controls[i].id === 'close')
+                    {
+                        this.close = this.controls[i];
+                    }
+                    if (this.controls[i].id === 'range')
+                    {
+                        this.range = this.controls[i];
+                    }
+                }
+
+                this.range.parent = this;
+
+                this.range.style.width =
+                    this.video.width - 160 -
+                    this.playButton.width -
+                    this.muteButton.width -
+                    this.duration.width -
+                    this.fullscreen.width -
+                    this.close.width +
+                    "px";
+
+                this.range.addEventListener('input', function ()
+                {
+                    this.parent.UpdateSlider();
+                });
+
+                this.video.addEventListener('ended', function ()
+                {
+                    this.isPlaying = false;
+                });
+
+                this.video.addEventListener('loadstart', function ()
+                {
+                    this.parent.duration.innerHTML = '00:00';
+                });
+
+                this.video.addEventListener('loadeddata', function ()
+                {
+                    this.parent.UpdateTimer();
+                });
+
+                this.video.addEventListener('pause', function ()
+                {
+                    this.isPlaying = false;
+                });
+
+                this.video.addEventListener('play', function ()
+                {
+                    this.isPlaying = true;
+                });
+
+                this.video.addEventListener('playing', function ()
+                {
+                    this.isPlaying = true;
+                });
+
+                this.video.addEventListener('seeking', function ()
+                {
+                    this.pause();
+                });
+
+                this.video.addEventListener('timeupdate', function ()
+                {
+                    this.parent.UpdateTimer();
+                });
+            }
+
+            UpdateTimer()
+            {
+                var totalSeconds = (this.video.duration - this.video.currentTime);
+
+                var hours = Math.floor(totalSeconds / 3600);
+                var minutes = Math.floor((totalSeconds % 3600) / 60);
+                var seconds = totalSeconds % 60;
+
+                this.duration.innerHTML = minutes.toFixed(0).toString().padStart(2, '0') + ':' + seconds.toFixed(0).toString().padStart(2, '0');
+
+                this.range.value = (this.video.currentTime / this.video.duration).toFixed(2) * 100;
+            }
+
+            UpdateSlider()
+            {
+                this.video.currentTime = (this.video.duration * this.range.value / 100);
+            }
+
+            TogglePlayingState()
+            {
+                if (this.video.isPlaying === true)
+                {
+                    this.video.pause();
+
+                    this.video.isPlaying = false;
+                }
+                else
+                {
+                    this.video.play();
+
+                    this.video.isPlaying = true;
+                }
+            }
+
+            ToggleMuteState()
+            {
+                if (this.video.muted === true)
+                {
+                    this.video.muted = false;
+                }
+                else
+                {
+                    this.video.muted = true;
+                }
+            }
+
+            ToggleFullscreen()
+            {
+                this.video.requestFullscreen();
+            }
+        }
+
+        function JavascriptInit()
+        {
+            video = new Video();
+
+            video.video.play();
+        }
+
+    </script>
+</head>
+
+<body onload="JavascriptInit();">
+
+    <table class="video">
+        <tr>
+            <td>
+                <video id="video" autofocus onclick="video.TogglePlayingState();"></video>
+            </td>
+        </tr>
+        <tr>
+            <td id="controls">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" id="play" value="P" onclick="video.TogglePlayingState();" />
+                        </td>
+                        <td>
+                            <input type="button" id="mute" value="M" onclick="video.ToggleMuteState();" />
+                        </td>
+                        <td>
+                            <input type="range" id="range" min="0" max="100" value="0">
+                        </td>
+                        <td id="duration">
+                        </td>
+                        <td>
+                            <input type="button" id="fullscreen" value="F" onclick="video.ToggleFullscreen();" />
+                        </td>
+                        <td>
+                            <input type="button" id="close" value="C" onclick="window.close();" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td id="title">
+            </td>
+        <tr>
+    </table>
+
+</body>
+</html>

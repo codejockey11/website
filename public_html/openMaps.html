@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>OpenLayers Demo</title>
+	<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+	<script src="base.js?v=1"></script>
+	<link rel="stylesheet" href="base.css?v=1"/>
+    <script>
+      function init() {
+        map = new OpenLayers.Map("basicMap");
+        var mapnik         = new OpenLayers.Layer.OSM();
+        var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
+        var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+        var position       = new OpenLayers.LonLat(-81.44091851395365, 39.342714819703815).transform( fromProjection, toProjection);
+        var zoom           = 13; 
+
+        map.addLayer(mapnik);
+		
+		var markers = new OpenLayers.Layer.Markers( "Markers" );
+		map.addLayer(markers);
+		
+		// map, label, lat, lon, color, iconUrl, info
+		var marker = new OSMMarker(map, null, 39.342714819703815, -81.44091851395365, null, null, null);
+		
+		markers.addMarker(marker.marker);
+		
+        map.setCenter(position, zoom );
+      }
+    </script>
+  </head>
+  <body onload="init();">
+  <table><tr><td>
+  <div class="mapOSM" id="basicMap"></div>
+  </td>
+  <td>blah blah</td>
+  </tr></table>
+  </body>
+</html>

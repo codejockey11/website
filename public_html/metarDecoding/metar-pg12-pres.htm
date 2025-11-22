@@ -1,0 +1,248 @@
+﻿<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>Atmospheric Pressure Groups</H2>
+    </CENTER>
+    <H2>Index</H2>
+    <TABLE>
+      <TR>
+        <TD>
+          <A HREF="#DEFINITIONS">Definitions and Criteria of Atmospheric Pressure Parameters</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#OBSERVING">Atmospheric Pressure Observing Standards</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#REPORTING">Atmospheric Pressure Reporting Standards</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#SUMMARY">Summary of Atmospheric Pressure Observing and Reporting Standards</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#CODING">Coding and Decoding the Atmospheric Pressure Group</A>
+        </TD>
+      </TR>
+    </TABLE>
+    Atmospheric pressure is the force per unit area exerted by the atmosphere at a given point. The term "<B>barometric pressure</B>" refers to the actual pressure sensor value. The sensor value may be an altimeter setting, station pressure, or simply a direct pressure value without applied corrections depending on the type of sensor.
+    <DL>
+      <LI>
+        <A NAME="DEFINITIONS">
+          <B>Atmospheric Pressure Parameter Definitions and Criteria</B>
+        </A>
+      </LI>
+      <DL>
+        <LI>
+          <B>Station pressure</B>  The atmospheric pressure at the designated station elevation.
+        </LI>
+        <LI>
+          <B>Altimeter setting</B>  The pressure value to which an aircraft altimeter scale is set so that it will indicate the altitude above mean sea level of an aircraft on the ground at the location for which the value was determined.
+        </LI>
+        <LI>
+          <B>Sea-level pressure</B>  A pressure value obtained by the theoretical reduction of barometric pressure to sea level. Where the Earth"s surface is above sea level, it is assumed that the atmosphere extends to sea level below the station and that the properties of that hypothetical atmosphere are related to conditions observed at the station.
+        </LI>
+      </DL>
+      <LI>
+        <A NAME="OBSERVING">
+          <B>Atmospheric Pressure Observing Standards</B>
+        </A>
+      </LI>
+      <DL>
+        <LI>
+          <B>Pressure Observing Standards</B>
+        </LI>
+        <DL>
+          <LI>
+            <B>Barometer Comparisons</B>. Each agency shall establish an agency standard barometer traceable to the standard of the National Institute of Standards and Technology. Each agency shall also establish a system of routine barometer comparisons to determine corrections required to keep the station"s pressure sensors within the required accuracy. See Table A-20.
+          </LI>
+        </DL>
+      </DL>
+      <CENTER>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="5">
+              <B>Table A-20. Units of Measure, Range, Accuracy and Resolution of Pressure Parameters</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Parameter</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Units of Measure</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Range</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Accuracy</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Resolution</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Station Pressure</TD>
+            <TD ALIGN="CENTER">Inches of Mercury</TD>
+            <TD ALIGN="CENTER">4</TD>
+            <TD ALIGN="CENTER">+ or - 0.02</TD>
+            <TD ALIGN="CENTER">0.005 inch</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Altimeter Setting</TD>
+            <TD ALIGN="CENTER">Inches of Mercury</TD>
+            <TD ALIGN="CENTER">4</TD>
+            <TD ALIGN="CENTER">+ or - 0.02</TD>
+            <TD ALIGN="CENTER">0.01 inch</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Sea Level Pressure</TD>
+            <TD ALIGN="CENTER">Hectopascals</TD>
+            <TD ALIGN="CENTER">136</TD>
+            <TD ALIGN="CENTER">+ or - 0.68</TD>
+            <TD ALIGN="CENTER">0.1 hectopascal</TD>
+          </TR>
+        </TABLE>
+      </CENTER>
+      <LI>
+        <B>Atmospheric Pressure</B>. The various pressure parameters shall be determined from the barometric pressure after appropriate corrections are applied. The method used shall depend on the type of sensor and the available computational aids. These aids may be systems that result in a direct readout of the desired parameter, pressure reduction calculators, or tables. Designated stations may use constants to convert measured pressure to the desired pressure parameter.
+      </LI>
+      <LI>
+        <B>Station Pressure</B>. Station pressure shall be determined by adjusting the corrected barometric pressure to compensate for the difference between the height of the barometer and the designated station elevation.
+      </LI>
+      <LI>
+        <B>Sea-Level Pressure</B>. At designated stations, sea-level pressure shall be computed by adjusting the station pressure to compensate for the difference between the station elevation and sea level. This adjustment shall be based on the station elevation and the 12-hour mean temperature at the station. The 12-hour mean temperature shall be the average of the present ambient temperature and the ambient temperature 12 hours ago. Stations within ±50 feet of sea level may be authorized by their agency to use a constant value to adjust station pressure to sea-level pressure. Otherwise, stations shall use reduction ratios provided by their responsible agency to calculate sea-level pressure.
+      </LI>
+      <LI>
+        <B>Altimeter setting</B>. The altimeter setting shall be determined either directly from an altimeter setting indicator or computed from the station pressure by applying a correction for the difference between the station elevation and field elevation in the standard atmosphere. Where this difference is 30 feet or less, agencies may authorize the use of a constant correction.
+      </LI>
+      <LI>
+        <B>Pressure Change (Rising/Falling)</B>. At designated stations, the pressure calculated for each report shall be examined to determine if a pressure change is occurring. If the pressure is rising or falling at a rate of at least 0.06 inch per hour and the pressure change totals 0.02 inch or more at the time of the observation, a pressure change remark shall be reported.
+      </LI>
+      <LI>
+        <B>Pressure Tendency</B>. Designated stations shall include pressure tendency data in each 3- and 6-hourly report. The pressure tendency includes two parts: the characteristic (an indication of how the pressure has been changing over the past three hours) and the amount of the pressure change in the past three hours. The characteristic shall be based on the observed or recorded (barogram trace) changes in pressure over the past three hours. The amount of pressure change is the absolute value of the change in station pressure or altimeter setting in the past three hours converted to tenths of hectopascals.
+      </LI>
+    </DL>
+    <LI>
+      <A NAME="REPORTING">
+        <B>Atmospheric Pressure Reporting Standards</B>
+      </A>
+    </LI>
+    <UL>
+      <LI>
+        <B>Rounding Pressure Values</B>. When computations of pressure values require that a number be rounded to comply with standards on reportable values, the number shall be rounded down to the next reportable value. For example, an altimeter reading of 29.248 inches becomes 29.24 and a station pressure reading of 29.249 inches becomes 29.245.
+      </LI>
+      <LI>
+        <B>Units of Measure</B>. Table A-21 lists the units of measure for pressure parameters.
+      </LI>
+      <CENTER>
+        <TABLE BORDER="1">
+          <TR>
+            <TD ALIGN="CENTER" COLSPAN="2">
+              <B>Table A-21. Units of Measure of Pressure Parameters</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">
+              <B>Parameter</B>
+            </TD>
+            <TD ALIGN="CENTER">
+              <B>Units of Measure</B>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Altimeter Setting</TD>
+            <TD ALIGN="CENTER">Inches of Mercury</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Sea-Level Pressure</TD>
+            <TD ALIGN="CENTER">Hectopascals</TD>
+          </TR>
+          <TR>
+            <TD ALIGN="CENTER">Station Pressure</TD>
+            <TD ALIGN="CENTER">Inches of Mercury</TD>
+          </TR>
+        </TABLE>
+      </CENTER>
+      <LI>
+        <B>Altimeter Setting</B>. Altimeter setting shall be reported in all reports.
+      </LI>
+      <LI>
+        <B>Sea-Level Pressure</B>. At designated stations, sea-level pressure shall be included in the remarks section of all <B>METAR</B>s.
+      </LI>
+      <LI>
+        <B>Remarks</B>. At designated stations, the pressure change remarks (<B>PRESRR</B> or <B>PRESFR</B>) shall be reported if occurring at the time of observation. The pressure tendency group shall only be included in 3- and 6-hourly reports.
+      </LI>
+    </UL>
+    <LI>
+      <A NAME="SUMMARY">
+        <B>Summary of Atmospheric Pressure Observing and Reporting Standards</B>
+      </A>
+    </LI>
+    <CENTER>
+      <TABLE BORDER="1">
+        <TR>
+          <TD ALIGN="CENTER" COLSPAN="2">
+            <B>Table A-22. Summary of Pressure Observing and Reporting Standards</B>
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">
+            <B>Altimeter Setting</B>
+          </TD>
+          <TD ALIGN="CENTER">
+            <B>Reporting Standard</B>
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">Altimeter Setting</TD>
+          <TD ALIGN="CENTER">Reported in inches of mercury at all stations</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">Sea-level Pressure</TD>
+          <TD ALIGN="CENTER">Reported in hectopascals at designated stations</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">
+            <U>Remarks</U>:<BR/>Rising Rapidly<BR/>Falling Rapidly
+          </TD>
+          <TD ALIGN="CENTER">Reported at designated stations</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">Pressure Tendency</TD>
+          <TD ALIGN="CENTER">Reported at designated stations</TD>
+        </TR>
+      </TABLE>
+    </CENTER>
+    <LI>
+      <A NAME="CODING">
+        <B>Coding of Atmospheric Pressure Groups</B>
+      </A>
+    </LI>
+    <DL>
+      <LI>
+        <B>
+          Coding the Altimeter Setting Group (AP<SUB>n</SUB>P<SUB>n</SUB>P<SUB>n</SUB>P<SUB>n</SUB>)
+        </B>  The altimeter group always starts with an <B>A</B>(the international indicator for altimeter in inches of mercury). The altimeter shall be coded as a four digit group immediately following the <B>A</B> using the tens, units, tenths, and hundredths of inches of mercury.  The decimal point is not coded.  <B>Note:</B> The WMO standard is to report the altimeter in whole hectopascals.  In this case, the altimeter setting group will be begin with a <B>Q</B> instead of an <B>A</B>.
+      </LI>
+      <LI>
+        <B>Coding the Sea-level Pressure Group (SLPppp)</B>  The sea-level pressure group (<B>SLPppp</B>) is included in the remarks secion of the message. Only the tens, units and tenths of hectopascals is included prefixed with <B>SLP</B>. A sea-level pressure of 1002.5 hectopascals would be encoded as: <B>SLP025</B>.
+      </LI>
+    </DL>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

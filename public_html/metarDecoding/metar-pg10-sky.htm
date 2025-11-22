@@ -1,0 +1,280 @@
+<HTML>
+<HEAD>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+</HEAD>
+<BODY>
+<TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+<CENTER>
+<H2>Sky Condition Group N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB><BR/>
+or<BR/>
+VVh<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB><BR/>
+or<BR/>
+SKC</H2>
+</CENTER>
+<H2>Index</H2>
+<TABLE>
+<TR>
+<TD><A HREF="metar-pg10-sky.htm#DEFINITIONS">Definitions and Criteria of Sky Condition Parameters</A></TD></TR>
+<TR>
+<TD><A HREF="metar-pg10-sky.htm#STANDARDS">Sky Condition Observing and Reporting Standards</A></TD></TR>
+<TR>
+<TD><A HREF="metar-pg10-sky.htm#CODING">Coding and Decoding Sky Condition Groups</A></TD></TR>
+</TABLE>
+Sky condition is a description of the appearance of the sky. Sky condition may be evaluated either automatically by instrument or manually with or without instruments.<BR/>
+<A NAME="#DEFINITIONS"><B>Sky Condition Parameter Definitions and Criteria </B></A><BR/>
+<B>Sky condition parameters are:</B>
+  <DL>
+    <LI>
+      <B>Sky cover</B>  The amount of the celestial dome hidden by clouds and/or obscurations.
+    </LI>
+    <LI>
+      <B>Layer amount</B>  The amount of sky cover for each layer shall be the eighths (or oktas) of the sky cover attributable to clouds or obscurations (i.e., smoke, haze, fog, etc.) in the layer being evaluated.
+    </LI>
+    Automated stations shall report no more than three layers. Manual stations shall report no more than six layers. The selection of layers reported shall be made in accordance with Table A-12. Additionally, all layers with associated cumulonimbus or towering cumulus shall be identified by appending the contractions <B>CB</B> and <B>TCU</B>, respectively.<BR/>
+    Sky condition shall be reported in an ascending order up to the first overcast layer. Layers above 12,000 feet are not reported by automated sky condition sensors. At mountain stations, if the cloud layer is below station level, the height of the layer shall be reported as <B>///</B>.<BR/>
+    <CENTER>
+      <TABLE BORDER="">
+        <TR>
+          <TD COLSPAN="2" ALIGN="CENTER">
+            <B>Table A-12 Priority for Reporting Layers</B>
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">
+            <B>Priority</B>
+          </TD>
+          <TD ALIGN="CENTER">
+            <B>Layer Description</B>
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">1</TD>
+          <TD ALIGN="CENTER">Lowest few layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">2</TD>
+          <TD ALIGN="CENTER">Lowest broken layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">3</TD>
+          <TD ALIGN="CENTER">Overcast layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">4</TD>
+          <TD ALIGN="CENTER">Lowest scattered layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">5</TD>
+          <TD ALIGN="CENTER">Second lowest scattered layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">6</TD>
+          <TD ALIGN="CENTER">Second lowest broken layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">7</TD>
+          <TD ALIGN="CENTER">Highest broken layer.</TD>
+        </TR>
+        <TR>
+          <TD ALIGN="CENTER">8</TD>
+          <TD ALIGN="CENTER">Highest scattered layer.</TD>
+        </TR>
+      </TABLE>
+    </CENTER>
+    <LI><B>Summation layer amount</B>  The sum of the sky cover for the layer being evaluated plus the sky cover of all lower layers including obscurations. Portions of layers aloft detected through lower layers aloft shall not increase the summation amount of the higher layer. No layer can have a summation amount greater than 8/8ths.<BR/>
+    </LI>
+    <LI><B>Layer height</B>  The height of the bases of each reported layer of clouds and/or obscurations;or the vertical visibility into an indefinite ceiling. A ceilometer, if available, or ceiling light, or known heights of unobscured portions of abrupt, isolated objects within 1 1/2 statute miles of a runway shall be used to measure the height of layers aloft. Otherwise, an alternative method shall be used to estimate the heights. The height may be estimated by using a ceiling balloon, pilot report, other agency guidelines, or observer experience.<BR/>
+    Heights of sky cover layers and vertical visibility shall be evaluated in feet above the surface. The reportable values of sky cover height are hundreds of feet. Heights of layers shall be reported in hundreds of feet, rounded to the nearest reportable increment. The reportable value increments are given in Table A-17. When a value falls halfway between two reportable increments, the lower value shall be reported. When a cloud layer is 50 feet or less above the surface, the height shall be reported as 000.</LI>
+    <LI><B>Ceiling</B>  The height above the earth"s surface of the lowest layer that is reported as broken or overcast;or, if the sky is totally obscured, the vertical visibility shall be the ceiling.<BR/>
+    When the height of a ceiling layer increases and decreases rapidly by the amounts given in Table A-13, during the period of evaluation, it shall be considered variable and the ascribed height shall be the average of all the varying values. At mountain stations, clouds below the level of the station may be observed.<BR/></LI>
+<CENTER>
+<TABLE BORDER="1">
+<TR>
+<TD COLSPAN="2" ALIGN="CENTER"><B>Table A-13 Criteria for Variable Ceiling</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">Ceiling (feet)</TD>
+<TD ALIGN="CENTER">Variation (feet)</TD></TR>
+<TR>
+<TD ALIGN="CENTER">&lt;or = 1,000</TD>
+<TD ALIGN="CENTER">&gt;or = 200</TD></TR>
+<TR>
+<TD ALIGN="CENTER">&gt;1,000 and &lt;or = 2,000</TD>
+<TD ALIGN="CENTER">&gt;or = 400</TD></TR>
+<TR>
+<TD ALIGN="CENTER">&gt;2,000 and &lt;3,000</TD>
+<TD ALIGN="CENTER">&gt;or = 500</TD></TR>
+</TABLE>
+</CENTER>
+<LI><B>Vertical visibility</B><BR/>  Vertical visibility shall be either:</LI>
+<UL>
+<LI>The distance that an observer can see vertically into an indefinite ceiling;</LI>
+<LI>The height corresponding to the top of a ceiling light projector beam;</LI>
+<LI>The height at which a ceiling balloon completely disappears during the presence of an indefinite ceiling;or,</LI>
+<LI>The height determined by the sensor algorithm at automated stations.</LI>
+</UL>
+<LI>
+<B>Indefinite Ceiling Height (Vertical Visibility)</B>  The height into an indifinite ceiling shall be the vertical visibility measured in hundreds of feet.
+</LI>
+<LI><B>Type of clouds</B> The variety of clouds present.</LI>
+<LI><B>Significant Clouds and Cloud Types</B>  Cloud types shall be identified in accordance with the WMO International Cloud Atlas-Volumes I and II, the WMO Abridged International Cloud Atlas, or agency observing aids for cloud identification. Cumulonimbus, including cumulonimbus mammatus, towering cumulus, altocumulus castellanus, standing lenticular, or rotor clouds are significant clouds.</LI>
+<LI><B>Variable Amounts of Sky Cover</B>  The sky cover shall be considered variable if it varies by one or more of these reportable values, <B>FEW</B>, <B>SCT</B>, <B>BKN</B>, or <B>OVC</B>, during the period it is being evaluated.</LI>
+<LI><B>Obscuration</B>  The portion of the sky (including higher clouds, the moon, or stars) hidden by weather phenomena either surface-based or aloft. If 8/8ths of the sky is obscured the obscuration is considered a <B> total obscuration</B>.  If only a portion of the sky is obscured, the obscuration is considered a <B>partial obscuration</B>. Surface-based obscurations shall have a height of 000 feet. If this surface-based obscuration is total, the ceiling is the vertical visibility into the obscuration.</LI>
+<A NAME="#STANDARDS"><H3>Sky Condition Standards</H3></A><B>Sky Condition Observing Standards</B>  Sky condition shall be evaluated at all stations with this capability. Automated stations shall have the capability to evaluate sky condition from the surface to at least 12,000 feet. Observers at manual stations shall evaluate all clouds and obscurations visible;the 12,000 foot restrictions shall not apply.<BR/>
+<UL>
+<UL>
+<LI>
+<B>Layer Opacity</B>. All cloud layers and obscurations shall be considered as opaque.
+</LI>
+<LI><B>Surface</B>. The surface shall be the assigned field elevation of the station. At stations where the field elevation has not been established, the surface shall be the ground elevation at the observation site.</LI>
+<LI><B>Sky Cover</B>. Sky cover shall include any clouds or obscurations detected from the observing location. See Table A-14.</LI>
+</UL>
+</UL>
+<CENTER>
+<TABLE WIDTH="100%" BORDER="1">
+<TR>
+<TD ALIGN="CENTER" COLSPAN="3"><B>Table A-14. Sky Cover Evaluation</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>Angle of Advancing or Receding Layer Edge</B></TD>
+<TD ALIGN="CENTER"><B>Eights of Sky Cover</B></TD>
+<TD ALIGN="CENTER"><B>Angular Elevation of Layer Surrounding Station</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">&gt;0 to 50<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">1</TD>
+<TD ALIGN="CENTER">&gt;0 to 10<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">51 to 68<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">2</TD>
+<TD ALIGN="CENTER">11 to 17<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">69 to 82<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">3</TD>
+<TD ALIGN="CENTER">18 to 24<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">83 to 98<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">4</TD>
+<TD ALIGN="CENTER">25 to 32<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">99 to 112<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">5</TD>
+<TD ALIGN="CENTER">33 to 41<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">113 to 129<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">6</TD>
+<TD ALIGN="CENTER">42 to 53<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">130 to 179<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">7</TD>
+<TD ALIGN="CENTER">54 to 89<SUP>o</SUP></TD></TR>
+<TR>
+<TD ALIGN="CENTER">180<SUP>o</SUP></TD>
+<TD ALIGN="CENTER">8</TD>
+<TD ALIGN="CENTER">90<SUP>o</SUP></TD></TR>
+</TABLE>
+</CENTER>
+<DL>
+<LI><B>Stratification of Sky Cover</B>  Sky cover shall be separated into layers with each layer containing clouds and/or obscurations (i.e., smoke, haze, fog, etc.) with bases at about the same height.</LI>
+<LI><B>Evaluation of Interconnected Layers</B>  Clouds formed by the horizontal extension of swelling cumulus or cumulonimbus, that are attached to a parent cloud, shall be regarded as a separate layer only if their bases appear horizontal and at a different level from the parent cloud. Otherwise, the entire cloud system shall be regarded as a single layer at a height corresponding to the base of the parent cloud.</LI>
+</DL>
+Table A-15 is a summary of the sky condition observing and reporting standards.<BR/>
+<CENTER>
+<TABLE BORDER="" WIDTH="100%">
+<TR>
+<TD ALIGN="CENTER" COLSPAN="2"><B>Table A-15. Summary of Sky Condition Observing and Reporting Standards</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>Parameter</B></TD>
+<TD ALIGN="CENTER"><B>Reporting Standard</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">Sky Cover (General)</TD>
+<TD>Sky condition shall be included in all reports.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">Height/Number of layers</TD>
+<TD>Report a maximum of three layers at automated stations;otherwise, a maximum of six layers at manual stations.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">Variable sky condition</TD>
+<TD>Not evaluated at automated stations.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">Variable ceiling height</TD>
+<TD>Evaluated at all stations.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">Ceiling height at second location</TD>
+<TD>Evaluated at automated stations with multiple sensors.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">Cloud types</TD>
+<TD>Not evaluated at automated stations.</TD></TR>
+</TABLE>
+</CENTER>
+<A NAME="#CODING"><H3>Coding and Decoding the Sky Condition Groups (N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB> or VVh<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB> or SKC/CLR)</H3></A>  Sky cover shall be included in all reports.<BR/>
+<UL>
+<LI>Sky condition shall be coded in the format, <B>N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB></B>, where <B>N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB></B> is the summation layer amount of sky cover and <B>h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB></B> is the height of the layer. There shall be no space between the summation layer amount of sky cover and the height of the layer.</LI>
+<LI>Sky condition shall be coded in an ascending order up to the first overcast layer. At mountain stations, if the layer is below station level, the height of the layer shall be coded as <B>///</B>.</LI>
+<LI>Vertical visibility shall be coded in the format, <B>VVh<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB></B>, where <B>VV</B> identifies an indefinite ceiling and <B>h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB></B> is the vertical visibility into the indefinite ceiling. There shall be no space between the <B>VV</B> identifier and the vertical visibility.</LI>
+<LI>Clear skies shall be coded in the format, <B>SKC</B> or <B>CLR</B>, where <B>SKC</B> is the abbreviation used by manual stations to indicate no layers are present and <B>CLR</B> is the abbreviation used by automated stations to indicate no layers are detectedd at or below 12,000 feet.</LI>
+<LI>Each layer shall be separated from other layers by a space. The sky cover for each layer reported shall be coded by using the appropriate reportable contraction from Table A-16. The report of clear skies (<B>SKC</B> or <B>CLR</B>) are complete layer reports within themselves. The abbreviations <B>FEW</B>, <B>SCT</B>, <B>BKN</B>, and <B>OVC</B> shall be followed without a space, by the height of the layer.</LI>
+</UL>
+<CENTER>
+<TABLE BORDER="1" COLSPAN="3">
+<TR>
+<TD ALIGN="CENTER" COLSPAN="3"><B>Table A-16. Contractions for Sky Cover</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>Reportable Contraction</B></TD>
+<TD ALIGN="CENTER"><B>Meaning</B></TD>
+<TD ALIGN="CENTER"><B>Summation Amount of Layer</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>VV</B></TD>
+<TD ALIGN="CENTER">Vertical Visibility</TD>
+<TD ALIGN="CENTER">8/8</TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>SKC</B> or <B>CLR<SUP>1</SUP></B></TD>
+<TD ALIGN="CENTER">Clear</TD>
+<TD ALIGN="CENTER">0</TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>FEW<SUP>2</SUP></B></TD>
+<TD ALIGN="CENTER">Few</TD>
+<TD ALIGN="CENTER">1/8 - 2/8</TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>SCT</B></TD>
+<TD ALIGN="CENTER">Scattered</TD>
+<TD ALIGN="CENTER">3/8 - 4/8</TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>BKN</B></TD>
+<TD ALIGN="CENTER">Broken</TD>
+<TD ALIGN="CENTER">5/8 - 7/8</TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>OVC</B></TD>
+<TD ALIGN="CENTER">Overcast</TD>
+<TD ALIGN="CENTER">8/8</TD></TR>
+<TR>
+<TD COLSPAN="3">
+<OL>
+<LI>The abbreviation <B>CLR</B> shall be used at automated stations when no layers at or below 12,000 feet are reported. The abbreviation <B>SKC</B> shall be used at manual stations when no layers are reported.</LI>
+<LI>Any layer amount less than 1/8 is reported as FEW.</LI>
+</OL>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+The height of the base of each layer, <B> h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB></B>, shall be coded in hundreds of feet above the surface using three digits in accordance with Table A-17.<BR/>
+<CENTER>
+<TABLE BORDER="1">
+<TR>
+<TD ALIGN="CENTER" COLSPAN="2"><B>Table A-17. Increments of Reportable Values of Sky Cover Height</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER"><B>Range of Height Values (feet)</B></TD>
+<TD ALIGN="CENTER"><B>Reportable Increment (feet)</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">&lt;or = 5,000</TD>
+<TD ALIGN="CENTER">To nearest 100</TD></TR>
+<TR>
+<TD ALIGN="CENTER">&gt;5,000 but &lt;or = 10,000</TD>
+<TD ALIGN="CENTER">To nearest 500</TD></TR>
+<TR>
+<TD ALIGN="CENTER">&gt;10,000</TD>
+<TD ALIGN="CENTER">To nearest 1,000</TD></TR>
+</TABLE>
+</CENTER>
+At manual stations, cumulonimbus (<B>CB</B>) or towering cumulus (<B>TCU</B>) shall be appended to the associated layer. For example, a scattered layer of towering cumulus at 1,500 feet would be coded "<B>SCT015TCU</B>" and would be followed by a space if there were additional higher layers to code.<BR/>
+<CENTER>
+<A href="index.htm">Return to First Page Index</A>
+</CENTER>
+</BODY>

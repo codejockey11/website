@@ -1,0 +1,28 @@
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+ </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>Coding the Type of Report, Station Identifier, Date/Time, and Report Modifier groups</H2>
+    </CENTER>
+    <H3>GENERAL</H3>
+    <A NAME="#METAR">
+      <B>A. Type of Report (METAR and SPECI)</B>
+    </A>The type, METAR or SPECI, shall be included in all reports. The type of report shall be separated from elements following it by a space. Whenever SPECI criteria are met at the time of the routine METAR, the type of report shall be METAR.<BR/>
+    <A NAME="#ID">
+      <B>B. Station Identifier (CCCC).</B>
+    </A>The station identifier, CCCC, shall be included in all reports to identify the station to which the coded report applies. The station identifier shall consist of four alphabetic-only characters if the METAR/SPECI is transmitted long-line. The agency with operational control when the station is first established shall be responsible for coordinating the location identifier with the FAA. A list of approved identifiers can be found in the FAA Manual 7350 Series, Location Identifiers.<BR/>
+    <A NAME="#DATE">
+      <B>C. Date and Time of Report (YYGGggZ).</B>
+    </A>The date, YY, (for US reports) and time, GGgg, shall be included in all reports. The time shall be the actual time of the report or when the criteria for a SPECI is met or noted. If the report is a correction to a previously disseminated report, the time of the corrected report shall be the same time used in the report being corrected. The date and time group always ends with a Z indicating Zulu time (or UTC). For example, <B>METAR KDCA 210855Z</B> is the 0900 UTC scheduled report from station KDCA taken at 0855 UTC on the 21st of the month.  <B>Note:</B> WMO standards indicate the scheduled time of the report shall be entered unless the actual time deviates by more than 10 minutes from the scheduled time. WMO standards do not require the date (YY) to be included.<BR/>
+    <A NAME="#COR">
+      <B>D. Report Modifier (AUTO or COR).</B>
+    </A>The report modifier, <B>AUTO</B>, identifies the METAR/SPECI as a fully automated report with no human intervention or oversight. Certain stations may provide human oversight during portions of the day;i.e., at airports open during certain hours. The AUTO identifier is not included in the observation report when the station is open and an observer has signed on to provide oversight. During periods when the observer has signed off, the AUTO identifier will again be included in the METAR/SPECI report.  <B>COR</B> is substituted in place of AUTO in the event of a corrected METAR or SPECI.<BR/>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

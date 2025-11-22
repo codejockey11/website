@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bing Map</title>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://www.bing.com/api/maps/mapcontrol?callback=InitMap" async defer></script>
+<script type="text/javascript">
+var map;
+
+var arb = Array();
+
+var xhttp = Array();
+	
+var i = 0;
+
+function GetOverlay(i, u)
+{
+	xhttp[i] = new XMLHttpRequest();
+
+	xhttp[i].onreadystatechange = function()
+	{
+		if (this.readyState == 4 && this.status == 200)
+		{
+			Microsoft.Maps.loadModule('Microsoft.Maps.GeoXml', function ()
+			{
+				arb[i] = new Microsoft.Maps.GeoXmlLayer(xhttp[i].responseText);
+				map.layers.insert(arb[i]);
+			});
+		}
+	};
+
+	xhttp[i].open("GET", u, true);
+	xhttp[i].send();
+}
+
+function InitMap()
+{
+	map = new Microsoft.Maps.Map('#map',
+	{
+		credentials: 'ArZP1HDL-as-_VQnajKbHiDpKqkkSHhLbIyBSUWi0lWZw9b6h8vWJ3H80KJ9fYw9',
+		center: new Microsoft.Maps.Location(40.69406472630992, -73.95611732209451),
+		zoom: 8
+	});
+	
+	GetOverlay(0, "http://127.0.0.1:49151/kml/KPKBI03CASOPPath.kml");
+	GetOverlay(1, "http://127.0.0.1:49151/kml/KPKBI03CASOPPoints.kml");
+	GetOverlay(2, "http://127.0.0.1:49151/kml/KCMHI10LAMITEPath.kml");
+	GetOverlay(3, "http://127.0.0.1:49151/kml/KCMHI10LAMITEPoints.kml");
+	
+	/*
+	GetOverlay(0, "http://127.0.0.1:49151/kml/saaMoa.kml");
+	GetOverlay(1, "http://127.0.0.1:49151/kml/saaControlled.kml");
+	GetOverlay(2, "http://127.0.0.1:49151/kml/saaProhibited.kml");
+	GetOverlay(3, "http://127.0.0.1:49151/kml/saaRestricted.kml");
+	GetOverlay(4, "http://127.0.0.1:49151/kml/saaAlert.kml");
+	GetOverlay(5, "http://127.0.0.1:49151/kml/saaWarning.kml");
+	GetOverlay(6, "http://127.0.0.1:49151/kml/saaNational.kml");
+	*/
+
+	/*
+	GetOverlay(0, "http://127.0.0.1:49151/kml/awyRouteA.kml");
+	GetOverlay(1, "http://127.0.0.1:49151/kml/awyRouteAT.kml");
+	GetOverlay(2, "http://127.0.0.1:49151/kml/awyRouteB.kml");
+	GetOverlay(3, "http://127.0.0.1:49151/kml/awyRouteBF.kml");
+	GetOverlay(4, "http://127.0.0.1:49151/kml/awyRouteG.kml");
+	GetOverlay(5, "http://127.0.0.1:49151/kml/awyRouteJ.kml");
+	GetOverlay(6, "http://127.0.0.1:49151/kml/awyRoutePA.kml");
+	GetOverlay(7, "http://127.0.0.1:49151/kml/awyRoutePR.kml");
+	GetOverlay(8, "http://127.0.0.1:49151/kml/awyRouteQ.kml");
+	GetOverlay(9, "http://127.0.0.1:49151/kml/awyRouteR.kml");
+	GetOverlay(10, "http://127.0.0.1:49151/kml/awyRouteT.kml");
+	*/
+	//GetOverlay(11, "http://127.0.0.1:49151/kml/awyRouteV.kml");
+
+	
+	/*
+	GetOverlay(0, "http://127.0.0.1:49151/kml/arbCTAZWY.kml");
+	GetOverlay(1, "http://127.0.0.1:49151/kml/arbBDRY1ZMA.kml");
+	GetOverlay(2, "http://127.0.0.1:49151/kml/arbBDRY2ZMA.kml");
+	GetOverlay(3, "http://127.0.0.1:49151/kml/arbBDRYZAN.kml");
+	GetOverlay(4, "http://127.0.0.1:49151/kml/arbBDRYZAP.kml");
+	GetOverlay(5, "http://127.0.0.1:49151/kml/arbBDRYZHN.kml");
+	GetOverlay(6, "http://127.0.0.1:49151/kml/arbBDRYZHU.kml");
+	GetOverlay(7, "http://127.0.0.1:49151/kml/arbBDRYZSU.kml");
+	GetOverlay(8, "http://127.0.0.1:49151/kml/arbCTAZAK.kml");
+	GetOverlay(9, "http://127.0.0.1:49151/kml/arbCTAZWY.kml");
+	GetOverlay(10, "http://127.0.0.1:49151/kml/arbFIR%20ONLYZAK.kml");
+	GetOverlay(11, "http://127.0.0.1:49151/kml/arbFIR%20ONLYZAP.kml");
+	GetOverlay(12, "http://127.0.0.1:49151/kml/arbFIR%20ONLYZWY.kml");
+	
+	GetOverlay(13, "http://127.0.0.1:49151/kml/arbLOWZAB.kml");
+	GetOverlay(14, "http://127.0.0.1:49151/kml/arbLOWZAN.kml");
+	GetOverlay(15, "http://127.0.0.1:49151/kml/arbLOWZAU.kml");
+	GetOverlay(16, "http://127.0.0.1:49151/kml/arbLOWZBW.kml");
+	GetOverlay(17, "http://127.0.0.1:49151/kml/arbLOWZDC.kml");
+	GetOverlay(18, "http://127.0.0.1:49151/kml/arbLOWZDV.kml");
+	GetOverlay(19, "http://127.0.0.1:49151/kml/arbLOWZFW.kml");
+	GetOverlay(20, "http://127.0.0.1:49151/kml/arbLOWZHU.kml");
+	GetOverlay(21, "http://127.0.0.1:49151/kml/arbLOWZID.kml");
+	GetOverlay(22, "http://127.0.0.1:49151/kml/arbLOWZJX.kml");
+	GetOverlay(23, "http://127.0.0.1:49151/kml/arbLOWZKC.kml");
+	GetOverlay(24, "http://127.0.0.1:49151/kml/arbLOWZLA.kml");
+	GetOverlay(25, "http://127.0.0.1:49151/kml/arbLOWZLC.kml");
+	GetOverlay(26, "http://127.0.0.1:49151/kml/arbLOWZMA.kml");
+	GetOverlay(27, "http://127.0.0.1:49151/kml/arbLOWZME.kml");
+	GetOverlay(28, "http://127.0.0.1:49151/kml/arbLOWZMP.kml");
+	GetOverlay(29, "http://127.0.0.1:49151/kml/arbLOWZNY.kml");
+	GetOverlay(30, "http://127.0.0.1:49151/kml/arbLOWZOA.kml");
+	GetOverlay(31, "http://127.0.0.1:49151/kml/arbLOWZOB.kml");
+	GetOverlay(32, "http://127.0.0.1:49151/kml/arbLOWZSE.kml");
+	GetOverlay(33, "http://127.0.0.1:49151/kml/arbLOWZTL.kml");
+	*/
+}
+</script>
+</head>
+<body>
+<div id='map' style='width: 1024px; height: 768px;'></div>
+</body>
+</html>

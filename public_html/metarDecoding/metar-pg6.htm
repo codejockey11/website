@@ -1,0 +1,302 @@
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>
+        Wind Group (dddff(f)Gfmfm(fm)Kt<BR/>_dndndnVdxdxdx)
+      </H2>
+    </CENTER>
+    <H2>Index</H2>
+    <TABLE>
+      <TR>
+        <TD>
+          <A HREF="#Wind Definitions">Definitions and Criteria for Observing and Reporting Wind</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#A-1">Estimating Wind Speed</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#Coding">Coding and Interpreting Coded Wind Groups</A>
+        </TD>
+      </TR>
+    </TABLE>
+    <A NAME="Wind Definitions">
+      <H3>
+        Definitions, Criteria
+      </H3>
+    </A>
+    <A NAME="DIRECTION">
+      <B>Wind Direction.</B>
+    </A>
+    <UL>
+      <LI>The direction, in tens of degrees, from which the wind is blowing with reference to true north.</LI>
+      <LI>
+        The wind direction shall be determined by averaging the direction over a <B>2-minute period</B>.
+      </LI>
+      <LI>When the wind direction sensor(s) is out of service, at designated stations, the direction may be estimated by observing the wind cone or tee, movement of twigs, leaves, smoke, etc., or by facing into the wind in an unsheltered area.</LI>
+    </UL>
+    <A NAME="VARIABLE">
+      <B>Variable Wind Direction.</B>
+    </A>
+    <UL>
+      <LI>The wind direction may be considered variable if, during the 2-minute evaluation period, the wind speed is 6 knots or less.</LI>
+      <LI>
+        Also, the wind direction shall be considered variable if, during the 2-minute evaluation period, it varies by <B>60 degrees or more</B> when the average wind speed is <B>greater than 6 knots</B>.
+      </LI>
+    </UL>
+    <A NAME="SPEED">
+      <B>Wind Speed.</B>
+    </A>
+    <UL>
+      <LI>The rate, in knots, at which the wind passes a given point.</LI>
+      <LI>
+        The wind speed shall be determined by averaging the speed over a <B>2-minute period</B>.
+      </LI>
+      <LI>
+        At designated stations, <A HREF="#A-1">Table A-1</A> shall be used to estimate wind speeds when instruments are out of service or the wind speed is below the starting speed of the anemometer in use.
+      </LI>
+      <LI>
+        <B>Note:</B> WMO standards indicate the wind speed will be determined from the average over the 10 minutes preceding the observation and reported in meters per second.
+      </LI>
+    </UL>
+    <A NAME="GUST">
+      <B>Wind Gust.</B>
+    </A>
+    <UL>
+      <LI>The wind speed data for the most recent 10 minutes shall be examined to evaluate the occurrence of gusts.</LI>
+      <LI>Gusts are indicated by rapid fluctuations in wind speed with a variation of 10 knots or more between peaks and lulls.</LI>
+      <LI>The speed of a gust shall be the maximum instantaneous wind speed.</LI>
+      <LI>
+        <B>Note:</B> WMO standard defines a gust as the maximum wind speed exceeding the "mean speed" by 5 m/s (10 knots) during the 10-minute interval.
+      </LI>
+    </UL>
+    <B>Peak Wind Speed.</B>
+    <UL>
+      <LI>The maximum instantaneous wind speed measured.</LI>
+      <LI>Peak wind data shall be determined with wind speed recorders.</LI>
+      <LI>The peak wind speed shall be the maximum instantaneous speed measured since the last routine METAR.</LI>
+    </UL>
+    <B>Wind Shifts.</B>
+    <UL>
+      <LI>Wind data shall be examined to determine the occurrence of a wind shift.</LI>
+      <LI>A wind shift is indicated by a change in wind direction of 45 degrees or more in less than 15 minutes with sustained winds of 10 knots or more throughout the wind shift.</LI>
+    </UL>
+    <A NAME="CALM">
+      <B>Calm Winds.</B>
+    </A>
+    <UL>
+      <LI>When no motion of air is detected, the wind shall be reported as calm.</LI>
+    </UL>
+    <A NAME="A-1">
+      <H3>
+        Table A-1 Estimating Wind Speed
+      </H3>
+    </A>
+    <TABLE WIDTH="100%" ALIGN="CENTER" BORDER="1">
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="4">
+          <B>Table A-1 Estimating Wind Speed</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">
+          <B>Knots</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>Specifications</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>Knots</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>Specifications</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">1</TD>
+        <TD ALIGN="CENTER">Calm: smoke rises vertically.</TD>
+        <TD ALIGN="CENTER">22-27</TD>
+        <TD ALIGN="CENTER">Large branches in motion;whistling heard in overhead wires;umbrellas used with difficulty</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">1-3</TD>
+        <TD ALIGN="CENTER">Direction of wind shown by smoke drift not by wind vanes.</TD>
+        <TD ALIGN="CENTER">28-33</TD>
+        <TD ALIGN="CENTER">Whole trees in motion;inconvenience felt walking against wind.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">4-6</TD>
+        <TD ALIGN="CENTER">Wind felt on face;leaves rustle;vanes moved by wind.</TD>
+        <TD ALIGN="CENTER">34-40</TD>
+        <TD ALIGN="CENTER">Breaks twigs off trees;impedes progress.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">7-10</TD>
+        <TD ALIGN="CENTER">Leaves and small twigs in constant motion;wind extends light flag.</TD>
+        <TD ALIGN="CENTER">41-47</TD>
+        <TD ALIGN="CENTER">Slight structural damage occurs.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">11-16</TD>
+        <TD ALIGN="CENTER">Raises dust, loose paper;small branches moved.</TD>
+        <TD ALIGN="CENTER">48-55</TD>
+        <TD ALIGN="CENTER">Trees uprooted;considerable damage occurs.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">17-21</TD>
+        <TD ALIGN="CENTER">Small trees in leaf begin to sway;crested wavelets form on inland waters.</TD>
+        <TD ALIGN="CENTER">56-71</TD>
+        <TD ALIGN="CENTER">Widespread damage.</TD>
+      </TR>
+    </TABLE>
+    Wind observing and reporting standards are sumarized in Table A-2.
+    <TABLE WIDTH="100%" ALIGN="CENTER" BORDER="1">
+      <TR>
+        <TD ALIGN="CENTER" COLSPAN="2">
+          <B>Table A-2 Summary of Wind Observing and Reporting Standards</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">
+          <B>Parameter</B>
+        </TD>
+        <TD ALIGN="CENTER">
+          <B>Observing and Reporting Standard</B>
+        </TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">Wind Direction</TD>
+        <TD>2-minute average in 10 degree increments with respect to true north is reported.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">Wind Speed</TD>
+        <TD>2-minute average speed in knots is reported.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">Wind Gust</TD>
+        <TD>The maximum instantaneous speed in knows in the past 10 minutes is reported.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">Peak Gust</TD>
+        <TD>The maximum instantaneous speed in knots (since the last scheduled report) shall be reported whenever the speed is greater than 25 knots.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="CENTER">Wind Shifts</TD>
+        <TD>Wind shift and the time the shift occurred is reported.</TD>
+      </TR>
+    </TABLE>
+    <A NAME="Coding">
+      <H3>
+        Coding and Interpreting the Coded Wind Groups
+      </H3>
+    </A>
+    <HR/>
+    <TABLE WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" WIDTH="20%">
+          <B>ddd</B>
+        </TD>
+        <TD VALIGN="TOP" WIDTH="25%">
+          <B>Wind Direction</B>
+        </TD>
+        <TD VALIGN="TOP">
+          The <A HREF="#DIRECTION">wind direction</A>
+          <B>ddd</B>, shall be coded in tens of degrees using three figures. Directions less than 100 degrees shall be preceded with a "0". For example, a wind direction of 90<SUP>o</SUP> is coded as "090".
+        </TD>
+      </TR>
+    </TABLE>
+    <HR/>
+    <TABLE WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" WIDTH="20%">
+          <B>ff(f)</B>
+        </TD>
+        <TD VALIGN="TOP" WIDTH="25%">
+          <B>Wind Speed</B>
+        </TD>
+        <TD>
+          The <A HREF="#SPEED">wind speed</A>, <B>ff(f)</B>, shall be coded in two or three digits immediately following the wind direction. The wind speed shall be coded, in <B>whole knots</B>, (for US stations) using the units and tens digits and, if required, the hundreds digit. Speeds of less than 10 knots shall be coded using a leading zero. The wind group shall always end with KT (for US stations) to indicate that wind speeds are reported in knots. For example, a wind speed of 8 knots shall be coded "08KT";a wind speed of 112 knots shall be coded "112KT". International stations may use meters per second (MPS) or kilometers per hour (KMH) and code the wind speed accordingly.
+        </TD>
+      </TR>
+    </TABLE>
+    <HR/>
+    <TABLE WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" WIDTH="20%">
+          <B>
+            Gf<SUB>m</SUB>f<SUB>m</SUB>(f<SUB>m</SUB>)
+          </B>
+        </TD>
+        <TD VALIGN="TOP" WIDTH="25%">
+          <B>Gust</B>
+        </TD>
+        <TD>
+          <A HREF="#GUST">Wind gusts</A> shall be coded in the format,<B>
+            Gf<SUB>m</SUB>f<SUB>m</SUB>(f<SUB>m</SUB>)
+          </B>. The wind gust shall be coded in two or three digits immediately following the wind speed. The wind gust shall be coded, in whole knots, using the units and tens digits and, if required, the hundreds digit. For example, a wind from due west at 20 knots with gusts to 35 knots would be coded "27020G35KT".
+        </TD>
+      </TR>
+    </TABLE>
+    <HR/>
+    <TABLE WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" WIDTH="20%">
+          <B>VRB</B>
+        </TD>
+        <TD VALIGN="TOP" WIDTH="25%">
+          <B>
+            Variable Wind<BR/>
+          </B>Direction<BR/>(Speed 6 knots<BR/>or less)
+        </TD>
+        <TD>
+          <A HREF="#VARIABLE">Variable wind direction</A> with wind speed 6 knots or less may be coded as <B>VRB</B> in place of the <B>ddd</B>. For example, if the wind is variable at three knots, it would be coded <B>VRB03KT</B>.
+        </TD>
+      </TR>
+    </TABLE>
+    <HR/>
+    <TABLE WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" WIDTH="20%">
+          <B>
+            d<SUB>n</SUB>d<SUB>n</SUB>d<SUB>n</SUB>Vd<SUB>x</SUB>d<SUB>x</SUB>d<SUB>x</SUB>
+          </B>
+        </TD>
+        <TD VALIGN="TOP" WIDTH="25%">
+          <B>
+            Variable Wind<BR/>Direction<BR/>(Speed greater<BR/>than 6 knots)
+          </B>
+        </TD>
+        <TD>
+          <A HREF="#VARIABLE">Variable wind direction</A> with wind speed greater than 6 knots shall be coded in the format, <B>
+            d<SUB>n</SUB>d<SUB>n</SUB>d<SUB>n</SUB>Vd<SUB>x</SUB>d<SUB>x</SUB>d<SUB>x</SUB>
+          </B>. The variable wind direction group shall immediately follow the wind group. The directional variability shall be coded in a clockwise direction. For example, if the wind is variable from 180<SUP>o</SUP> to 240<SUP>o</SUP> at 10 knots, it would be coded "<B>21010KT 180V240</B>".
+        </TD>
+      </TR>
+    </TABLE>
+    <HR/>
+    <TABLE WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" WIDTH="20%">
+          <B>00000KT</B>
+        </TD>
+        <TD VALIGN="TOP" WIDTH="25%">
+          <B>Calm Wind</B>
+        </TD>
+        <TD>
+          <A HREF="#CALM">Calm Wind</A> shall be coded as "<B>00000KT</B>".
+        </TD>
+      </TR>
+    </TABLE>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>
