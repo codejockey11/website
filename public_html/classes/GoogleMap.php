@@ -1,7 +1,7 @@
 <?php
 class GoogleMap
 {
-	public $myKey = "&key=AIzaSyC2frC8OJPu3j-Sfh7ahZA_sRpJovi87GQ";
+	public $myKey = "&key=";
 
 	public $latLon;
 

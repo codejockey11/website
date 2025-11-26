@@ -200,7 +200,7 @@ class LatLon
 			return;
 		}
 
-		$xml = sprintf("https://maps.googleapis.com/maps/api/geocode/xml?latlng=%s,%s&key=AIzaSyCnoazHa0WEibhtQZmBqlMtXcr9LOjN5Dw", $this->decimalLat, $this->decimalLon);
+		$xml = sprintf("https://maps.googleapis.com/maps/api/geocode/xml?latlng=%s,%s&key=", $this->decimalLat, $this->decimalLon);
 
 		$sr = new SimpleRequest($xml);
 

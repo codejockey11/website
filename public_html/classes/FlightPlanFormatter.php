@@ -1198,7 +1198,7 @@ class FlightPlanFormatter
 
 					printf("\t\t\t<type>USER WAYPOINT</type>\r\n");
 
-					$xml = sprintf("https://maps.googleapis.com/maps/api/geocode/xml?address=%s,%s&key=AIzaSyCnoazHa0WEibhtQZmBqlMtXcr9LOjN5Dw", $wayp->latLon->decimalLat, $wayp->latLon->decimalLon);
+					$xml = sprintf("https://maps.googleapis.com/maps/api/geocode/xml?address=%s,%s&key=", $wayp->latLon->decimalLat, $wayp->latLon->decimalLon);
 
 					$sr = new SimpleRequest($xml);
 
