@@ -1,0 +1,64 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : HP-Pavilion
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Mixed
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Physical Address. . . . . . . . . : 18-60-24-77-BB-00
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::9439:2f72:b262:7a34%6(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 173.81.22.134(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.252.0
+   Lease Obtained. . . . . . . . . . : Wednesday, March 19, 2025 8:33:48 AM
+   Lease Expires . . . . . . . . . . : Thursday, March 20, 2025 8:33:48 AM
+   Default Gateway . . . . . . . . . : 173.81.20.1
+   DHCP Server . . . . . . . . . . . : 172.21.233.8
+   DHCPv6 IAID . . . . . . . . . . . : 51929124
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-21-AE-1E-01-18-60-24-77-BB-00
+   DNS Servers . . . . . . . . . . . : 24.48.160.2
+                                       24.48.160.3
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 60-F6-77-0C-F5-27
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 11:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : 62-F6-77-0C-F5-26
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::2291:7671:fb70:eb6c%10(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.137.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 157480567
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-21-AE-1E-01-18-60-24-77-BB-00
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Wi-Fi:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : mshome.net
+   Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 3168
+   Physical Address. . . . . . . . . : 60-F6-77-0C-F5-26
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes

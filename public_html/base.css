@@ -1,0 +1,1379 @@
+*:focus
+{
+    outline: none;
+}
+
+table
+{
+    /*border-collapse:collapse;*/
+    /*background-color:DarkGray;*/
+    /*border:1px solid SteelBlue;*/
+}
+
+th
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: middle;
+}
+
+td
+{
+    vertical-align: top;
+}
+
+a
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: SteelBlue;
+}
+
+    a:hover
+    {
+        font-family: Verdana;
+        font-size: 12px;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid LightGray;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 16px;
+    line-height: 20px;
+}
+
+iframe
+{
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    background-size: contain;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+select
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    scrollbar-arrow-color: SteelBlue;
+    scrollbar-base-color: LightGray;
+    scrollbar-face-color: SteelBlue;
+    scrollbar-track-color: WhiteSmoke;
+}
+
+    select option:checked
+    {
+        color: White;
+        background: SteelBlue;
+    }
+
+    select option:hover
+    {
+        color: White;
+        background: SteelBlue;
+    }
+
+input[type='text']
+{
+    font-family: Verdana;
+    font-size: 12px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+}
+
+input[type='password']
+{
+    font-family: Verdana;
+    font-size: 12px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+}
+
+input[type='file'],
+input[type='checkbox'],
+input[type='radio']
+{
+    display: none;
+}
+
+.clock
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+a.tooltip
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: Black;
+}
+
+    a.tooltip:hover
+    {
+        font-family: Verdana;
+        font-size: 12px;
+        font-weight: normal;
+        text-decoration: none;
+        color: Black;
+    }
+
+    a.tooltip span
+    {
+        display: none;
+    }
+
+    a.tooltip:hover span
+    {
+        max-width: 200px;
+        display: inline;
+        position: absolute;
+        color: Black;
+        border: 1px solid SteelBlue;
+        border-radius: 3px;
+        background: White;
+        padding: 3px 3px;
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+
+.radio
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+    .radio label
+    {
+        vertical-align: top;
+    }
+
+    .radio img
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+.checkbox
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+    .checkbox label
+    {
+        vertical-align: top;
+    }
+
+    .checkbox img
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+.checkboxStay
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+    .checkboxStay label
+    {
+        vertical-align: middle;
+    }
+
+    .checkboxStay img
+    {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+    }
+
+.plannerLink
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.navSignOn
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.topPanel
+{
+    font-family: Verdana;
+    font-size: 10px;
+    min-width: 1100px;
+    max-width: 1100px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    background-color: WhiteSmoke;
+}
+
+.mainForm
+{
+    font-family: Verdana;
+    font-size: 12px;
+    min-width: 1100px;
+    max-width: 1100px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    background-color: WhiteSmoke;
+    position: relative;
+    top: -1px;
+}
+
+.pageResult
+{
+    font-family: Verdana;
+    font-size: 12px;
+    min-width: 1100px;
+    max-width: 1100px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    background-color: WhiteSmoke;
+    position: relative;
+    top: -2px;
+}
+
+.mapGoogle
+{
+    min-width: 1100px;
+    max-width: 1100px;
+    min-height: 735px;
+    max-height: 735px;
+    border: 1px solid rgb(211,211,211);
+    border-radius: 3px;
+    border-collapse: collapse;
+    position: relative;
+    top: -5px;
+}
+
+.mapBing
+{
+    min-width: 1100px;
+    max-width: 1100px;
+    min-height: 735px;
+    max-height: 735px;
+    border: 1px solid rgb(211,211,211);
+    border-radius: 3px;
+    border-collapse: collapse;
+    position: relative;
+    top: -5px;
+}
+
+.mapOSM
+{
+    min-width: 1100px;
+    max-width: 1100px;
+    min-height: 735px;
+    max-height: 735px;
+    border: 1px solid rgb(211,211,211);
+    border-radius: 3px;
+    border-collapse: collapse;
+    position: relative;
+    top: -5px;
+}
+
+.gm-style-cc
+{
+    display: none;
+}
+
+.mapNavbar
+{
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    background-color: WhiteSmoke;
+}
+
+.list
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    min-width: 50px;
+    max-width: 250px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.listcdr
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    min-width: 50px;
+    max-width: 650px;
+    vertical-align: top;
+}
+
+.button
+{
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: center;
+    min-width: 60px;
+    border-radius: 3px;
+    border: 1px solid LightGray;
+}
+
+    .button:hover
+    {
+        color: SteelBlue;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px SteelBlue;
+        border: 1px solid SteelBlue;
+    }
+
+.smallButton
+{
+    font-family: Verdana;
+    font-size: 9px;
+    min-width: 50px;
+    max-width: 100px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+    .smallButton:hover
+    {
+        font-family: Verdana;
+        font-size: 9px;
+        min-width: 50px;
+        max-width: 100px;
+        color: SteelBlue;
+        box-shadow: 0px 0px 3px SteelBlue;
+        border: 1px solid SteelBlue;
+        border-radius: 3px;
+    }
+
+.centerLabel
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.leftLabel
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.leftMidLabel
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.rightLabel
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.rightMidLabel
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.footer
+{
+    font-family: Verdana;
+    font-size: 10px;
+    min-width: 1100px;
+    max-width: 1100px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    background-color: WhiteSmoke;
+    position: relative;
+    top: -3px;
+}
+
+.footerTable
+{
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: normal;
+    background-color: WhiteSmoke;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.footertd
+{
+    min-width: 200px;
+    max-width: 300px;
+}
+
+a.footertd
+{
+    font-size: 10px;
+}
+
+    a.footertd :hover
+    {
+        font-size: 10px;
+    }
+
+.footerText
+{
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.remarks
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    width: 100%;
+}
+
+.logbook
+{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: Black;
+    width: 1100px;
+}
+
+.logbookRemarks
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    width: 900px;
+    vertical-align: middle;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    scrollbar-arrow-color: SteelBlue;
+    scrollbar-base-color: LightGray;
+    scrollbar-face-color: SteelBlue;
+    scrollbar-track-color: WhiteSmoke;
+    resize: none;
+}
+
+a.logbook
+{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: Black;
+    width: 1100px;
+}
+
+    a.logbook:hover
+    {
+        font-family: Verdana;
+        font-weight: normal;
+        font-size: 12px;
+        text-decoration: none;
+        color: Black;
+    }
+
+.logbookTot
+{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+}
+
+.weatherLeft
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: WhiteSmoke;
+    max-width: 775px;
+    vertical-align: top;
+}
+
+    .weatherLeft h2
+    {
+        font-family: Verdana;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+a.weatherLeft
+{
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: normal;
+    /*font-style:italic;*/
+}
+
+    a.weatherLeft:hover
+    {
+        font-family: Verdana;
+        font-size: 14px;
+        font-weight: normal;
+        /*font-style:italic;*/
+    }
+
+.aw-widget-36hour
+{
+    min-width: 225px;
+    max-width: 225px;
+    vertical-align: top;
+}
+
+.aw-widget-legal
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.planner
+{
+    border-collapse: collapse;
+}
+
+.planeInfo
+{
+    font-family: Consolas;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: top;
+    padding: 3px;
+    border: 1px solid LightGray;
+}
+
+.planeInfoError
+{
+    font-family: Consolas;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: top;
+    color: Tomato;
+}
+
+.plannerInfoHeading
+{
+    font-family: Consolas;
+    font-size: 12px;
+    font-weight: normal;
+    min-width: 225px;
+    max-width: 225px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid LightGray;
+    word-wrap: break-word;
+}
+
+.plannerInfo
+{
+    font-family: Consolas;
+    font-size: 12px;
+    font-weight: normal;
+    min-width: 225px;
+    max-width: 225px;
+    vertical-align: top;
+    padding: 3px;
+    border: 1px solid LightGray;
+    word-wrap: break-word;
+}
+
+.plannerwp
+{
+    font-family: Consolas;
+    font-size: 12px;
+    font-weight: normal;
+    min-width: 40px;
+    max-width: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid LightGray;
+}
+
+.plannerwpcorr
+{
+    border-left: 1px solid LightGray;
+}
+
+.spacer4060px
+{
+    min-width: 40px;
+    max-width: 60px;
+}
+
+.weather
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+    min-width: 25px;
+    max-width: 175px;
+    vertical-align: top;
+    padding: 3px;
+    border: 1px solid LightGray;
+}
+
+.weatherVFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+    min-width: 25px;
+    max-width: 200px;
+    vertical-align: top;
+    padding: 3px;
+    border: 1px solid LightGray;
+}
+
+.weatherMVFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+    min-width: 25px;
+    max-width: 200px;
+    vertical-align: top;
+    padding: 3px;
+    color: Blue;
+    border: 1px solid LightGray;
+}
+
+.weatherIFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+    min-width: 25px;
+    max-width: 200px;
+    vertical-align: top;
+    padding: 3px;
+    color: Red;
+    border: 1px solid LightGray;
+}
+
+.weatherLIFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+    min-width: 25px;
+    max-width: 200px;
+    vertical-align: top;
+    padding: 3px;
+    color: Purple;
+    border: 1px solid LightGray;
+}
+
+a.weatherVFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+a.weatherMVFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+a.weatherIFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+a.weatherLIFR
+{
+    font-family: Consolas;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.waypoints
+{
+    font-family: Consolas;
+    font-size: 14px;
+    width: 748px;
+    height: 60px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    resize: none;
+}
+
+.infoboxText
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: White;
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    padding: 3px;
+    min-width: 250px;
+    max-width: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.infoboxWeather
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: White;
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    padding: 3px;
+    min-width: 350px;
+    max-width: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.infoboxSigmet
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: White;
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    padding: 3px;
+    min-width: 500px;
+    max-width: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.infoboxRamps
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: White;
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    padding: 3px;
+    min-width: 500px;
+    max-width: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.infoboxRightClick
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: White;
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    padding: 3px;
+    min-width: 300px;
+    max-width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.infoboxParachute
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: White;
+    border: 1px solid SteelBlue;
+    border-radius: 3px;
+    padding: 3px;
+    min-width: 200px;
+    max-width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.equipment select
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px;
+    width: 320px;
+}
+
+.cgTextarea
+{
+    font-family: Consolas;
+    font-size: 12px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 3px;
+    border: 1px solid rgb(211,211,211);
+    border-radius: 3px;
+    width: 312px;
+    height: 418px;
+    resize: none;
+}
+
+.notes
+{
+    font-family: Consolas;
+    font-size: 12px;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 3px;
+    border: 1px solid rgb(211,211,211);
+    border-radius: 3px;
+    width: 282px;
+    height: 538px;
+    resize: none;
+}
+
+.planePrint
+{
+    font-family: Consolas;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.planeList
+{
+    font-family: Consolas;
+    font-size: 12px;
+    border: 1px solid rgb(211,211,211);
+    padding: 6px;
+    border-radius: 3px;
+    height: 46px;
+}
+
+a.planeList
+{
+    font-family: Consolas;
+    font-size: 12px;
+}
+
+.checklist
+{
+    border: 1px solid rgb(211,211,211);
+    border-radius: 3px;
+    min-height: 56px;
+    max-height: 56px;
+    min-width: 610px;
+    max-width: 610px;
+}
+
+.checkboxChecklist
+{
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+a.checkboxChecklist
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.checkboxChecklist img
+{
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+}
+
+.fileUploadArea
+{
+    vertical-align: middle;
+    text-align: left;
+}
+
+.fileUpload
+{
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: rgb(240,240,240);
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-top: 1px;
+    padding-right: 12px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+    .fileUpload:hover
+    {
+        color: SteelBlue;
+        border: 1px solid SteelBlue;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px SteelBlue;
+    }
+
+.fileUploadError
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    color: Tomato;
+    min-width: 610px;
+    max-width: 610px;
+}
+
+.adm
+{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid rgb(134, 198, 126);
+    border-radius: 3px;
+    text-align: left;
+    height: 16px;
+    top: 32px;
+    padding: 3px;
+    position: absolute;
+}
+
+.admButton
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid Gold;
+    border-radius: 3px;
+    background-color: LemonChiffon;
+    border-radius: 3px;
+}
+
+    .admButton:hover
+    {
+        background-color: Gold;
+        border: 1px solid LemonChiffon;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px Gold;
+    }
+
+.error
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+    color: Tomato;
+}
+
+.plannerError
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+    color: Tomato;
+}
+
+.airport td
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    min-width: 275px;
+    max-width: 275px;
+}
+
+.tower td
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.runway td
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.coords
+{
+    padding: 1px 2px 1px 2px;
+    margin: 0px;
+    font-size: 10px;
+    background-color: Ivory;
+    opacity: 0.75;
+}
+
+.spacer100px
+{
+    text-align: right;
+    width: 100px;
+}
+
+.spacer85px
+{
+    text-align: right;
+    width: 85px;
+}
+
+.experience
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    width: 250px;
+}
+
+.conditions
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    width: 100px;
+}
+
+.pdfmenu
+{
+    width: 300px;
+    height: 1040px;
+    vertical-align: top;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pdfFrame
+{
+    border: 5px solid SteelBlue;
+    border: 5px solid LightGray;
+    background-size: contain;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
+    width: 700px;
+    height: 1040px;
+}
+
+.button100px
+{
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+}
+
+    .button100px:hover
+    {
+        color: SteelBlue;
+        border: 1px solid SteelBlue;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px SteelBlue;
+    }
+
+.button120px
+{
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: center;
+    width: 120px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+}
+
+    .button120px:hover
+    {
+        color: SteelBlue;
+        border: 1px solid SteelBlue;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px SteelBlue;
+    }
+
+.e6b200px
+{
+    width: 210px;
+    height: 200px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.e6b220px
+{
+    width: 426px;
+    height: 200px;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.e6bda
+{
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    height: 200px;
+    text-align: left;
+}
+
+.varDump
+{
+    font-family: Consolas;
+    font-weight: normal;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.sqler
+{
+    font-family: Consolas;
+    font-size: 12px;
+    background-color: Silver;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.sqler
+{
+    font-family: Consolas;
+    font-size: 12px;
+    background-color: Silver;
+    border: 1px solid LightGray;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+    .sqler th
+    {
+        font-family: Consolas;
+        font-size: 12px;
+        background-color: Silver;
+        white-space: nowrap;
+    }
+
+.sqlertext
+{
+    font-family: Consolas;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.sqlerheading
+{
+    font-family: Consolas;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+ul
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    list-style-type: disc;
+}
+/* menu dropdown */
+.dropdown
+{
+    min-height: 252px;
+    max-height: 252px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-arrow-color: SteelBlue;
+    scrollbar-base-color: LightGray;
+    scrollbar-face-color: SteelBlue;
+    scrollbar-track-color: WhiteSmoke;
+    z-index: 100;
+}
+
+    .dropdown ul
+    {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .dropdown ul li
+        {
+            width: 140px;
+            display: block;
+            position: relative;
+            float: left;
+            border: 1px solid LightGray;
+            border-radius: 3px;
+        }
+
+    .dropdown li ul
+    {
+        display: none;
+    }
+
+    .dropdown ul li a
+    {
+        font-family: Verdana;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 10px;
+        display: block;
+        background: WhiteSmoke;
+        padding: 3px;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+        .dropdown ul li a:hover
+        {
+            color: Silver;
+            background: SteelBlue;
+            text-decoration: none;
+        }
+
+    .dropdown li:hover ul
+    {
+        border: 1px solid LightGray;
+        display: block;
+        position: absolute;
+    }
+
+    .dropdown li:hover li
+    {
+        float: none;
+    }
+
+    .dropdown li:hover a
+    {
+        background: Silver;
+        text-decoration: none;
+    }
+
+    .dropdown li:hover li a:hover
+    {
+        color: Silver;
+        background: SteelBlue;
+    }
+
+    .dropdown li ul li
+    {
+        border-radius: 3px;
+        border: 1px solid LightGray;
+    }
+
+.pagebreak
+{
+    page-break-before: always;
+}
+
+.aircraftDropdown
+{
+    background-color: rgb(211, 211, 211);
+    border: 1px solid rgb(11, 83, 148);
+    border-radius: 3px;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    position: absolute;
+    top: 85px;
+    left: 306px;
+    visibility: hidden;
+}

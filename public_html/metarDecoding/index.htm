@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+    <LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>DECODING AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <TABLE>
+      <TBODY>
+        <TR>
+          <TD></TD>
+          <TD align="CENTER" valign="CENTER">
+            <H1>KEY TO DECODING THE U.S. METAR OBSERVATION REPORT</H1>
+          </TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <B>Example METAR Report</B><BR/>
+    METAR KABC 121755Z AUTO 21016G24KT 180V240 1SM R11/P6000FT -RA BR BKN015 0VC025 06/04 A2990 RMK A02 PK WND 20032/25 WSHFT 1715 VIS 3/4V1 1/2 VIS 3/4 RWY11 RAB07 CIG 013V017 CIG 017 RWY11 PRESFR SLP125 POOO3 6OOO9 T00640036 10066 21012 58033 TSNO $
+    <TABLE width="100%" border="1">
+      <TBODY>
+        <TR>
+          <TD align="CENTER" colspan="3">
+            <B>KEY TO DECODING A METAR REPORT</B>
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>METAR</B>
+          </TD>
+          <TD width="20%" align="CENTER">TYPE OF REPORT</TD>
+          <TD width="70%">METAR: hourly (scheduled) report;SPECI: special (unscheduled) report.</TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>KABC</B>
+          </TD>
+          <TD width="20%" align="CENTER">ICAO STATION (location) IDENTIFIER</TD>
+          <TD width="70%">Four character ICAO location identifier.</TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>121755Z</B>
+          </TD>
+          <TD width="20%" align="CENTER">DATE/TIME group</TD>
+          <TD width="70%">
+            All dates and times in UTC using a 24-hour clock;two-digit date and four-digit time;always appended with <B>Z</B> to indicate UTC.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>AUTO</B>
+          </TD>
+          <TD width="20%" align="CENTER">REPORT MODIFIER</TD>
+          <TD width="70%">
+            <B>AUTO</B>: Indicates a fully automated report with no human intervention. It is removed when an observer logs on to the system. <B>COR</B>: Indicates a corrected observation. No modifier indicates human observer or automated system with human logged on for oversight functions.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>21016G24KT 180V240</B>
+          </TD>
+          <TD width="20%" align="CENTER">WIND DIRECTION AND SPEED</TD>
+          <TD width="70%">
+            Direction in tens of degrees from true north (first three digits);next two digits: speed in whole knots;if needed, include character as: <B>G</B>usts (character) followed by maximum observed speed;always appended with <B>KT</B> to indicate knots;00000KT for calm;if direction varies by 60<SUP>o</SUP> or more and speed greater than 6 knots, a <B>V</B>ariable wind direction group is reported, otherwise omitted. If wind direction is variable and speed 6 knots or less, replace wind direction with <B>VRB</B> followed by wind speed in knots. See <A href="metar-pg6.htm">Observing and Coding Wind</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>1SM</B>
+          </TD>
+          <TD width="20%" align="CENTER">VISIBILITY</TD>
+          <TD width="70%">
+            Prevailing visibility in statute miles and fractions with space between whole miles and fractions;always appended with <B>SM</B> to indicate statute miles;values &lt;1/4SM reported as M1/4SM. See <A href="metar-pg7-vis.htm">Observing and Coding Visibility</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>R11/P6000FT</B>
+          </TD>
+          <TD width="20%" align="CENTER">RUNWAY VISUAL RANGE</TD>
+          <TD width="70%">
+            A 10-minute RVR evaluation value in hundreds of feet is reported <B>if prevailing visibility is &lt;or = 1 mile or RVR &lt;or = 6000 feet</B>;always appended with <B>FT</B> to indicate feet;value prefixed with <B>M</B> or <B>P</B> to indicate value is lower or higher than the reportable RVR value. See <A href="metar-pg8-RVR.htm">Observing and Coding Runway Visual Range</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>-RA BR</B>
+          </TD>
+          <TD width="20%" align="CENTER">WEATHER PHENOMENA</TD>
+          <TD width="70%">
+            Present weather: <BR/>
+            <TABLE border="1">
+              <TBODY>
+                <TR>
+                  <TD colspan="5">
+                    <B>QUALIFIER</B>
+                  </TD>
+                </TR>
+                <TR>
+                  <TD colspan="5">Intensity or Proximity</TD>
+                </TR>
+                <TR>
+                  <TD colspan="2"> - Light</TD>
+                  <TD>"no sign" Moderate</TD>
+                  <TD colspan="2">+ Heavy</TD>
+                </TR>
+                <TR>
+                  <TD colspan="1"></TD>
+                  <TD colspan="4">VC Vicinity: but not at aerodrome;in U.S. METAR, between 5SM and 10SM of the point(s) of observation.</TD>
+                </TR>
+                <TR>
+                  <TD colspan="5">Descriptor</TD>
+                </TR>
+                <TR>
+                  <TD rowspan="2"></TD>
+                  <TD>
+                    MI Shallow<BR/>BL Blowing
+                  </TD>
+                  <TD>
+                    BC Patches<BR/>SH showers
+                  </TD>
+                  <TD>
+                    PR Partial<BR/>DR Drifting
+                  </TD>
+                  <TD>
+                    TS Thunderstorm<BR/>FZ Freezing
+                  </TD>
+                </TR>
+                <TR>
+                  <TD colspan="5">
+                    <B>WEATHER PHENOMENA</B>
+                  </TD>
+                </TR>
+                <TR>
+                  <TD colspan="5">Precipitation</TD>
+                </TR>
+                <TR>
+                  <TD rowspan="2"></TD>
+                  <TD>
+                    DZ Drizzle<BR/>IC Ice Crystals<BR/>UP Unknown<BR/>
+                    precipitation in automated<BR/>observations
+                  </TD>
+                  <TD>
+                    RA Rain<BR/>PL Ice pellets
+                  </TD>
+                  <TD>
+                    SN Snow<BR/>GR Hail
+                  </TD>
+                  <TD>
+                    SG Snow grains<BR/>GS Small hail/<BR/>snow pellets
+                  </TD>
+                </TR>
+                <TR>
+                  <TD colspan="5">Obscuration</TD>
+                </TR>
+                <TR>
+                  <TD rowspan="2"></TD>
+                  <TD>
+                    BR Mist (&lt;or = 5/8SM)<BR/>SA Sand
+                  </TD>
+                  <TD>
+                    FU Smoke<BR/>HZ Haze
+                  </TD>
+                  <TD>
+                    VA Volcanic Ash<BR/>PY Spray
+                  </TD>
+                  <TD>DU Widespread Dust</TD>
+                </TR>
+                <TR>
+                  <TD colspan="5">Other</TD>
+                </TR>
+                <TR>
+                  <TD rowspan="2"></TD>
+                  <TD>
+                    SQ Squall<BR/>FC Funnel Cloud
+                  </TD>
+                  <TD>
+                    SS Sandstorm<BR/>+FC Tornado/<BR/>Waterspout
+                  </TD>
+                  <TD>DS Duststorm</TD>
+                  <TD>
+                    PO Well developed<BR/>dust/sand whirls
+                  </TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            See <A href="metar-pg9-ww.htm">Observing and Coding Present Weather Group</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>BKN015 OVC025</B>
+          </TD>
+          <TD width="20%" align="CENTER">SKY CONDITION</TD>
+          <TD width="70%">
+            Cloud amount and height: CLR (In automated METAR reports only, no clouds detected below 12000 feet.);<B>SK</B>y <B>C</B>lear 0/8;<B>FEW</B> 1/8-2/8;<B>SC</B>a<B>t</B>tered 3/8-4/8;<B>B</B>ro<B>K</B>e<B>N</B> 5/8-7/8;<B>OV</B>er<B>C</B>ast 8/8;3-digit height of base in hundreds of feet;followed by <B>T</B>owering <B>CU</B>mulus or <B>C</B>umulonim<B>B</B>us if present. For an observed sky: <B>V</B>ertical <B>V</B>isibility followed by vertical veisibility in hundreds of feet into the obscuration, example: <B>VV004</B>. More than 1 layer may be reported. See <A href="metar-pg10-sky.htm">Observing and Coding Sky Conditions</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>06/04</B>
+          </TD>
+          <TD width="20%" align="CENTER">TEMPERATURE/DEW POINT</TD>
+          <TD width="70%">
+            Each is reported in whole degrees Celsius using two digits;values are separated by a solidus (/);sub-zero values are prefixed with an <B>M</B> (minus). See <A href="metar-pg11-t-td.htm">Observing and Coding Temperature and Dew Point</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>A2990</B>
+          </TD>
+          <TD width="20%" align="CENTER">ALTIMETER</TD>
+          <TD width="70%">
+            Altimeter setting (in U.S. reports) is always prefixed with an <B>A</B> indicating inches of mercury;reported using four digits: tens, units, tenths, and hundredths. See <A href="metar-pg12-pres.htm">Observing and Coding Pressure</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD align="CENTER" colspan="3">The following groups are reported in the Remarks section of the METAR report</TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>RMK</B>
+          </TD>
+          <TD width="20%" align="CENTER">REMARKS IDENTIFIER</TD>
+          <TD width="70%">Remarks includes clarifying or augmenting data concerning elements in the body of the METAR, additive coded data and maintenance data.</TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>TORNADO, FUNNEL CLOUD or WATERSPOUT</B>
+          </TD>
+          <TD width="20%" align="CENTER">TORNADIC ACTIVITY</TD>
+          <TD width="70%">
+            Augmented;report should include TORNADO, FUNNEL CLOUD or WATERSPOUT, time (after the hour) of beginning/end, location, movement;e.g., TORNADO B25 N MOVE E See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>AO2</B>
+          </TD>
+          <TD width="20%" align="CENTER">TYPE OF AUTOMATED STATION</TD>
+          <TD width="70%">
+            AO1;automated station without a precipitation descriminator. AO2;automated station with precipitation descriminator. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>PK WND 20032/25</B>
+          </TD>
+          <TD width="20%" align="CENTER">PEAK WIND</TD>
+          <TD width="70%">
+            PK WND dddff(F)/(hh)mm;direction in tens of degrees, speed in whole knots, time in minutes after the hour. Only minutes after the hour is included if the hour can be inferred from the report. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>WSHFT 1715</B>
+          </TD>
+          <TD width="20%" align="CENTER">WIND SHIFT</TD>
+          <TD width="70%">
+            WSHFT followed by hours and minutes of occurrence. The term FROPA may be entered after the time if it is reasonably certain that the wind shift was a result of a frontal passage. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg6.htm"> here for wind definitions</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>Not on this report</B>
+          </TD>
+          <TD width="20%" align="CENTER">TOWER OR SURFACE VISIBILITY</TD>
+          <TD width="70%">
+            TWR VIS vvvvv: visibility reported by tower personnel, e.g., TWR VIS 2;SFC VIS vvvvv: visibility reported by ASOS or observer. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg7-vis.htm"> here for visibility criteria and definitions.</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>VIS 3/4V1 1/2</B>
+          </TD>
+          <TD width="20%" align="CENTER">VARIABLE PREVAILING VISIBILITY</TD>
+          <TD width="70%">
+            VIS v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB>v<SUB>n</SUB><B>V</B>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>v<SUB>x</SUB>;reported if prevailing visibility is &lt;3 statute miles and variable. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg7-vis.htm"> here for visibility criteria and definitions</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>VIS 3/4 RWY11</B>
+          </TD>
+          <TD width="20%" align="CENTER">VISIBILITY AT SECOND LOCATION</TD>
+          <TD width="70%">
+            VIS vvvvv(LOC);reported if different than the reported prevailing visibility in the body of the report. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg7-vis.htm"> here for visibility criteria and definitions</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>Not on this report</B>
+          </TD>
+          <TD width="20%" align="CENTER">LIGHTNING</TD>
+          <TD width="70%">
+            (FREQUENCY) LTG (LOCATION);when detected the frequency and location is reported, e.g., FRQ LTG NE, meaning frequent lightning to northeast of station. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>RAB07</B>
+          </TD>
+          <TD width="20%" align="CENTER">BEGINNING AND ENDING OF PRECIPITATION AND THUNDERSTORMS</TD>
+          <TD width="70%">
+            w"w"B(hh)mmE(hh)mm;TSB(hh)mmE(hh)mm, where w"w" is the present weather precipitation contraction, B indicates began, E indicates ended;(hh) indicates the hour the phenomena began or ended and can be omitted if the hour can be inferred from the report, mm indicates the minutes after the hour the phenomenon began or ended. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>Not on this report</B>
+          </TD>
+          <TD width="20%" align="CENTER">VIRGA</TD>
+          <TD width="70%">
+            Augmented to report by human observer;indicates precipitation not reaching the ground is observed. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>CIG 013V017</B>
+          </TD>
+          <TD width="20%" align="CENTER">VARIABLE CEILING</TD>
+          <TD width="70%">
+            CIG h<SUB>n</SUB>h<SUB>n</SUB>h<SUB>n</SUB>Vh<SUB>x</SUB>h<SUB>x</SUB>h<SUB>x</SUB>;<BR/> reported if the ceiling in the body of the report is &lt;3000 feet and variable. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>CIG 017 RWY11</B>
+          </TD>
+          <TD width="20%" align="CENTER">CEILING HEIGHT AT SECOND LOCATION</TD>
+          <TD width="70%">
+            CIG hhh[LOC];Ceiling height reported if secondary ceilometer site ceiling value is different than the ceiling height in the body of the report. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg10-sky.htm"> here for sky condition criteria and definitions</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>PRESFR</B>
+          </TD>
+          <TD width="20%" align="CENTER">PRESSURE RISING OR FALLING RAPIDLY</TD>
+          <TD width="70%">
+            PRESRR or PRESFR;pressure rising or falling rapidly at time of observation. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg12-pres.htm"> here for pressure criteria and definitions</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>SLP125</B>
+          </TD>
+          <TD width="20%" align="CENTER">SEA LEVEL PRESSURE</TD>
+          <TD width="70%">
+            SLPppp;sea level pressure reported for ppp in tens, units, and tenths of hPa. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information and <A href="metar-pg12-pres.htm"> here for pressure criteria and definitions</A>.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>P0003</B>
+          </TD>
+          <TD width="20%" align="CENTER">HOURLY PRECIPITATION AMOUNT</TD>
+          <TD width="70%">
+            Prrrr;in tens, units, tenths and hundredths of an inch since last regular hourly METAR. A trace is reported as P0000. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>60009</B>
+          </TD>
+          <TD width="20%" align="CENTER">3- AND 6-HOUR PRECIPITATION AMOUNT</TD>
+          <TD width="70%">
+            6RRRR;precipitation amount, including water equivalent, to nearest 0.01 inches for past 6 hours reported in 00, 06, 12, and 18 UTC observations and for past 3 hours in 03, 09, 15, and 21 UTC observations. A trace is 60000. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>Not on this report </B>
+          </TD>
+          <TD width="20%" align="CENTER">24-HOUR PRECIPITATION AMOUNT</TD>
+          <TD width="70%">
+            7R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>R<SUB>24</SUB>;precipitation amount to nearest 0.01 inches for past 24 hours reported in 12 UTC observation;e.g., 70015 indicates 0.15 inches of precipitation for past 24 hours. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>T00640036</B>
+          </TD>
+          <TD width="20%" align="CENTER">HOURLY TEMPERATURE AND DEW POINT</TD>
+          <TD width="70%">
+            Ts<SUB>n</SUB>T<SUB>a</SUB>T<SUB>a</SUB>T<SUB>a</SUB>s<SUB>n</SUB>T"<SUB>a</SUB>T"<SUB>a</SUB>T"<SUB>a</SUB>;reported to nearest tenth of <SUP>o</SUP>C;s<SUB>n</SUB>: 1 if temperature or dew point below 0<SUP>o</SUP>C and 0 if temperature/dew point 0<SUP>o</SUP>C or higher. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>10066</B>
+          </TD>
+          <TD width="20%" align="CENTER">6-HOUR MAXIMUM TEMPERATURE</TD>
+          <TD width="70%">
+            1s<SUB>n</SUB>T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>;maximum temperature for past 6 hours reported to nearest tenth of degree Celsius;reported on 00, 06, 12, 18 UTC reports;s<SUB>n</SUB> = 1 if temperature below 0<SUP>o</SUP>C and 0 if temperature 0<SUP>o</SUP>C or higher. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>21012</B>
+          </TD>
+          <TD width="20%" align="CENTER">6-HOUR MINIMUM TEMPERATURE</TD>
+          <TD width="70%">
+            2s<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>;minimum temperature for past 6 hours reported to nearest tenth of degree Celsius;reported on 00, 06, 12, 18 UTC reports;s<SUB>n</SUB> = 1 if temperature below 0<SUP>o</SUP>C and 0 if temperature 0<SUP>o</SUP>C or higher. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>Not on this report</B>
+          </TD>
+          <TD width="20%" align="CENTER">24-HOUR MAXIMUM AND MINIMUM TEMPERATURE</TD>
+          <TD width="70%">
+            4s<SUB>n</SUB>T<SUB>x</SUB>T<SUB>x</SUB>T<SUB>x</SUB>s<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>T<SUB>n</SUB>;maximum temperature for past 6 hours reported to nearest tenth of degree Celsius;reported on midnight local standard time reports;s<SUB>n</SUB> = 1 if temperature below 0<SUP>o</SUP>C and 0 if temperature 0<SUP>o</SUP>C or higher;e.g., 400461006 indicates a 24-hour maximum temperature of 4.6<SUP>o</SUP>C and a 24-hour minimum temperature of -0.6<SUP>o</SUP>C. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>58033</B>
+          </TD>
+          <TD width="20%" align="CENTER">PRESSURE TENDENCY</TD>
+          <TD width="70%">
+            5appp;the character (a) and amount of change in pressure (ppp) in tenths of hPa for the past 3 hours. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>TSNO</B>
+          </TD>
+          <TD width="20%" align="CENTER">SENSOR STATUS INDICATORS</TD>
+          <TD width="70%">
+            RVRNO: RVR missing;PWINO: precipitation identifier information not available;PNO: precipitation amount not available;FZRANO: freezing rain information not available;TSNO: thunderstorm information not available (may indicate augmenting weather observer not logged on);VISNO [LOC} visibility at second location not available, e.g. VISNO RWY06;CHINO [LOC}: (cloud-height- indicator) sky condition at secondary location not available, e.g., CHINO RWY06. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD width="10%" align="CENTER">
+            <B>$</B>
+          </TD>
+          <TD width="20%" align="CENTER">MAINTENANCE CHECK INDICATOR</TD>
+          <TD width="70%">
+            Maintenance is needed on the system. See <A href="metar-pg13-rmk.htm">Observing and Coding Remarks</A> for additional information.
+          </TD>
+        </TR>
+        <TR>
+          <TD colspan="3">If an element or phenomena does not occur, is missing, or cannot be observed, the corresponding group and space are omitted (body and/or remarks) from that particular report, except for Sea-level Pressure (SLPppp). SLPNO shall be reported in a METAR when the SLP is not available.</TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

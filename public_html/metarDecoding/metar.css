@@ -1,0 +1,33 @@
+body
+{
+	background-color:#F5F5F5;
+}
+td
+{
+	font-family:Verdana;
+	font-weight:normal;
+	font-size:14px;
+	border:none;
+	text-align:left;
+}
+a:link
+{
+	font-family:Verdana;
+	text-decoration:none;
+	font-size:14px;
+	color:#0B5394;
+}
+a:link:hover
+{
+	font-family:Verdana;
+	text-decoration:underline;
+	font-size:14px;
+	color:#0B5394;
+}
+a:visited
+{
+	font-family:Verdana;
+	text-decoration:none;
+	font-size:14px;
+	color:#0B5394;
+}

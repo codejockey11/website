@@ -1,0 +1,266 @@
+<HTML>
+  <HEAD>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"/>
+<LINK REL="StyleSheet" HREF="metar.css" TYPE="text/css" />
+  </HEAD>
+  <BODY>
+    <TITLE>AVIATION ROUTING WEATHER REPORT (METAR)</TITLE>
+    <CENTER>
+      <H2>
+        ICAO Aviation Weather<BR/>
+        Report<BR/>
+        METAR/SPECI<BR/>
+        Code Format
+      </H2>
+    </CENTER>
+    <H2>Index</H2>
+    <TABLE>
+      <TR>
+        <TD>
+          <A HREF="#General">General Format of the METAR/SPECI Code</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#International">International Code Groups</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#US">United States Code Groups</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <A HREF="#Missing">
+            Additional Data and Coding Missing Data
+            Groups
+          </A>
+        </TD>
+      </TR>
+    </TABLE>
+    <A NAME="General">
+      <B>General Format of the METAR/SPECI Code</B>
+    </A><BR/>
+    <B>METAR</B> contains a report of wind, visibility, runway visual range, present weather, sky condition, temperature, dew point, and altimeter setting collectively referred to as "the body of the report." In addition, coded and/or plain language information which elaborates on data in the body of the report may be appended to the <B>METAR</B>. The contents of the remarks will vary according to the type of weather station. At designated stations, the <B>METAR</B> may be abridged to include one or more of the above elements.  The <B>METAR/SPECI</B> code format has two major sections: the <B>Body</B>, consisting of a maximum of 11 groups, and the <B>Remarks</B>, consisting of 2 categories. Together, the body and remarks make up the complete <B>METAR/SPECI</B>.  The groups of the <B>METAR</B> code format contain a non-uniform number of characters. When an element or phenomenon does not occur, the corresponding group, or the extension of a group, is omitted from a particular report. The groups enclosed in brackets are used in accordance with regional or national decisions.<A NAME="International">
+      <B>The International Format of the METAR/SPECI Code</B>
+    </A> The following is the international format of the used by most countries. Each group provides a <B>link</B> to further details concerning observing and coding standards of the element.
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP">{</TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#METAR">
+            <B>METAR</B>
+            <BR/>or<BR/><B>SPECI</B>
+          </A><BR/>Message<BR/>type
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#ID">_CCCC</A><BR/>Location<BR/>identifier
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#ID">_GGggZ</A><BR/>Date-<BR/>
+          time<BR/>group
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg6.htm">
+            _dddff(f)<B>G</B>f<SUB>m</SUB>f<SUB>m</SUB>
+          </A><BR/>Wind group
+        </TD>
+        <TD VALIGN="TOP">_(</TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg6.htm">
+            <B>KMH</B> or</BR><B>KT</B> or
+            <BR/><B>MPS</B>
+          </A>
+        </TD>
+        <TD VALIGN="TOP">)</TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg6.htm">
+            d<SUB>n</SUB>
+            d<SUB>n</SUB>d<SUB>n</SUB><B>V</B>d<SUB>x</SUB>d<SUB>x</SUB>d<SUB>x</SUB>
+          </A><BR/>Variable<BR/>wind<BR/>group
+        </TD>
+        <TD VALIGN="TOP">_{</TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg7-vis.htm">
+            VVVVD<SUB>v</SUB>_V<SUB>x</SUB>
+            V<SUB>x</SUB>V<SUB>x</SUB>V<SUB>x</SUB>D<SUB>v</SUB><BR/>or<BR/><B>CAVOK</B>
+          </A><BR/>Visibility group
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP">_{</TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg8-RVR.htm">
+            <B>R</B>D<SUB>R</SUB>
+            D<SUB>R</SUB>/V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>I<BR/>or<BR/>
+            <B>R</B>D<SUB>R</SUB>D<SUB>R</SUB>/V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>
+            V<SUB>R</SUB><B>V</B>V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>i
+          </A><BR/>Runway Visual Range group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg9-ww.htm">_w"w"(ww)</A><BR/>Present<BR/>weather<BR/>group
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">_</TD>
+        <TD VALIGN="TOP">
+          {
+        </TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg10-sky.htm">
+            N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>
+            h<SUB>s</SUB>h<SUB>s</SUB>h<SUB>s</SUB><BR/>or<BR/><B>VV</B>h<SUB>s</SUB>
+            h<SUB>s</SUB>h<SUB>s</SUB><BR/>or<BR/><B>SKC</B>
+          </A><BR/>Cloud groups
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg11-t-td.htm">
+            _T"T"/T"<SUB>d</SUB>T"<SUB>d</SUB>
+          </A><BR/>
+          Temperature/<BR/>Dew Point<BR/>groups
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg12-pres.htm">
+            _<B>Q</B>
+            P<SUB>H</SUB>P<SUB>H</SUB>P<SUB>H</SUB>P<SUB>H</SUB>
+          </A><BR/>Sea-level<BR/>Pressure<BR/>
+          group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg14-rmk-inter.htm">
+            _<B>RE</B>w"w"
+          </A><BR/>Recent<BR/>Weather<BR/>
+          group
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1">
+      <TR>
+        <TD VALIGN="TOP">_{</TD>
+        <TD ALIGN="CENTER" VALIGN="TOP">
+          <A HREF="metar-pg14-rmk-inter.htm">
+            <B>WS_TKOF_RWY</B>
+            D<SUB>R</SUB>D<SUB>R</SUB>
+            <BR/>and/or<BR/><B>WS_LDG_RWY</B>D<SUB>R</SUB>D<SUB>R</SUB>
+          </A><BR/>Takeoff and<BR/>
+          Landing Conditions groups
+        </TD>
+      </TR>
+    </TABLE>
+    <A NAME="US">
+      <B>United States Format of the METAR/SPECI Code</B>
+    </A>  The format below is used by the United States and contains the modifications relating to the exceptions requested by the United States. Most exceptions deal with the units used to report certain weather elements. Each group provides a <B>link</B> to further details concerning observing and coding standards of the element.
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" ALIGN="CENTER">{</TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#METAR">
+            <B>METAR</B><BR/>or<BR/><B>SPECI</B>
+          </A><BR/>Message<BR/>type
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#ID">_CCCC</A><BR/>Location<BR/>identifier
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#DATE">_YYGGggZ_</A><BR/>Date-<BR/>time<BR/>group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">{</TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg5.htm#COR">
+            <B>COR</B><BR/>or<BR/><B>AUTO</B>
+          </A><BR/>
+          <B>Cor</B>rected or
+          <BR/><B>Auto</B>mated Ob<BR/>AUTO omitted<BR/>when observer logs on
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg6.htm">
+            _dddff(f)<B>G</B>f<SUB>m</SUB>
+            f<SUB>m</SUB><B>KT</B>
+          </A><BR/>Wind<BR/>group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg6.htm">
+            _d<SUB>n</SUB>d<SUB>n</SUB>
+            d<SUB>n</SUB><B>V</B>d<SUB>x</SUB>d<SUB>x</SUB>d<SUB>x</SUB>
+          </A><BR/>
+          Variable wind<BR/>group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg7-vis.htm">
+            _VVVVV<B>SM</B>
+          </A><BR/>Visibility<BR/>group
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" ALIGN="CENTER">_{</TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg8-RVR.htm">
+            <B>R</B>D<SUB>R</SUB>
+            D<SUB>R</SUB>/V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>V<SUB>R</SUB>
+            <B>FT</B><BR/>or<BR/>
+            <B>R</B>D<SUB>N</SUB>D<SUB>N</SUB>/V<SUB>N</SUB>V<SUB>N</SUB>
+            V<SUB>N</SUB>
+            V<SUB>N</SUB><B>V</B>V<SUB>X</SUB>V<SUB>X</SUB>V<SUB>X</SUB>
+            V<SUB>X</SUB><B>FT</B>
+          </A><BR/>Runway Visual Range group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg9-ww.htm">_w"w"</A><BR/>Present<BR/>Weather<BR/>group
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" ALIGN="CENTER">_{</TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg10-sky.htm">
+            N<SUB>s</SUB>N<SUB>s</SUB>N<SUB>s</SUB>h<SUB>s</SUB>
+            h<SUB>s</SUB>h<SUB>s</SUB><BR/>or<BR/><B>VV</B>h<SUB>s</SUB>h<SUB>s</SUB>
+            h<SUB>s</SUB><BR/>or<BR/><B>SKC/CLR</B>
+          </A><BR/>Sky Condition<BR/>group
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg11-t-td.htm">
+            _T"T"/T"<SUB>d</SUB>T"<SUB>d</SUB>
+          </A>
+          <BR/>Temperature/<BR/>Dew Point<BR/>groups
+        </TD>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg12-pres.htm">
+            _<B>A</B>P<SUB>H</SUB>P<SUB>H</SUB>P<SUB>H</SUB>P<SUB>H</SUB>
+          </A><BR/>Sea-level Pressure<BR/>group
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE BORDER="1" WIDTH="100%">
+      <TR>
+        <TD VALIGN="TOP" ALIGN="CENTER">
+          <A HREF="metar-pg13-rmk.htm">
+            _<B>RMK</B>_(Automated, Manual, Plain Language)_(Additive Data and Automated Maintenance Indicators)
+          </A><BR/>Remarks Section groups
+        </TD>
+      </TR>
+    </TABLE>
+    <A NAME="Missing">
+      <B>Additional Data and Coding Missing Data in METAR/SPECI Observations</B>
+    </A>  The underline character "<B>_</B>" indicates a required space between the groups. If a group is not reported, the preceding space is also not reported. In addition to the format given, agencies shall provide for the inclusion of any special Beginning-of-Message, End-of-Message, or End-of-Transmission signals required by their communication system.  The actual content of a METAR or SPECI depends on the observation program at the individual station. At designated station, the 0000, 0600, 1200, and 1800 Coordinated Universal Time (UTC) METAR"s include additional data specified by the responsible agency and are known as <B>6-hourly reports</B>. At designated stations, the 0300, 0900, 1500, and 2100 UTC METAR"s are known as <B>3-hourly reports</B> and also contain additional information specified by the responsible agency.  When an element does not occur, or cannot be observed, the corresponding group and preceding space are omitted from that particular report.
+    <CENTER>
+      <A href="index.htm">Return to First Page Index</A>
+    </CENTER>
+  </BODY>
+</HTML>

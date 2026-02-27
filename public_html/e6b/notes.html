@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<HTML>
+<head>
+<title>Special Calculations</title>
+<style>
+body
+{
+  background-color:rgb(250,250,250);
+}
+p
+{
+  font-family:Consolas;
+  font-weight:normal;
+  font-size:12px;
+}
+h1
+{
+  font-family:Consolas;
+  font-weight:bold;
+  font-size:12px;
+}
+a:link
+{
+  color:rgb(101,156,239);
+  text-decoration:none;
+}
+a:visited
+{
+  color:rgb(101,156,239);
+  text-decoration:none;
+}
+a:hover
+{
+  color:rgb(101,156,239);
+  text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<p>
+=======================================================================<br/>
+Knots to MPH<br/>
+mph = speed in knots * 1.15<br/>
+=======================================================================<br/>
+Fahrenheit to Celsius to Fahrenheit<br/>
+<br/>
+F to C Deduct 32, then multiply by 5, then divide by 9<br/>
+((F - 32) * 5) / 9<br/>
+<br/>
+C to F Multiply by 9, then divide by 5, then add 32 
+<br/>
+((C * 9) / 5) + 32<br/>
+=======================================================================<br/>
+Rate of climb in fpm for takeoff minimums<br/>
+<br/>
+TAKEOFF MINIMUMS: Rwy 3, 300-1 or std. w/ min. climb<br/>
+of 451' per NM to 1300. Rwy 28, 500-3 or std. w/ min.<br/>
+climb of 295' per NM to 1600.<br/>
+<br/>
+fpm = (ground speed / 60) * (feet per NM) or (ratio 300/1)<br/>
+<br/>
+Calculated for runway 3<br/>
+<br/>
+fpm = (70 / 60) * 451 = 526.16<br/>
+fpm = 1.16 * 451 = 526.16<br/>
+<br/>
+Calculated for runway 28<br/>
+<br/>
+fpm = (70 / 60) * 295 = 342.20<br/>
+fpm = 1.16 * 295 = 342.20<br/>
+=======================================================================<br/>
+Rate of descent<br/>
+rate of descent in fpm = tan(glide slope) * (speed in knots * 6076 / 60)<br/>
+<br/>
+4.0 degree glide<br/>
+fpm = tan(4.0) * ((70 * 6076) / 60)<br/>
+fpm = 0.069926 * (425,320 / 60)<br/>
+fpm = 0.069926 * 7,088.666667<br/>
+fpm = 495.68<br/>
+=======================================================================<br/>
+Rate of descent for 3.0 degree glide slope (Rule of thumb)<br/>
+fpm = (airspeed / 2) * 10<br/>
+Flying a landing at 70 knots<br/>
+fpm = (70 / 2) * 10<br/>
+fpm = 35 * 10 = 350<br/>
+=======================================================================<br/>
+Distance to begin descent<br/>
+(((Current Altitude - Final Altitude) / 60) / constant rate fpm) * constant rate ground speed = distance in miles<br/>
+=======================================================================<br/>
+Cloudbase For Celsius<br/>
+cloud base = ((temperature - dewpoint) / 2.5) * 1000<br/>
+<br/>
+For Fahrenheit<br/>
+cloud base = ((temperature - dewpoint) / 4.4) * 1000<br/>
+=======================================================================<br/>
+pressure altitude = (standard pressure – your current pressure setting) x 1,000 + field elevation<br/>
+<br/>
+density altitude = pressure altitude + [120 x (OAT – ISA Temp)]<br/>
+<br/>
+Now I know what you are saying, the $10 Sporty’s E6B app will figure this for me.<br/>
+Well you are right, and I use the same app, but hopefully this will help you understand density altitude.<br/>
+This is a rough estimate, however, it will get you close.<br/>
+<br/>
+First, we need pressure altitude which can be easily calculated.<br/>
+OAT is “Outside Air Temperature” in degrees Celsius and ISA Temp is always 15 °C at sea level.<br/>
+To find ISA standard temperature for a given altitude, double the altitude, subtract 15 and place a – sign in front of it.<br/>
+</p>
+</body>
+</HTML>

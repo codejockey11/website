@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1;" />
+<title>Risk Assesment</title>
+<style type="text/css">
+.button
+{
+	font-family:Calibri;
+	font-size:12px;
+	font-weight:bold;
+	border:solid 1px rgb(255, 210, 91);
+	background-color:rgb(255, 232, 170);
+	border-radius:3px;
+}
+.button:hover
+{
+	background-color:rgb(255, 210, 91);
+	border:solid 1px rgb(255, 232, 170);
+	box-shadow:0px 0px 3px rgb(255, 210, 91);
+}
+</style>
+<script type="text/javascript">
+function UpdateColumnAmount(isChecked, amount)
+{
+	if (isChecked == true)
+	{
+		return amount;
+	}
+
+	return 0;
+}
+
+function calcRisk(form)
+{
+	var col1 = 0;
+	var col2 = 0;
+
+	col1 += UpdateColumnAmount(form.sleep.checked, 2);
+	col1 += UpdateColumnAmount(form.sleepWell.checked, 0);
+	col1 += UpdateColumnAmount(form.ill.checked, 4);
+    col1 += UpdateColumnAmount(form.great.checked, 0);
+    col1 += UpdateColumnAmount(form.bitOff.checked, 2);
+    col1 += UpdateColumnAmount(form.vfr.checked, 1);
+    col1 += UpdateColumnAmount(form.mvfr.checked, 3);
+    col1 += UpdateColumnAmount(form.ifr.checked, 4);
+
+	col2 += UpdateColumnAmount(form.day.checked, 4);
+    col2 += UpdateColumnAmount(form.gday.checked, 0);
+    col2 += UpdateColumnAmount(form.dayFlight.checked, 1);
+	col2 += UpdateColumnAmount(form.nightFlight.checked, 3);
+	col2 += UpdateColumnAmount(form.rush.checked, 3);
+	col2 += UpdateColumnAmount(form.noHurry.checked, 1);
+    col2 += UpdateColumnAmount(form.charts.checked, 0);
+	col2 += UpdateColumnAmount(form.computerY.checked, 3);
+	col2 += UpdateColumnAmount(form.computerN.checked, 0);
+	col2 += UpdateColumnAmount(form.wbcgY.checked, 0);
+	col2 += UpdateColumnAmount(form.wbcgN.checked, 3);
+	col2 += UpdateColumnAmount(form.performanceY.checked, 0);
+	col2 += UpdateColumnAmount(form.performanceN.checked, 3);
+	col2 += UpdateColumnAmount(form.briefY.checked, 0);
+    col2 += UpdateColumnAmount(form.briefN.checked, 2);
+
+	if(col1 > 0)
+	{
+		form.col1.value = col1;
+		form.tcol1.value = col1;
+	}
+
+	if(col2 > 0)
+	{
+		form.col2.value = col2;
+		form.tcol2.value = col2;
+	}
+
+	if((col1 > 0) || (col2 > 0))
+	{
+		form.total.value = col1 + col2;
+	}
+}
+function clearForm(form)
+{
+	form.sleep.checked = false;
+	form.sleepWell.checked = false;
+	form.ill.checked = false;
+	form.great.checked = false;
+	form.bitOff.checked = false;
+	form.vfr.checked = false;
+	form.mvfr.checked = false;
+	form.ifr.checked = false;
+
+	form.day.checked = false;
+	form.gday.checked = false;
+	form.dayFlight.checked = false;
+	form.nightFlight.checked = false;
+	form.rush.checked = false;
+	form.noHurry.checked = false;
+	form.charts.checked = false;
+	form.computerY.checked = false;
+	form.computerN.checked = false;
+	form.wbcgY.checked = false;
+	form.wbcgN.checked = false;
+	form.performanceY.checked = false;
+	form.performanceN.checked = false;
+	form.briefY.checked = false;
+	form.briefN.checked = false;
+
+	form.col1.value = "";
+	form.col2.value = "";
+	form.tcol1.value = "";
+	form.tcol2.value = "";
+	form.total.value = "";
+
+}
+</script>
+</head>
+<body>
+<div style="height:583px;width:624px;position:absolute;overflow:hidden;">
+<img src="riskAssesment.png">
+<form name="raf" method="POST">
+
+<input name="name" type="text" style="font-family:Calibri;font-weight:normal;font-size:14px;border:1px solid rgb(134, 198, 126);text-align:left;width:150px;height:16px;position:absolute;top:36px;left:104px;"/>
+<input name="from" type="text" style="font-family:Calibri;font-weight:normal;font-size:14px;border:1px solid rgb(134, 198, 126);text-align:left;width:50px;height:16px;position:absolute;top:36px;left:404px;"/>
+<input name="to"   type="text" style="font-family:Calibri;font-weight:normal;font-size:14px;border:1px solid rgb(134, 198, 126);text-align:left;width:50px;height:16px;position:absolute;top:36px;left:504px;"/>
+
+<input name="sleep" type="checkbox" AUTOFOCUS style="position:absolute;top:89px;left:254px;"/>
+<input name="sleepWell" type="checkbox" style="position:absolute;top:105px;left:254px;"/>
+<input name="ill" type="checkbox" style="position:absolute;top:152px;left:254px;"/>
+<input name="great" type="checkbox" style="position:absolute;top:167px;left:254px;"/>
+<input name="bitOff" type="checkbox" style="position:absolute;top:183px;left:254px;"/>
+<input name="vfr" type="checkbox" style="position:absolute;top:247px;left:254px;"/>
+<input name="mvfr" type="checkbox" style="position:absolute;top:294px;left:254px;"/>
+<input name="ifr" type="checkbox" style="position:absolute;top:309px;left:254px;"/>
+<input name="col1" readonly type="text" style="font-family:Consolas;font-weight:normal;font-size:10px;border:1px solid rgb(255, 219, 120);text-align:center;width:25px;height:12px;position:absolute;top:344px;left:251px;"/>
+
+<input name="day" type="checkbox" style="position:absolute;top:104px;left:566px;"/>
+<input name="gday" type="checkbox" style="position:absolute;top:120px;left:566px;"/>
+<input name="dayFlight" type="checkbox" style="position:absolute;top:168px;left:566px;"/>
+<input name="nightFlight" type="checkbox" style="position:absolute;top:183px;left:566px;"/>
+<input name="rush" type="checkbox" style="position:absolute;top:233px;left:566px;"/>
+<input name="noHurry" type="checkbox" style="position:absolute;top:249px;left:566px;"/>
+<input name="charts" type="checkbox" style="position:absolute;top:264px;left:566px;"/>
+<input name="computerY" type="checkbox" style="position:absolute;top:280px;left:566px;"/>
+<input name="computerN" type="checkbox" style="position:absolute;top:295px;left:566px;"/>
+<input name="wbcgY" type="checkbox" style="position:absolute;top:311px;left:566px;"/>
+<input name="wbcgN" type="checkbox" style="position:absolute;top:326px;left:566px;"/>
+<input name="performanceY" type="checkbox" style="position:absolute;top:342px;left:566px;"/>
+<input name="performanceN" type="checkbox" style="position:absolute;top:357px;left:566px;"/>
+<input name="briefY" type="checkbox" style="position:absolute;top:373px;left:566px;"/>
+<input name="briefN" type="checkbox" style="position:absolute;top:389px;left:566px;"/>
+<input name="col2" readonly type="text" style="font-family:Consolas;font-weight:normal;font-size:10px;border:1px solid rgb(255, 219, 120);text-align:center;width:25px;height:12px;position:absolute;top:426px;left:563px;"/>
+
+<input name="tcol1" readonly type="text" style="font-family:Consolas;font-weight:normal;font-size:10px;border:1px solid rgb(255, 219, 120);text-align:center;width:25px;height:12px;position:absolute;top:463px;left:237px;"/>
+<input name="tcol2" readonly type="text" style="font-family:Consolas;font-weight:normal;font-size:10px;border:1px solid rgb(255, 219, 120);text-align:center;width:25px;height:12px;position:absolute;top:463px;left:400px;"/>
+<input name="total" readonly type="text" style="font-family:Consolas;font-weight:normal;font-size:10px;border:1px solid rgb(255, 219, 120);text-align:center;width:25px;height:12px;position:absolute;top:463px;left:530px;"/>
+
+<input name="Submit" type="button" value="Submit" onclick="calcRisk(this.form)" class="button" style="position:absolute;top:494px;left:570px;"/>
+<input name="Clear" type="button" value="Clear" onclick="clearForm(this.form)" class="button" style="position:absolute;top:494px;left:520px;"/>
+</form>
+</div>
+<div style="height:245px;width:625px;position:absolute;overflow:hidden;top:534px;">
+<img src="riskAssesment2.png">
+</div>
+</body>
+</html>

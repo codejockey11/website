@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+
+Options +Indexes
+
+#IndexIgnore *.php *.js *.css *.html *.ico
+
+ErrorDocument 403 http://localhost/missing/index.php
+ErrorDocument 404 http://localhost/missing/index.php
+ErrorDocument 500 http://localhost/errors/500/
